@@ -26,7 +26,7 @@ const categoriesList = [
     description: "",
   },
   {
-    name: "Web Design && SEO",
+    name: "Web Design & SEO",
     icon: <img src={webDesignSeo} alt="web_design_seo_webp" />,
     description: "",
   },
