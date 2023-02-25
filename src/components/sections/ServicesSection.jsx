@@ -8,50 +8,51 @@ const categoriesList = [
   {
     name: "Branding / Business Cards",
     icon: <img src={branding} alt="branding_webp" />,
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis dolor, libero sunt facere eligendi laudantium corrupti nemo repellendus labore, quia minima cum provident, consectetur beatae quo voluptatibus blanditiis molestiae illum voluptatum? Saepe quo facilis magnam, quod molestiae delectus nisi reiciendis?`,
+    description: "",
   },
   {
     name: "Creative Production",
     icon: <img src={creativeProduction} alt="creative_production_webp" />,
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis magni quae modi perspiciatis quos sed.",
+    description: "",
   },
   {
     name: "Email Marketing",
     icon: <img src={emailMarketing} alt="email_marketing_webp" />,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam nobis omnis reprehenderit aspernatur asperiores fuga delectus voluptate. Odit nesciunt expedita, recusandae fugiat a temporibus? Repellat impedit ex architecto ",
+    description: "",
   },
   {
     name: "Social Media Marketing",
     icon: <img src={socialMediaMarketing} alt="social_media_marketing_webp" />,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat asperiores tenetur explicabo mollitia, hic accusamus inventore nesciunt eos magnam voluptates! Impedit recusandae facere suscipit cupiditate.",
+    description: "",
   },
   {
     name: "Web Design && SEO",
     icon: <img src={webDesignSeo} alt="web_design_seo_webp" />,
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, perferendis minus ad voluptatem, maxime aperiam quas quisquam delectus aliquam, animi asperiores. Error officia laborum nesciunt quisquam adipisci impedit, ut placeat.",
+    description: "",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <div className="bg-secondary rounded-t-[140px] overflow-hidden px-4">
-      <div id="#services" className="mx-auto max-w-7xl py-14">
-        <div className="flex flex-wrap gap-x-4 lg:gap-x-10 gap-4 md:gap-y-14 items-center justify-center">
+    <div className="bg-secondary lg:rounded-t-[140px] overflow-hidden">
+      <div id="#services" className="mx-auto max-w-7xl px-8 py-12">
+        <div className="flex flex-wrap gap-10 items-center justify-center">
           {categoriesList.map((category, index) => (
             <div
               key={index}
-              className="transition-all gap-6 grid items-center justify-center p-8 bg-white rounded-md w-full h-[380px] max-w-[360px] lg:max-w-[400px] md:shadow-lg border border-transparent hover:border-gold-main"
+              className="cursor-pointer transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[320px] lg:max-w-[360px] md:shadow-lg border border-transparent lg:hover:border-gold-main"
             >
-              <div className="w-20 h-20 pb-4 mx-auto">{category.icon}</div>
+              <div className="w-28 h-28 mx-auto rounded-full bg-alternative p-6 mt-2">
+                {category.icon}
+              </div>
               <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
                 {category.name}
               </span>
-              <p className="text-sm min-h-[200px]">
-                {category.description}
+              <p className="min-h-[200px]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam nobis omnis reprehenderit aspernatur asperiores
+                fuga delectus voluptate. Odit nesciunt expedita, recusandae
+                fugiat a temporibus? Repellat impedit ex architecto
               </p>
             </div>
           ))}

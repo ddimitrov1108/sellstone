@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <HeaderNavigation />
-
+      
       <HomeSection />
       <ServicesSection />
     </>
