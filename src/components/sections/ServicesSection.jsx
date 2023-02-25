@@ -1,8 +1,8 @@
-import branding from "../../assets/branding.png";
-import creativeProduction from "../../assets/creative-production.png";
-import emailMarketing from "../../assets/email-marketing.png";
-import socialMediaMarketing from "../../assets/social-media-marketing.png";
-import webDesignSeo from "../../assets/web-design-seo.png";
+import branding from "../../assets/branding.webp";
+import creativeProduction from "../../assets/creative-production.webp";
+import emailMarketing from "../../assets/email-marketing.webp";
+import socialMediaMarketing from "../../assets/social-media-marketing.webp";
+import webDesignSeo from "../../assets/web-design-seo.webp";
 
 const categoriesList = [
   {
@@ -31,16 +31,16 @@ const categoriesList = [
 
 export default function ServicesSection() {
   return (
-    <div className="bg-white md:rounded-t-[140px] overflow-hidden">
-      <div id="#services" className="mx-auto max-w-7xl min-h-[8000px] py-14">
+    <div className="bg-white md:rounded-t-[100px] lg:rounded-t-[140px] overflow-hidden">
+      <div id="#services" className="mx-auto max-w-7xl py-14">
         <div className="flex flex-wrap gap-x-10 gap-y-14 items-center justify-center">
           {categoriesList.map((category, index) => (
             <div
               key={index}
-              className="gap-6 flex flex-col items-center justify-center p-8 shadow-md bg-white rounded-md w-full max-w-[400px]"
+              className="gap-6 grid items-center justify-center p-8 bg-white rounded-md w-full max-w-[360px] lg:max-w-[400px] md:shadow-lg"
             >
-              <div className="w-20 h-20 pb-4">{category.icon}</div>
-              <span className="text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
+              <div className="w-20 h-20 pb-4 mx-auto">{category.icon}</div>
+              <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
                 {category.name}
               </span>
               <p className="text-sm">
