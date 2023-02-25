@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
@@ -14,10 +35,24 @@ body {
 }
 
 .hidden-section {
-  opacity: 0;
+  .section-header,
+  .service-card {
+    opacity: 0;
+  }
 }
 
 .show-section {
-  opacity: 1 !important;
-  transition: opacity 2s;
+  .section-header {
+    animation: FadeIn 0.5s 0.25s linear both;
+  }
+
+  .service-card {
+    animation: FadeIn 0.5s linear both, SlideInFromLeft 0.5s linear both;
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1 + 0.35}s !important;
+      }
+    }
+  }
 }
