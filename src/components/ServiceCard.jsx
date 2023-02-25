@@ -4,7 +4,7 @@ export default function ServiceCard({ service = null }) {
       <div className="w-24 h-24 mx-auto rounded-full bg-alternative p-4 mt-2">
         {service?.icon}
       </div>
-      <span className="w-fit mx-auto text-center truncate ... font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
+      <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2 truncate ...">
         {service?.name}
       </span>
       <p className="min-h-[200px] text-black-light">
