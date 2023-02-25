@@ -20,7 +20,7 @@ export default function HomeSection() {
               href="#"
               className="bg-gold-main text-black-dark w-fit h-fit rounded-md px-12 py-4 font-semibold text-lg"
             >
-              Let's Talk
+              Свържи се с нас
             </a>
           </div>
         </div>

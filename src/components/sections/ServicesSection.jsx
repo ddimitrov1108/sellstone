@@ -40,8 +40,8 @@ export default function ServicesSection() {
       className="bg-white sm:bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-black-main">
-          Our Services
+        <div className="text-center sm:text-left text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-black-main">
+          Нашите услуги
         </div>
         <div className="flex flex-wrap gap-0 sm:gap-10 items-center justify-center">
           {servicesArr.map((service, index) => (
