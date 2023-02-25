@@ -42,7 +42,7 @@ export default function ServicesSection() {
               key={index}
               className="cursor-pointer transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] md:shadow-lg border border-transparent md:hover:border-gold-main"
             >
-              <div className="w-28 h-28 mx-auto rounded-full bg-alternative p-6 mt-2">
+              <div className="w-24 h-24 mx-auto rounded-full bg-alternative p-4 mt-2">
                 {category.icon}
               </div>
               <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
