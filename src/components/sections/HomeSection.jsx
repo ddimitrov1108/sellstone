@@ -3,7 +3,7 @@ export default function HomeSection() {
     <div className="bg-black-dark text-white h-screen grid items-center pt-10 px-4 md:px-8">
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
-          <p className="text-[35px] xs:text-[38px] sm:text-7xl leading-snug sm:leading-snug xl:leading-snug font-semibold">
+          <p className="text-[35px] xs:text-[38px] sm:text-7xl xl:text-8xl leading-snug sm:leading-snug xl:leading-snug font-semibold">
             Evolve together.
             <br />
             <span className="text-gold-main">Digitally.</span>
