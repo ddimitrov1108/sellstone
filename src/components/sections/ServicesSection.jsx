@@ -35,12 +35,17 @@ const servicesArr = [
 
 export default function ServicesSection() {
   return (
-    <div id="services" className="bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12">
+    <div
+      id="services"
+      className="bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+    >
       <div className="mx-auto max-w-7xl">
-        <div className="text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-gold-main">Our Services</div>
+        <div className="text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-gold-main">
+          Our Services
+        </div>
         <div className="flex flex-wrap gap-0 md:gap-10 items-center justify-center">
           {servicesArr.map((service, index) => (
-            <ServiceCard key={index} service={service}/>
+            <ServiceCard key={index} service={service} />
           ))}
         </div>
       </div>

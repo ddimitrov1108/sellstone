@@ -1,6 +1,6 @@
 export default function ServiceCard({ service = null }) {
   return (
-    <div className="select-none transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] md:shadow-lg border border-transparent md:hover:border-gold-main">
+    <div className="service-card select-none transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] md:shadow-lg border border-transparent md:hover:border-gold-main">
       <div className="w-24 h-24 mx-auto rounded-full bg-alternative p-4 mt-2">
         {service?.icon}
       </div>
