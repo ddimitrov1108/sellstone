@@ -5,11 +5,11 @@ import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import clsx from "clsx";
 
 const navLinks = [
-  { name: "Home", navigateTo: "#home" },
-  { name: "Services", navigateTo: "#services" },
-  { name: "Portfolio", navigateTo: "#portfolio" },
-  { name: "Customers", navigateTo: "#customers" },
-  { name: "Our Team", navigateTo: "#ourteam" },
+  { name: "Home", navigateTo: "home" },
+  { name: "Services", navigateTo: "services" },
+  { name: "Portfolio", navigateTo: "portfolio" },
+  { name: "Customers", navigateTo: "customers" },
+  { name: "Our Team", navigateTo: "ourteam" },
 ];
 
 export default function HeaderNavigation() {
