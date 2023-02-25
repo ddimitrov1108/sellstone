@@ -26,7 +26,7 @@ export default function MobileNavigation({
       >
         <div className="p-6 flex flex-col">
           <div className="flex items-center justify-between">
-            <Brand className='md:hidden'/>
+            <Brand className='sm:hidden'/>
             <button className="text-4xl w-fit ml-auto" onClick={onClose}>
               <VscClose />
             </button>

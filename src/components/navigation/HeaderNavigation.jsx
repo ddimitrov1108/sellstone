@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Начало", navigateTo: "home" },
   { name: "Услуги", navigateTo: "services" },
   { name: "Портфолио", navigateTo: "portfolio" },
-  { name: "Нашите Партньори", navigateTo: "customers" },
+  { name: "Партньори", navigateTo: "customers" },
   { name: "Нашият Екип", navigateTo: "ourteam" },
 ];
 

@@ -6,6 +6,20 @@
 
 html {
   scroll-behavior: smooth;
+
+  // &::-webkit-scrollbar {
+  //   width: 12px;
+
+  // }
+  
+  // &::-webkit-scrollbar-track {
+  //   background: #0C0E12;
+  // }
+  
+  // &::-webkit-scrollbar-thumb {
+  //   background: #1E2329;
+  //   border-radius: 25px;
+  // }
 }
 
 body {
@@ -51,7 +65,7 @@ body {
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.1 + 0.5}s !important;
+        animation-delay: #{$i * 0.1 + 0.3}s !important;
       }
     }
   }
