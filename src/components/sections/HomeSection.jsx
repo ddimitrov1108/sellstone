@@ -1,7 +1,7 @@
 export default function HomeSection() {
   return (
     <div className="bg-black-dark text-white h-screen grid items-center pt-14 px-4 md:px-8">
-      <div className="w-full mx-auto max-w-7xl text-center md:text-left ">
+      <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
           <p className="text-[35px] xs:text-[38px] sm:text-6xl xl:text-8xl leading-snug sm:leading-snug xl:leading-snug font-semibold">
             Evolve together.
@@ -18,7 +18,7 @@ export default function HomeSection() {
 
             <a
               href="#"
-              className="mx-auto md:mx-0 bg-gold-main text-black-dark w-fit h-fit rounded-md px-12 py-4 font-semibold text-lg"
+              className="bg-gold-main text-black-dark w-fit h-fit rounded-md px-12 py-4 font-semibold text-lg"
             >
               Let's Talk
             </a>
