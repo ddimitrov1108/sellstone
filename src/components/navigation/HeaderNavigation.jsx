@@ -106,7 +106,7 @@ export default function HeaderNavigation() {
           </nav>
 
           <HiOutlineBars3BottomRight
-            className="header-links lg:hidden text-4xl text-primary-main cursor-pointer text-secondary"
+            className="header-links lg:hidden text-4xl cursor-pointer text-secondary"
             onClick={toggleMobileMenu}
           />
         </div>

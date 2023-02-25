@@ -25,20 +25,24 @@ export default function MobileNavigation({
       >
         <div className="p-6 flex flex-col">
           <button
-            className="text-4xl w-fit ml-auto text-primary-main"
+            className="text-4xl w-fit ml-auto"
             onClick={onClose}
           >
             <VscClose />
           </button>
 
           <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <a
                 key={link.navigateTo}
-                className=" hover:text-primary-main text-center cursor-pointer hover:text-gold-main"
+                className="relative group px-4 py-3 cursor-pointer text-center hover:text-gold-main"
                 onClick={() => onNavLinkClick(link.navigateTo)}
               >
-                {link.name}
+                <span className="transition-all text-white group-hover:text-gold-main">
+                  {link.name}
+                </span>
+                <div className="absolute bottom-0 right-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
+                <div className="absolute bottom-0 left-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
               </a>
             ))}
           </div>

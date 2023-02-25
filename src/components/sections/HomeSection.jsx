@@ -18,7 +18,7 @@ export default function HomeSection() {
 
             <a
               href="#"
-              className="bg-gold-main text-black-main w-fit h-fit rounded-md px-12 py-4 font-semibold text-lg"
+              className="bg-gold-main text-black-dark w-fit h-fit rounded-md px-12 py-4 font-semibold text-lg"
             >
               Let's Talk
             </a>
