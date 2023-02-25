@@ -84,7 +84,7 @@ export default function HeaderNavigation() {
         className={clsx(
           "transform transition-all duration-500 backdrop-blur-sm z-40 fixed top-0 left-0 right-0 p-4",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
-          yValue ? "shadow-md py-3 bg-black-main/60" : "md:py-6 bg-black-main"
+          yValue ? "shadow-md py-3 bg-black-main/60" : "md:py-6 bg-black-dark"
         )}
       >
         <div className="mx-auto w-full max-w-7xl flex items-center justify-between">
