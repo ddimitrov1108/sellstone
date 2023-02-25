@@ -1,6 +1,6 @@
 export default function HomeSection() {
   return (
-    <div id="home" className="bg-black-dark text-white h-screen grid items-center py-14 px-4 md:px-8">
+    <div id="home" className="bg-black-dark text-white h-screen grid items-center py-14 px-4 xs:px-8">
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
           <p className="text-[35px] xs:text-[38px] sm:text-7xl leading-snug sm:leading-snug font-semibold">

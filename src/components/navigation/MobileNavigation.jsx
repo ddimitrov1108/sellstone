@@ -1,5 +1,6 @@
 import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
+import Brand from "../Brand";
 
 export default function MobileNavigation({
   navLinks = [],
@@ -24,12 +25,12 @@ export default function MobileNavigation({
         )}
       >
         <div className="p-6 flex flex-col">
-          <button
-            className="text-4xl w-fit ml-auto"
-            onClick={onClose}
-          >
-            <VscClose />
-          </button>
+          <div className="flex items-center justify-between">
+            <Brand className='md:hidden'/>
+            <button className="text-4xl w-fit ml-auto" onClick={onClose}>
+              <VscClose />
+            </button>
+          </div>
 
           <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
             {navLinks.map((link) => (
