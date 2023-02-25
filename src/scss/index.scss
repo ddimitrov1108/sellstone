@@ -35,18 +35,18 @@ body {
 }
 
 .hidden-section {
-  .section-header,
-  .service-card {
+  &.section-header,
+  &.service-card {
     opacity: 0;
   }
 }
 
 .show-section {
-  .section-header {
+  &.section-header {
     animation: FadeIn 0.25s 0.25s linear both;
   }
 
-  .service-card {
+  &.service-card {
     animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both;
 
     @for $i from 1 through 5 {
