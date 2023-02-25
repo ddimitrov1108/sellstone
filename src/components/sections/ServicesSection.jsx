@@ -43,7 +43,7 @@ export default function ServicesSection() {
         <div className="hidden-section section-header text-center sm:text-left text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-black-main">
           Нашите услуги
         </div>
-        <div className="flex flex-wrap gap-0 sm:gap-10 items-center justify-center">
+        <div className="flex flex-wrap gap-0 gap-y-10 sm:gap-10 items-center justify-center">
           {servicesArr.map((service, index) => (
             <ServiceCard key={index} service={service} />
           ))}
