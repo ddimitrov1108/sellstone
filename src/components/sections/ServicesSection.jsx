@@ -7,40 +7,40 @@ import webDesignSeo from "../../assets/web-design-seo.webp";
 const categoriesList = [
   {
     name: "Branding / Business Cards",
-    icon: <img src={branding} alt="branding_webp" />,
+    icon: <img src={branding} className="select-none" alt="branding_webp" />,
     description: "",
   },
   {
     name: "Creative Production",
-    icon: <img src={creativeProduction} alt="creative_production_webp" />,
+    icon: <img src={creativeProduction} className="select-none" alt="creative_production_webp" />,
     description: "",
   },
   {
     name: "Email Marketing",
-    icon: <img src={emailMarketing} alt="email_marketing_webp" />,
+    icon: <img src={emailMarketing} className="select-none" alt="email_marketing_webp" />,
     description: "",
   },
   {
     name: "Social Media Marketing",
-    icon: <img src={socialMediaMarketing} alt="social_media_marketing_webp" />,
+    icon: <img src={socialMediaMarketing} className="select-none" alt="social_media_marketing_webp" />,
     description: "",
   },
   {
     name: "Web Design && SEO",
-    icon: <img src={webDesignSeo} alt="web_design_seo_webp" />,
+    icon: <img src={webDesignSeo} className="select-none" alt="web_design_seo_webp" />,
     description: "",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <div className="bg-secondary lg:rounded-t-[140px] overflow-hidden">
+    <div className="bg-secondary md:rounded-t-[140px] overflow-hidden">
       <div id="#services" className="mx-auto max-w-7xl px-8 py-12">
-        <div className="flex flex-wrap gap-10 items-center justify-center">
+        <div className="flex flex-wrap gap-0 md:gap-10 items-center justify-center">
           {categoriesList.map((category, index) => (
             <div
               key={index}
-              className="cursor-pointer transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[320px] lg:max-w-[360px] md:shadow-lg border border-transparent lg:hover:border-gold-main"
+              className="cursor-pointer transition-all gap-6 grid items-center justify-center md:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] md:shadow-lg border border-transparent md:hover:border-gold-main"
             >
               <div className="w-28 h-28 mx-auto rounded-full bg-alternative p-6 mt-2">
                 {category.icon}
