@@ -1,6 +1,7 @@
 import { VscClose } from "react-icons/vsc";
 import clsx from "clsx";
 import Brand from "../Brand";
+import { NavLink } from "react-router-dom";
 
 export default function MobileNavigation({
   navLinks = [],
@@ -34,8 +35,9 @@ export default function MobileNavigation({
 
           <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
             {navLinks.map((link) => (
-              <a
-                key={link.navigateTo}
+              <NavLink
+              key={link.href}
+              to={`/${link.href}`}
                 className="relative group px-4 py-3 cursor-pointer text-center hover:text-gold-main"
                 onClick={() => onNavLinkClick(link.navigateTo)}
               >
@@ -44,7 +46,7 @@ export default function MobileNavigation({
                 </span>
                 <div className="absolute bottom-0 right-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
                 <div className="absolute bottom-0 left-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-              </a>
+              </NavLink>
             ))}
           </div>
         </div>

@@ -4,6 +4,12 @@ import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
 
 function App() {
+  const scrollSectionIntoView = (sectionId) => {
+    const domElement = document.getElementById(sectionId);
+
+    if (domElement) domElement.scrollIntoView();
+  };
+
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -24,7 +30,7 @@ function App() {
 
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation scrollSectionIntoView={scrollSectionIntoView}/>
 
       <main className="grid gap-24">
         <HomeSection />

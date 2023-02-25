@@ -3,25 +3,20 @@ import Brand from "../Brand";
 import MobileNavigation from "./MobileNavigation";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import clsx from "clsx";
+import { NavLink } from "react-router-dom";
 
 const navLinks = [
-  { name: "Начало", navigateTo: "home" },
-  { name: "Услуги", navigateTo: "services" },
-  { name: "Портфолио", navigateTo: "portfolio" },
-  { name: "Партньори", navigateTo: "customers" },
-  { name: "Нашият Екип", navigateTo: "ourteam" },
+  { name: "Начало", href: "", navigateTo: "home" },
+  { name: "Услуги", href: "services", navigateTo: "services" },
+  { name: "Портфолио", href: "portfolio", navigateTo: "portfolio" },
+  { name: "Партньори", href: "partners", navigateTo: "artners" },
+  { name: "Нашият Екип", href: "our-team", navigateTo: "our-team" },
 ];
 
-export default function HeaderNavigation() {
+export default function HeaderNavigation({ scrollSectionIntoView }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(window.scrollY);
-
-  const scrollSectionIntoView = (sectionId) => {
-    const domElement = document.getElementById(sectionId);
-
-    if (domElement) domElement.scrollIntoView();
-  };
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
 
@@ -91,8 +86,9 @@ export default function HeaderNavigation() {
           <Brand />
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
-                key={link.navigateTo}
+              <NavLink
+                key={link.href}
+                to={`/${link.href}`}
                 className="relative group px-4 py-3 cursor-pointer"
                 onClick={() => scrollSectionIntoView(link.navigateTo)}
               >
@@ -101,7 +97,7 @@ export default function HeaderNavigation() {
                 </span>
                 <div className="absolute bottom-0 right-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
                 <div className="absolute bottom-0 left-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-              </a>
+              </NavLink>
             ))}
           </nav>
 
