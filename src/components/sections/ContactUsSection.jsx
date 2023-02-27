@@ -57,7 +57,7 @@ export default function ContactUsSection() {
       <div className="transition-all mx-auto max-w-7xl">
         <SectionHeader>Свържете се с нас</SectionHeader>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-24">
+        <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
           <div className="w-full lg:w-fit flex flex-col items-start lg:items-center gap-6">
             {contactRef.map((contact) => (
               <div
