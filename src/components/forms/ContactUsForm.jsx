@@ -78,6 +78,7 @@ export default function ContactUsForm() {
             name="categoryType"
             type="select"
             label="Услуга"
+            hiddenOptionText="Изберете категория"
             options={servicesArr}
             component={Select}
             fullWidth

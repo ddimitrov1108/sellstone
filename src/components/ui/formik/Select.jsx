@@ -5,6 +5,7 @@ import ErrorMessage from "./ErrorMessage";
 export default function Select({
   label = "",
   options = [],
+  hiddenOptionText = "",
   fullWidth = false,
   className,
   field,
@@ -32,7 +33,7 @@ export default function Select({
             : "border-black-light/10 focus:outline-gold-main"
         )}
       >
-        <option value="" selected hidden></option>
+        <option value="" selected hidden>{hiddenOptionText}</option>
         {options.map((option, index) => (
           <option key={index} value={option} className="text-black-main">
             {option}
