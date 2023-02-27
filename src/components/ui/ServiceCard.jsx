@@ -1,7 +1,7 @@
 export default function ServiceCard({ service = null }) {
   return (
-    <div className="hidden-section service-card select-none transition-all gap-6 grid items-center justify-center sm:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] sm:shadow-lg border border-transparent md:hover:border-gold-main">
-      <div className="w-24 h-24 mx-auto rounded-full bg-alternative p-4 mt-2">
+    <div className="hidden-section service-card select-none transition-all duration-300 gap-6 grid items-center justify-center sm:p-8 bg-white rounded-md w-full min-h-[460px] md:max-w-[330px] lg:max-w-[360px] sm:shadow-md border border-transparent hover:border-gold-main">
+      <div className="mx-auto rounded-full bg-alternative p-4 mt-2">
         {service?.icon}
       </div>
       <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2 truncate ...">

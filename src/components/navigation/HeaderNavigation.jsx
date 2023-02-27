@@ -1,26 +1,29 @@
 import { useEffect, useState } from "react";
-import Brand from "../Brand";
+import Brand from "../ui/Brand";
 import MobileNavigation from "./MobileNavigation";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
+import Link from "../ui/Link";
+import { scrollSectionIntoView } from "../../js/scrollIntoView";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 
 const navLinks = [
-  { name: "Начало", href: "", navigateTo: "home" },
+  { name: "Начало", href: "/", navigateTo: "home" },
   { name: "Услуги", href: "services", navigateTo: "services" },
   { name: "Портфолио", href: "portfolio", navigateTo: "portfolio" },
   { name: "Партньори", href: "partners", navigateTo: "artners" },
-  { name: "Нашият Екип", href: "our-team", navigateTo: "our-team" },
+  { name: "Екип", href: "our-team", navigateTo: "our-team" },
 ];
 
-export default function HeaderNavigation({ scrollSectionIntoView }) {
+export default function HeaderNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(window.scrollY);
 
+  const linkClickHandler = (navigateTo) => scrollSectionIntoView(navigateTo);
   const toggleMobileMenu = () => setIsOpen(!isOpen);
 
-  const onMobileNavLinkClick = (sectionId) => {
+  const mobileLinkClickHandler = (sectionId) => {
     if (sectionId) scrollSectionIntoView(sectionId);
 
     setIsOpen(false);
@@ -71,8 +74,8 @@ export default function HeaderNavigation({ scrollSectionIntoView }) {
       <MobileNavigation
         navLinks={navLinks}
         open={isOpen}
-        onNavLinkClick={onMobileNavLinkClick}
-        onClose={() => setIsOpen(!isOpen)}
+        onNavLinkClick={mobileLinkClickHandler}
+        onClose={toggleMobileMenu}
       />
 
       <header
@@ -86,19 +89,21 @@ export default function HeaderNavigation({ scrollSectionIntoView }) {
           <Brand />
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <NavLink
+              <Link
                 key={link.href}
-                to={`/${link.href}`}
-                className="relative group px-4 py-3 cursor-pointer"
-                onClick={() => scrollSectionIntoView(link.navigateTo)}
-              >
-                <span className="transition-all text-white group-hover:text-gold-main">
-                  {link.name}
-                </span>
-                <div className="absolute bottom-0 right-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-                <div className="absolute bottom-0 left-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-              </NavLink>
+                to={link.href}
+                text={link.name}
+                onClick={() => linkClickHandler(link.navigateTo)}
+              />
             ))}
+
+            <NavLink
+              to={"/contact-us"}
+              onClick={() => linkClickHandler("contact-us")}
+              className="bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
+            >
+              Свържи се с нас
+            </NavLink>
           </nav>
 
           <HiOutlineBars3BottomRight

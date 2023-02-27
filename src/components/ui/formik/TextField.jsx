@@ -1,0 +1,37 @@
+import ErrorMessage from "./ErrorMessage";
+import clsx from "clsx";
+
+export default function TextField({
+  label = "",
+  fullWidth = false,
+  className,
+  field,
+  type,
+  form: { errors, touched },
+  ...restProps
+}) {
+  return (
+    <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
+      <div className="min-w-fit pb-1.5">
+        <span className="min-w-fit text-sm">{label}</span>
+      </div>
+
+      <input
+        className={clsx(
+          "px-4 py-3 border rounded-md w-full text-black-main",
+          className,
+          errors[field.name] && touched[field.name]
+            ? " border-error-main focus:outline-error-main"
+            : "border-black-light/10 focus:outline-gold-main"
+        )}
+        type={type}
+        {...field}
+        {...restProps}
+      />
+
+      {errors[field.name] && touched[field.name] && (
+        <ErrorMessage msg={errors[field.name]} />
+      )}
+    </div>
+  );
+}

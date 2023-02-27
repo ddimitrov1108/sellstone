@@ -20,6 +20,11 @@ module.exports = {
           main: "#F2BC07",
           dark: "#F0B90B",
         },
+        error: {
+          light: "#f6685e",
+          main: "#f44336",
+          dark: "#aa2e25",
+        },
       },
     },
   },

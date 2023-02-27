@@ -2,14 +2,9 @@ import { useEffect } from "react";
 import HeaderNavigation from "./components/navigation/HeaderNavigation";
 import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
+import ContactUsSection from "./components/sections/ContactUsSection";
 
 function App() {
-  const scrollSectionIntoView = (sectionId) => {
-    const domElement = document.getElementById(sectionId);
-
-    if (domElement) domElement.scrollIntoView();
-  };
-
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -30,11 +25,12 @@ function App() {
 
   return (
     <>
-      <HeaderNavigation scrollSectionIntoView={scrollSectionIntoView}/>
+      <HeaderNavigation/>
 
       <main className="grid gap-24">
-        <HomeSection />
+        <HomeSection/>
         <ServicesSection />
+        <ContactUsSection />
       </main>
     </>
   );

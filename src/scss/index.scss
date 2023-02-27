@@ -2,50 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./keyframes.scss";
 
 html {
   scroll-behavior: smooth;
+}
 
-  // &::-webkit-scrollbar {
-  //   width: 12px;
-
-  // }
-  
-  // &::-webkit-scrollbar-track {
-  //   background: #0C0E12;
-  // }
-  
-  // &::-webkit-scrollbar-thumb {
-  //   background: #1E2329;
-  //   border-radius: 25px;
-  // }
+select > option:hover {
+    background-color: red !important;
+    color: red !important;
 }
 
 body {
-  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-  background-color: #0C0E12;
-}
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  background-color: #0c0e11;
 
-@keyframes FadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes SlideInFromLeft {
-  0% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .hidden-section {
@@ -61,12 +34,27 @@ body {
   }
 
   &.service-card {
-    animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both;
+    &:nth-child(odd) {
+      animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both,
+        BounceInFromLeft 0.5s linear both;
+    }
+    &:nth-child(even) {
+      animation: FadeIn 0.25s linear both, SlideInFromRight 0.5s linear both,
+        BounceInFromRight 0.5s linear both;
+    }
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.1 + 0.3}s !important;
       }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .show-section {
+    &.service-card {
+      animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both !important;
     }
   }
 }

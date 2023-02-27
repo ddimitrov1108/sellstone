@@ -1,6 +1,7 @@
 import { VscClose } from "react-icons/vsc";
+import Brand from "../ui/Brand";
+import Link from "../ui/Link";
 import clsx from "clsx";
-import Brand from "../Brand";
 import { NavLink } from "react-router-dom";
 
 export default function MobileNavigation({
@@ -25,30 +26,34 @@ export default function MobileNavigation({
           open ? "translate-x-0 " : "translate-x-full"
         )}
       >
-        <div className="p-6 flex flex-col">
+        <div className="p-6 grid">
           <div className="flex items-center justify-between">
-            <Brand className='sm:hidden'/>
-            <button className="text-4xl w-fit ml-auto" onClick={onClose}>
+            <Brand className="sm:hidden" />
+            <button
+              className="text-4xl w-fit ml-auto hover:text-gold-main transition-all"
+              onClick={onClose}
+            >
               <VscClose />
             </button>
           </div>
 
-          <div className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
+          <nav className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
             {navLinks.map((link) => (
-              <NavLink
-              key={link.href}
-              to={`/${link.href}`}
-                className="relative group px-4 py-3 cursor-pointer text-center hover:text-gold-main"
+              <Link
+                key={link.href}
+                to={link.href}
+                text={link.name}
                 onClick={() => onNavLinkClick(link.navigateTo)}
-              >
-                <span className="transition-all text-white group-hover:text-gold-main">
-                  {link.name}
-                </span>
-                <div className="absolute bottom-0 right-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-                <div className="absolute bottom-0 left-[50%] transition-all w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>
-              </NavLink>
+              />
             ))}
-          </div>
+            <NavLink
+              to={"/contact-us"}
+              onClick={() => onNavLinkClick("contact-us")}
+              className="bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
+            >
+              Свържи се с нас
+            </NavLink>
+          </nav>
         </div>
       </div>
     </div>
