@@ -9,8 +9,12 @@ import { useLocation } from "react-router-dom";
 function App() {
   const location = useLocation();
   useEffect(() => {
-    scrollSectionIntoView(location.pathname === "/"? "home" : location.pathname.substring(1));
-  }, [location])
+    setTimeout(() => {
+      scrollSectionIntoView(
+        location.pathname === "/" ? "home" : location.pathname.substring(1)
+      );
+    }, 100);
+  }, [location]);
 
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
@@ -32,10 +36,10 @@ function App() {
 
   return (
     <>
-      <HeaderNavigation/>
+      <HeaderNavigation />
 
       <main className="grid gap-24">
-        <HomeSection/>
+        <HomeSection />
         <ServicesSection />
         <ContactUsSection />
       </main>
