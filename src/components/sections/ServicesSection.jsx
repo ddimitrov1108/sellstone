@@ -3,8 +3,9 @@ import creativeProductionWebp from "../../assets/creative-production.webp";
 import emailMarketingWebp from "../../assets/email-marketing.webp";
 import socialMediaMarketingWebp from "../../assets/social-media-marketing.webp";
 import webDesignSeoWebp from "../../assets/web-design-seo.webp";
+import SectionHeader from "../ui/SectionHeader";
 import ServiceCard from "../ui/ServiceCard";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const servicesArr = [
   {
@@ -76,9 +77,8 @@ export default function ServicesSection() {
       className="bg-white sm:bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
       <div className="transition-all mx-auto max-w-7xl">
-        <div className="hidden-section section-header text-center sm:text-left text-4xl xs:text-[38px] sm:text-6xl font-semibold pb-2 mb-12 text-black-main">
-          Нашите услуги
-        </div>
+        <SectionHeader>Нашите услуги</SectionHeader>
+
         <div className="flex flex-wrap gap-0 gap-y-4 md:gap-y-10 sm:gap-10 items-center justify-center">
           {servicesArr.map((service) => (
             <ServiceCard key={service.id} service={service} />
