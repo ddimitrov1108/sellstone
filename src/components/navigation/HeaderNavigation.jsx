@@ -20,14 +20,8 @@ export default function HeaderNavigation() {
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(window.scrollY);
 
-  const linkClickHandler = (navigateTo) => scrollSectionIntoView(navigateTo);
   const toggleMobileMenu = () => setIsOpen(!isOpen);
-
-  const mobileLinkClickHandler = (sectionId) => {
-    if (sectionId) scrollSectionIntoView(sectionId);
-
-    setIsOpen(false);
-  };
+  const closeMobileMenu = () => setIsOpen(false);
 
   useEffect(() => {
     const href = window.location.href;
@@ -74,7 +68,7 @@ export default function HeaderNavigation() {
       <MobileNavigation
         navLinks={navLinks}
         open={isOpen}
-        onNavLinkClick={mobileLinkClickHandler}
+        onNavLinkClick={closeMobileMenu}
         onClose={toggleMobileMenu}
       />
 
@@ -93,13 +87,11 @@ export default function HeaderNavigation() {
                 key={link.href}
                 to={link.href}
                 text={link.name}
-                onClick={() => linkClickHandler(link.navigateTo)}
               />
             ))}
 
             <NavLink
               to={"/contact-us"}
-              onClick={() => linkClickHandler("contact-us")}
               className="bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
             >
               Свържи се с нас

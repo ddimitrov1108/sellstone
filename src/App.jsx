@@ -3,8 +3,15 @@ import HeaderNavigation from "./components/navigation/HeaderNavigation";
 import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
 import ContactUsSection from "./components/sections/ContactUsSection";
+import { scrollSectionIntoView } from "./js/scrollIntoView";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    scrollSectionIntoView(location.pathname === "/"? "home" : location.pathname.substring(1));
+  }, [location])
+
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

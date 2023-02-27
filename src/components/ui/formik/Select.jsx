@@ -23,7 +23,7 @@ export default function Select({
 
       <Field
         as="select"
-        value={null}
+        value={field.value}
         name={field.name}
         className={clsx(
           "px-4 py-3 focus:outline-gold-main focus-within:outline-gold-main border w-full rounded-md",
@@ -33,7 +33,7 @@ export default function Select({
             : "border-black-light/10 focus:outline-gold-main"
         )}
       >
-        <option value="" selected hidden>{hiddenOptionText}</option>
+        <option value="" hidden>{hiddenOptionText}</option>
         {options.map((option, index) => (
           <option key={index} value={option} className="text-black-main">
             {option}

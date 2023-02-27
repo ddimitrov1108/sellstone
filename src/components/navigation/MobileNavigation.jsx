@@ -43,12 +43,11 @@ export default function MobileNavigation({
                 key={link.href}
                 to={link.href}
                 text={link.name}
-                onClick={() => onNavLinkClick(link.navigateTo)}
+                onClick={onNavLinkClick}
               />
             ))}
             <NavLink
               to={"/contact-us"}
-              onClick={() => onNavLinkClick("contact-us")}
               className="bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
             >
               Свържи се с нас

@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 export default function Link({
   to = "/",
   text = "link",
-  onClick = () => {},
   className,
   ...restProps
 }) {
@@ -12,7 +11,6 @@ export default function Link({
     <NavLink
       to={to}
       className={clsx("relative group px-4 py-3 cursor-pointer", className)}
-      onClick={onClick}
       {...restProps}
     >
       <span className="transition-all text-white group-hover:text-gold-main ">
