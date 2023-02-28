@@ -74,13 +74,13 @@ export default function OurTeamSection() {
   return (
     <div id="our-team" className="bg-white overflow-hidden px-4 xs:px-8 py-12">
       <Section>
-        <SectionHeader className="xl:text-left">Нашият екип</SectionHeader>
+        <SectionHeader className="">Нашият екип</SectionHeader>
 
         <div className="flex flex-col md:flex-row gap-14 gap-y-4 items-center justify-center">
           {teamArr.map((employee) => (
             <div
               key={employee.id}
-              className="p-6 bg-white transition-all duration-300 md:hover:shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
+              className="opacity-0 p-6 bg-white transition-all duration-300 md:hover:shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
             >
               <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
                 {employee.img}
