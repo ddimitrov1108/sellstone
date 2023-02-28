@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Poppins", "Helvetica", "Arial", sans-serif;
-  background-color: #0c0e11;
+  background-color: white;
 }
 
 .hidden-section {
@@ -38,6 +38,21 @@ body {
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1 + 1}s !important;
+      }
+    }
+  }
+
+  &.project-card {
+    &:nth-child(odd) {
+      animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both;
+    }
+    &:nth-child(even) {
+      animation: FadeIn 0.25s linear both, SlideInFromRight 0.5s linear both;
+    }
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.1 + 0.3}s !important;
       }
     }
@@ -48,6 +63,17 @@ body {
   .show-section {
     &.service-card {
       animation: FadeIn 0.25s linear both, SlideInFromLeft 0.5s linear both !important;
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}n) {
+          animation-delay: #{$i * 0.1 + 0.5}s !important;
+        }
+      }
+    }
+
+    &.project-card {
+      animation: FadeIn 0.5s 1s linear both,
+      SlideInFromBottom 0.5s 1s linear both !important;
     }
   }
 }

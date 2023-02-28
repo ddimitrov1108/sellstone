@@ -65,7 +65,7 @@ export default function HeaderNavigation() {
 
       <header
         className={clsx(
-          "transform transition-all duration-500 bg-black-dark z-40 fixed top-0 left-0 right-0 px-4 py-4 xs:px-8",
+          "bg-black-dark transform transition-all duration-500 z-40 fixed top-0 left-0 right-0 px-4 py-4 xs:px-8",
           scrollDir === "scroll-down" ? "-translate-y-40" : "translate-y-0",
           yValue ? "shadow-md py-3" : "md:py-6"
         )}
