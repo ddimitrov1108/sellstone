@@ -8,6 +8,9 @@ import OurTeamSection from "./components/sections/OurTeamSection";
 import PortfolioSection from "./components/sections/PortfolioSection";
 import PartnersSection from "./components/sections/PartnersSection";
 import FooterNavigation from "./components/navigation/FooterNavigation";
+import { register } from "swiper/element/bundle";
+import TestimonialsSection from "./components/sections/TestimonialsSection";
+register();
 
 function App() {
   const location = useLocation();
@@ -45,10 +48,11 @@ function App() {
       <HomeSection />
       <ServicesSection />
       <PortfolioSection />
-      <PartnersSection/>
+      <TestimonialsSection />
+      <PartnersSection />
       <OurTeamSection />
       <ContactUsSection />
-      <FooterNavigation/>
+      <FooterNavigation />
     </>
   );
 }

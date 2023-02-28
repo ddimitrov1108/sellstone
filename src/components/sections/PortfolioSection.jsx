@@ -6,10 +6,10 @@ export default function PortfolioSection() {
   return (
     <div
       id="portfolio"
-      className="min-h-[1024px] bg-white overflow-hidden px-4 xs:px-8 py-12"
+      className="min-h-[1024px] md:rounded-b-[140px] bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader>Нашите проекти</SectionHeader>
+        <SectionHeader className="xl:text-left">Нашите проекти</SectionHeader>
         <div className="flex flex-col gap-24 items-center justify-start even:justify-end">
           {[1, 2, 3].map((i, index) => (
             <ProjectCard key={index} />

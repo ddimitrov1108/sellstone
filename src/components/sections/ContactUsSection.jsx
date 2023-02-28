@@ -53,10 +53,10 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="bg-white md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white md:rounded-b-[140px] overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader>Свържете се с нас</SectionHeader>
+        <SectionHeader className="xl:text-left">Свържете се с нас</SectionHeader>
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
           <div className="w-full lg:w-fit flex flex-col items-start lg:items-center gap-6">

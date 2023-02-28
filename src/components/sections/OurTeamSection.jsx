@@ -74,10 +74,10 @@ export default function OurTeamSection() {
   return (
     <div
       id="our-team"
-      className="bg-white md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader>Нашият екип</SectionHeader>
+        <SectionHeader className="xl:text-left">Нашият екип</SectionHeader>
 
         <div className="flex flex-col md:flex-row gap-14 gap-y-4 items-center justify-center">
           {teamArr.map((employee) => (

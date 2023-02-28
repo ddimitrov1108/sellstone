@@ -1,0 +1,88 @@
+import { useEffect } from "react";
+import Section from "./components/Section";
+import SectionHeader from "./components/SectionHeader";
+import userPfPng from "../../assets/user-pf.png";
+import { FaQuoteLeft } from "react-icons/fa";
+
+const params = {
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    426: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
+  spaceBetween: 32,
+  loop: true,
+};
+
+export default function TestimonialsSection() {
+  useEffect(() => {
+    const swiperEl = document.querySelector("#swiperContainerTestimonials");
+    Object.assign(swiperEl, params);
+
+    return () => {};
+  }, []);
+
+  return (
+    <div className="bg-black-dark px-4 xs:px-8 py-12">
+      <Section>
+        <SectionHeader className="text-center text-white pb-0 mb-2">
+          Отзиви от наши клиенти
+        </SectionHeader>
+        <div className="mx-auto w-[40%] md:w-[30%] h-1 bg-gold-main"></div>
+        <div className="mx-auto min-h-fit py-12">
+          <swiper-container
+            id="swiperContainerTestimonials"
+            autoplay-delay="5000"
+            autoplay-disable-on-interaction="false"
+          >
+            {[...Array(9).keys()].map((key) => (
+              <swiper-slide key={key}>
+                <div className="w-full bg-black-dark rounded-md mt-14">
+                  <img
+                    src={userPfPng}
+                    width="128px"
+                    height="128px"
+                    alt="user_pf_png"
+                    className="shadow-md mx-auto bg-black-main border-2 border-gold-light rounded-full -mt-24"
+                  />
+
+                  <div className="relative mt-4 py-4 flex items-center gap-2">
+                    <FaQuoteLeft className="z-0 absolute top-1 left-2 text-black-light/30 text-7xl" />
+                    <div className="z-30 text-white/80 p-4 text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Eveniet, numquam? Aut sapiente accusantium quas doloribus
+                      earum maxime, id distinctio! Corporis facere sint
+                      voluptatum nostrum nesciunt ea, debitis hic nihil
+                      asperiores repellat facilis delectus veniam quisquam nam
+                      sapiente unde? Exercitationem, ducimus!
+                    </div>
+                  </div>
+
+                  <div className="text-center text-white">
+                    <span className="font-semibold">Daniel Dimitrov,</span>{" "}
+                    <span className="text-gold-main"> Bulgaria</span>
+                  </div>
+                </div>
+              </swiper-slide>
+            ))}
+          </swiper-container>
+        </div>
+      </Section>
+    </div>
+  );
+}

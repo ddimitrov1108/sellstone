@@ -1,10 +1,7 @@
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
-import { register } from "swiper/element/bundle";
 import viberLogoPng from "../../assets/viber-logo.png";
 import { useEffect } from "react";
-
-register();
 
 const params = {
   centeredSlides: false,
@@ -38,13 +35,14 @@ export default function PartnersSection() {
 
     return () => {};
   }, []);
+
   return (
     <div
       id="partners"
-      className="bg-white md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="md:rounded-t-[140px] bg-white px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader>Партньори</SectionHeader>
+        <SectionHeader className="xl:text-left">Партньори</SectionHeader>
 
         <div className="mx-auto py-12">
           <swiper-container
@@ -53,7 +51,7 @@ export default function PartnersSection() {
             autoplay-delay="2500"
             autoplay-disable-on-interaction="false"
           >
-            {[...Array(10).keys()].map((key) => (
+            {[...Array(9).keys()].map((key) => (
               <swiper-slide key={key}>
                 <div className="mx-auto max-w-[240px] w-full">
                   <img src={viberLogoPng} alt="viber_logo_png" />

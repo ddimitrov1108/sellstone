@@ -75,10 +75,10 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="bg-white px-4 xs:px-8 py-12"
+      className="md:rounded-t-[140px] bg-white px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader>Нашите услуги</SectionHeader>
+        <SectionHeader className="xl:text-left">Нашите услуги</SectionHeader>
 
         <div className="flex flex-wrap gap-10 items-center justify-start">
           {servicesArr.map((service) => (

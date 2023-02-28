@@ -20,7 +20,7 @@ const navLinks = [
 
 export default function FooterNavigation() {
   return (
-    <div className="bg-black-dark px-4 py-10 md:py-16">
+    <div className="bg-black-dark px-4 xs:px-8 py-10 md:py-16">
       <Section>
         <div className="flex flex-wrap gap-16">
           <div className="grid gap-8">
