@@ -23,7 +23,9 @@ export default function HomeSection() {
             </p>
 
             <NavLink to="/contact-us" className="max-w-fit">
-              <Button size="large">Свържи се с нас</Button>
+              <Button size="large" aria-label="Свържи се с нас">
+                Свържи се с нас
+              </Button>
             </NavLink>
           </div>
         </div>

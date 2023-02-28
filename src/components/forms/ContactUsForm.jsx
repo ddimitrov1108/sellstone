@@ -98,6 +98,7 @@ export default function ContactUsForm() {
         <Button
           type="submit"
           className="flex justify-center md:w-fit ml-auto"
+          aria-label="изпрати"
           disabled={formLoading}
           fullWidth
         >
