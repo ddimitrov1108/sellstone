@@ -14,10 +14,8 @@ export default function Select({
   ...restProps
 }) {
   return (
-    <div
-      className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}
-    >
-      <Label>{label}</Label>
+    <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
+      <Label labelFor={field.name}>{label}</Label>
 
       <Field
         as="select"
@@ -32,7 +30,9 @@ export default function Select({
         )}
         {...restProps}
       >
-        <option value="" hidden>{hiddenOptionText}</option>
+        <option value="" hidden>
+          {hiddenOptionText}
+        </option>
         {options.map((option, index) => (
           <option key={index} value={option} className="text-black-main">
             {option}

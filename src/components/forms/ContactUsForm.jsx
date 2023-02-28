@@ -18,6 +18,7 @@ export default function ContactUsForm() {
   const [formLoading, setFormLoading] = useState(false);
 
   const submitHandler = (values) => {
+    alert("check console");
     console.log(values);
   };
 

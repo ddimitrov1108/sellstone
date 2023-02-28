@@ -13,7 +13,7 @@ export default function TextField({
 }) {
   return (
     <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
-      <Label>{label}</Label>
+      <Label labelFor={field.name}>{label}</Label>
 
       <input
         className={clsx(

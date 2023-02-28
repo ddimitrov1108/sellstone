@@ -12,7 +12,7 @@ export default function TextArea({
 }) {
   return (
     <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
-      <Label>{label}</Label>
+      <Label labelFor={field.name}>{label}</Label>
 
       <textarea
         className={clsx(
