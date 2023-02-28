@@ -9,6 +9,7 @@ register();
 const params = {
   centeredSlides: false,
   slidesPerGroupSkip: 1,
+  grabCursor: true,
   keyboard: {
     enabled: true,
   },
@@ -46,11 +47,16 @@ export default function PartnersSection() {
         <SectionHeader>Партньори</SectionHeader>
 
         <div className="mx-auto py-12">
-          <swiper-container className="h-44" id="swiperContainerPartners" autoplay-delay="2500" autoplay-disable-on-interaction="false" navigation="false">
+          <swiper-container
+            className="h-44"
+            id="swiperContainerPartners"
+            autoplay-delay="2500"
+            autoplay-disable-on-interaction="false"
+          >
             {[...Array(10).keys()].map((key) => (
               <swiper-slide key={key}>
                 <div className="mx-auto max-w-[240px] w-full">
-                  <img src={viberLogoPng} alt="viber_logo_png"/>
+                  <img src={viberLogoPng} alt="viber_logo_png" />
                 </div>
               </swiper-slide>
             ))}
