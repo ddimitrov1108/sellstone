@@ -9,7 +9,7 @@ export default function HomeSection() {
     >
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
-          <p className="text-[35px] sm:text-7xl leading-snug sm:leading-snug font-semibold">
+          <p className="text-[35px] sm:text-6xl lg:text-7xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
             Evolve together.
             <br />
             <span className="text-gold-main">Digitally.</span>
@@ -22,7 +22,7 @@ export default function HomeSection() {
               explicabo enim, perferendis nostrum?
             </p>
 
-            <NavLink to="/contact-us">
+            <NavLink to="/contact-us" className="max-w-fit">
               <Button size="large">Свържи се с нас</Button>
             </NavLink>
           </div>

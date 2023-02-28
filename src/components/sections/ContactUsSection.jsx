@@ -53,7 +53,7 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="bg-white sm:bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white sm:bg-secondary xl:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
       <SectionMain>
         <SectionHeader>Свържете се с нас</SectionHeader>
