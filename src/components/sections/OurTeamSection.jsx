@@ -94,11 +94,11 @@ export default function OurTeamSection() {
       <Section>
         <SectionHeader>Нашият екип</SectionHeader>
 
-        <div className="flex flex-wrap gap-10 gap-y-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-10 gap-y-4 items-center justify-center">
           {teamArr.map((employee) => (
             <div
               key={employee.id}
-              className="hidden-section employee-card grid gap-4 rounded-md p-4"
+              className="hidden-section employee-card grid gap-2 rounded-md p-4"
             >
               <div className="relative rounded-full overflow-hidden w-fit mx-auto p-4 bg-alternative border-2 border-gold-main">
                 {employee.img}
@@ -121,7 +121,7 @@ export default function OurTeamSection() {
               <span className="w-fit mx-auto text-center text-lg truncate ...">
                 {employee.name}
               </span>
-              <span className="text-black-main/40 w-fit mx-auto text-center truncate ...">
+              <span className="text-black-main/40 w-fit mx-auto text-center font-semibold truncate ...">
                 {employee.title}
               </span>
             </div>
