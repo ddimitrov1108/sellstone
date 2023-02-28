@@ -80,7 +80,7 @@ export default function OurTeamSection() {
           {teamArr.map((employee) => (
             <div
               key={employee.id}
-              className="opacity-0 p-6 bg-white transition-all duration-300 md:hover:shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
+              className="opacity-0 p-6 bg-white transition-all duration-300 sm:shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
             >
               <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
                 {employee.img}
