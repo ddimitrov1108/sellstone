@@ -80,7 +80,7 @@ export default function ServicesSection() {
       <Section>
         <SectionHeader>Нашите услуги</SectionHeader>
 
-        <div className="flex flex-wrap gap-0 gap-y-4 gap-10 items-center justify-center">
+        <div className="flex flex-wrap gap-10 items-center justify-center">
           {servicesArr.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
