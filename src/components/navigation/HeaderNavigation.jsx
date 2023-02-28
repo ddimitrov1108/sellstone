@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Brand from "../ui/Brand";
 import MobileNavigation from "./MobileNavigation";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import Link from "../ui/Link";
-import { scrollSectionIntoView } from "../../js/scrollIntoView";
 import clsx from "clsx";
-import { NavLink } from "react-router-dom";
 
 const navLinks = [
   { name: "Начало", href: "/", navigateTo: "home" },
@@ -22,14 +21,6 @@ export default function HeaderNavigation() {
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
   const closeMobileMenu = () => setIsOpen(false);
-
-  useEffect(() => {
-    const href = window.location.href;
-    const pathName = href.substring(href.lastIndexOf("/") + 1);
-
-    if (navLinks.findIndex((link) => link.href === pathName))
-      scrollSectionIntoView(pathName);
-  }, []);
 
   useEffect(() => {
     const threshold = 0;

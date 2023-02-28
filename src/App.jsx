@@ -3,16 +3,17 @@ import HeaderNavigation from "./components/navigation/HeaderNavigation";
 import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
 import ContactUsSection from "./components/sections/ContactUsSection";
-import { scrollSectionIntoView } from "./js/scrollIntoView";
 import { useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
   useEffect(() => {
     setTimeout(() => {
-      scrollSectionIntoView(
+      const domElement = document.getElementById(
         location.pathname === "/" ? "home" : location.pathname.substring(1)
       );
+
+      if (domElement) domElement.scrollIntoView();
     }, 100);
   }, [location]);
 

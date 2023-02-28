@@ -37,7 +37,7 @@ export default function MobileNavigation({
             </button>
           </div>
 
-          <nav className="h-[75vh] flex flex-col items-center justify-center gap-8 text-lg">
+          <nav className="h-[80vh] flex flex-col items-center justify-center gap-4 text-lg">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

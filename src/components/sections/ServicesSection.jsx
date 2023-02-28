@@ -3,7 +3,8 @@ import creativeProductionWebp from "../../assets/creative-production.webp";
 import emailMarketingWebp from "../../assets/email-marketing.webp";
 import socialMediaMarketingWebp from "../../assets/social-media-marketing.webp";
 import webDesignSeoWebp from "../../assets/web-design-seo.webp";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "./components/SectionHeader";
+import SectionMain from "./components/SectionMain";
 import ServiceCard from "../ui/ServiceCard";
 import { v4 as uuidv4 } from "uuid";
 
@@ -76,7 +77,7 @@ export default function ServicesSection() {
       id="services"
       className="bg-white sm:bg-secondary lg:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
-      <div className="transition-all mx-auto max-w-7xl">
+      <SectionMain>
         <SectionHeader>Нашите услуги</SectionHeader>
 
         <div className="flex flex-wrap gap-0 gap-y-4 md:gap-y-10 sm:gap-10 items-center justify-center">
@@ -84,7 +85,7 @@ export default function ServicesSection() {
             <ServiceCard key={service.id} service={service} />
           ))}
         </div>
-      </div>
+      </SectionMain>
     </div>
   );
 }

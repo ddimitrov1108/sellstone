@@ -1,9 +1,7 @@
+import { NavLink } from "react-router-dom";
 import Button from "../ui/Button";
-import { scrollSectionIntoView } from "../../js/scrollIntoView";
 
 export default function HomeSection() {
-  const buttonClickHandler = () => scrollSectionIntoView("contact-us")
-
   return (
     <div
       id="home"
@@ -11,7 +9,7 @@ export default function HomeSection() {
     >
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
-          <p className="text-[35px] xs:text-[38px] sm:text-7xl leading-snug sm:leading-snug font-semibold">
+          <p className="text-[35px] sm:text-7xl leading-snug sm:leading-snug font-semibold">
             Evolve together.
             <br />
             <span className="text-gold-main">Digitally.</span>
@@ -24,7 +22,9 @@ export default function HomeSection() {
               explicabo enim, perferendis nostrum?
             </p>
 
-            <Button onClick={buttonClickHandler}>Свържи се с нас</Button>
+            <NavLink to="/contact-us">
+              <Button size="large">Свържи се с нас</Button>
+            </NavLink>
           </div>
         </div>
       </div>
