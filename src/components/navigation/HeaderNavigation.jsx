@@ -80,7 +80,7 @@ export default function HeaderNavigation() {
 
           <NavLink
             to={"/contact-us"}
-            className="hidden lg:block bg-gold-main !text-black-main px-4 py-2 rounded-md font-semibold"
+            className="hidden lg:block bg-gold-main !text-black-main px-4 py-2.5 rounded-md font-semibold"
           >
             Свържи се с нас
           </NavLink>
