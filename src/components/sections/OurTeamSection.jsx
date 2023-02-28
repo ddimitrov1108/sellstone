@@ -72,10 +72,7 @@ const teamArr = [
 
 export default function OurTeamSection() {
   return (
-    <div
-      id="our-team"
-      className="bg-white overflow-hidden px-4 xs:px-8 py-12"
-    >
+    <div id="our-team" className="bg-white overflow-hidden px-4 xs:px-8 py-12">
       <Section>
         <SectionHeader className="xl:text-left">Нашият екип</SectionHeader>
 
@@ -83,33 +80,33 @@ export default function OurTeamSection() {
           {teamArr.map((employee) => (
             <div
               key={employee.id}
-              className="bg-white md:shadow-lg overflow-hidden hidden-section employee-card grid gap-6 rounded-md p-4"
+              className="p-6 bg-white transition-all duration-300 md:hover:shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
             >
-              <div className="relative overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
+              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
                 {employee.img}
-                <div className="group absolute top-0 right-0 bottom-0 left-0 hover:bg-alternative/60 transition-all duration-300">
-                  <div className="w-full h-full flex items-center justify-center gap-4 text-3xl transform transition-all duration-500 translate-y-40 group-hover:translate-y-0">
-                    {employee.socials.map((social) => (
-                      <a
-                        key={social.id}
-                        href={social.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="transition-all duration-300"
-                      >
-                        {social.icon}
-                      </a>
-                    ))}
-                  </div>
-                </div>
               </div>
-              <div className="grid items-center gap-2">
-                <span className="w-fit mx-auto text-center text-lg font-semibold truncate ...">
-                  {employee.name}
-                </span>
-                <span className="text-black-main/80 w-fit mx-auto text-center truncate ...">
-                  {employee.title}
-                </span>
+              <div className="grid items-center gap-4 p-4">
+                <div className="grid gap-2">
+                  <span className="text-left text-lg font-semibold truncate ...">
+                    {employee.name}
+                  </span>
+                  <span className="text-left text-black-main/40 truncate ...">
+                    {employee.title}
+                  </span>
+                </div>
+                <div className="flex items-center gap-4 text-2xl transition-all duration-500">
+                  {employee.socials.map((social) => (
+                    <a
+                      key={social.id}
+                      href={social.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="transition-all duration-300 text-black-light/60 rounded-full hover:text-gold-main"
+                    >
+                      {social.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
