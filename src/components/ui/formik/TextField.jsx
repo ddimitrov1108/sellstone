@@ -1,5 +1,6 @@
 import ErrorMessage from "./ErrorMessage";
 import clsx from "clsx";
+import Label from "./Label";
 
 export default function TextField({
   label = "",
@@ -12,9 +13,7 @@ export default function TextField({
 }) {
   return (
     <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
-      <div className="min-w-fit pb-1.5">
-        <span className="min-w-fit text-sm">{label}</span>
-      </div>
+      <Label>{label}</Label>
 
       <input
         className={clsx(

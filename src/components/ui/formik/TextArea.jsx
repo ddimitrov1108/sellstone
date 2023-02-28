@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import ErrorMessage from "./ErrorMessage";
+import Label from "./Label";
 
 export default function TextArea({
   label = "",
@@ -11,9 +12,7 @@ export default function TextArea({
 }) {
   return (
     <div className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}>
-      <div className="min-w-fit pb-1.5">
-        <span className="min-w-fit text-sm">{label}</span>
-      </div>
+      <Label>{label}</Label>
 
       <textarea
         className={clsx(

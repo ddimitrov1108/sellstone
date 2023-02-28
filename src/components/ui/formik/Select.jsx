@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Field } from "formik";
 import ErrorMessage from "./ErrorMessage";
+import Label from "./Label";
 
 export default function Select({
   label = "",
@@ -15,11 +16,8 @@ export default function Select({
   return (
     <div
       className={clsx("py-3.5", fullWidth ? "w-full" : "w-fit")}
-      {...restProps}
     >
-      <div className="min-w-fit pb-1.5">
-        <span className="min-w-fit text-sm">{label}</span>
-      </div>
+      <Label>{label}</Label>
 
       <Field
         as="select"
@@ -32,6 +30,7 @@ export default function Select({
             ? " border-error-main focus:outline-error-main"
             : "border-black-light/10 focus:outline-gold-main"
         )}
+        {...restProps}
       >
         <option value="" hidden>{hiddenOptionText}</option>
         {options.map((option, index) => (
