@@ -1,6 +1,6 @@
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
-import portfolioTemplate from "../../assets/project-template.png";
+import portfolioTemplateWebp from "../../assets/project-template.webp";
 
 export default function PortfolioSection() {
   return (
@@ -35,7 +35,7 @@ export default function PortfolioSection() {
                 rel="noreferrer"
                 className="overflow-hidden rounded-md lg:max-w-[60%] h-auto"
               >
-                <img src={portfolioTemplate} className="w-full" alt="test" />
+                <img src={portfolioTemplateWebp} className="w-full" alt="test" />
               </a>
             </div>
           ))}
