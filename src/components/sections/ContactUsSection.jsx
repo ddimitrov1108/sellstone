@@ -4,7 +4,7 @@ import emailWebp from "../../assets/email.webp";
 import { v4 as uuidv4 } from "uuid";
 import ContactUsForm from "../forms/ContactUsForm";
 import SectionHeader from "./components/SectionHeader";
-import SectionMain from "./components/SectionMain";
+import Section from "./components/Section";
 
 const contactRef = [
   {
@@ -55,7 +55,7 @@ export default function ContactUsSection() {
       id="contact-us"
       className="bg-white md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
-      <SectionMain>
+      <Section>
         <SectionHeader>Свържете се с нас</SectionHeader>
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
@@ -84,7 +84,7 @@ export default function ContactUsSection() {
             <ContactUsForm />
           </div>
         </div>
-      </SectionMain>
+      </Section>
     </div>
   );
 }

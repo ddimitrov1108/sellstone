@@ -4,6 +4,9 @@ import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
 import ContactUsSection from "./components/sections/ContactUsSection";
 import { useLocation } from "react-router-dom";
+import OurTeamSection from "./components/sections/OurTeamSection";
+import PortfolioSection from "./components/sections/PortfolioSection";
+import PartnersSection from "./components/sections/PartnersSection";
 
 function App() {
   const location = useLocation();
@@ -38,12 +41,12 @@ function App() {
   return (
     <>
       <HeaderNavigation />
-
-      <main className="grid gap-24">
-        <HomeSection />
-        <ServicesSection />
-        <ContactUsSection />
-      </main>
+      <HomeSection />
+      <ServicesSection />
+      <PortfolioSection />
+      <OurTeamSection />
+      <PartnersSection/>
+      <ContactUsSection />
     </>
   );
 }

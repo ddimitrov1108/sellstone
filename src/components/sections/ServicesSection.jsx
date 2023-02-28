@@ -4,7 +4,7 @@ import emailMarketingWebp from "../../assets/email-marketing.webp";
 import socialMediaMarketingWebp from "../../assets/social-media-marketing.webp";
 import webDesignSeoWebp from "../../assets/web-design-seo.webp";
 import SectionHeader from "./components/SectionHeader";
-import SectionMain from "./components/SectionMain";
+import Section from "./components/Section";
 import ServiceCard from "../ui/ServiceCard";
 import { v4 as uuidv4 } from "uuid";
 
@@ -75,17 +75,17 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="bg-white md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white px-4 xs:px-8 py-12"
     >
-      <SectionMain>
+      <Section>
         <SectionHeader>Нашите услуги</SectionHeader>
 
-        <div className="flex flex-wrap gap-0 gap-y-4 md:gap-y-10 sm:gap-10 items-center justify-center">
+        <div className="flex flex-wrap gap-0 gap-y-4 sm:gap-10 items-center justify-center">
           {servicesArr.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
         </div>
-      </SectionMain>
+      </Section>
     </div>
   );
 }

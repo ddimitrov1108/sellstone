@@ -7,11 +7,11 @@ import Link from "../ui/Link";
 import clsx from "clsx";
 
 const navLinks = [
-  { name: "Начало", href: "/", navigateTo: "home" },
-  { name: "Услуги", href: "services", navigateTo: "services" },
-  { name: "Портфолио", href: "portfolio", navigateTo: "portfolio" },
-  { name: "Партньори", href: "partners", navigateTo: "artners" },
-  { name: "Екип", href: "our-team", navigateTo: "our-team" },
+  { name: "Начало", href: "/" },
+  { name: "Услуги", href: "services" },
+  { name: "Портфолио", href: "portfolio" },
+  { name: "Екип", href: "our-team" },
+  { name: "Партньори", href: "partners" },
 ];
 
 export default function HeaderNavigation() {
@@ -74,20 +74,16 @@ export default function HeaderNavigation() {
           <Brand />
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                text={link.name}
-              />
+              <Link key={link.href} to={link.href} text={link.name} />
             ))}
-
-            <NavLink
-              to={"/contact-us"}
-              className="bg-gold-main !text-black-main px-4 py-2 rounded-md font-semibold"
-            >
-              Свържи се с нас
-            </NavLink>
           </nav>
+
+          <NavLink
+            to={"/contact-us"}
+            className="hidden lg:block bg-gold-main !text-black-main px-4 py-2 rounded-md font-semibold"
+          >
+            Свържи се с нас
+          </NavLink>
 
           <HiOutlineBars3BottomRight
             className="header-links lg:hidden text-4xl cursor-pointer text-secondary"
