@@ -12,6 +12,10 @@ html {
 body {
   font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   background-color: white;
+
+  #swiperContainerPartners > .swiper-pagination-bullets {
+    opacity: 0 !important;
+  }
 }
 
 .hidden-section {
@@ -59,7 +63,8 @@ body {
   }
 
   &.employee-card {
-    animation: FadeIn 0.25s 1s linear both, SlideInFromBottom 0.35s 1s linear both;
+    animation: FadeIn 0.25s 1s linear both,
+      SlideInFromBottom 0.35s 1s linear both;
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}n) {
@@ -83,7 +88,7 @@ body {
 
     &.project-card {
       animation: FadeIn 0.5s 1s linear both,
-      SlideInFromBottom 0.5s 1s linear both !important;
+        SlideInFromBottom 0.5s 1s linear both !important;
     }
   }
 }

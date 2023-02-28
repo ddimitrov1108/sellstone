@@ -9,11 +9,14 @@ register();
 const params = {
   centeredSlides: false,
   slidesPerGroupSkip: 1,
-  grabCursor: true,
   keyboard: {
     enabled: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
     426: {
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -25,9 +28,6 @@ const params = {
   },
   spaceBetween: 30,
   loop: true,
-  pagination: {
-    clickable: true,
-  },
 };
 
 export default function PartnersSection() {
@@ -46,7 +46,7 @@ export default function PartnersSection() {
         <SectionHeader>Партньори</SectionHeader>
 
         <div className="mx-auto py-12">
-          <swiper-container id="swiperContainerPartners" autoplay-delay="2500">
+          <swiper-container className="h-44" id="swiperContainerPartners" autoplay-delay="2500" autoplay-disable-on-interaction="false" navigation="false">
             {[...Array(10).keys()].map((key) => (
               <swiper-slide key={key}>
                 <div className="mx-auto max-w-[240px] w-full">
