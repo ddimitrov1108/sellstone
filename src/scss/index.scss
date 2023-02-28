@@ -38,7 +38,7 @@ body {
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.1 + 1}s !important;
+        animation-delay: #{$i * 0.1 + 0.5}s !important;
       }
     }
   }
