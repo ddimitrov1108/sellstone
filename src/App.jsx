@@ -36,29 +36,35 @@ function App() {
 
     let borderTopRadiusObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting)
           entry.target.classList.add("transition-border-radius-top");
-          entry.target.classList.remove("border-top-radius-transition-init");
-        }
+        else entry.target.classList.remove("transition-border-radius-top");
       });
     });
 
     let borderBottomRadiusObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting)
           entry.target.classList.add("transition-border-radius-bottom");
-          entry.target.classList.remove("border-bottom-radius-transition-init");
-        }
+        else entry.target.classList.remove("transition-border-radius-bottom");
       });
     });
 
     const hiddenElements = document.querySelectorAll(".hidden-section");
-    const borderTopRadiusElementsTransition = document.querySelectorAll(".border-top-radius-transition-init");
-    const borderBottomRadiusElementsTransition = document.querySelectorAll(".border-bottom-radius-transition-init");
+    const borderTopRadiusElementsTransition = document.querySelectorAll(
+      ".border-top-radius-transition-init"
+    );
+    const borderBottomRadiusElementsTransition = document.querySelectorAll(
+      ".border-bottom-radius-transition-init"
+    );
 
     hiddenElements.forEach((el) => observer.observe(el));
-    borderTopRadiusElementsTransition.forEach((el) => borderTopRadiusObserver.observe(el));
-    borderBottomRadiusElementsTransition.forEach((el) => borderBottomRadiusObserver.observe(el));
+    borderTopRadiusElementsTransition.forEach((el) =>
+      borderTopRadiusObserver.observe(el)
+    );
+    borderBottomRadiusElementsTransition.forEach((el) =>
+      borderBottomRadiusObserver.observe(el)
+    );
     return () => {
       observer = null;
       borderTopRadiusObserver = null;
