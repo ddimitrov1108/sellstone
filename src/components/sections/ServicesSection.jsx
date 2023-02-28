@@ -75,7 +75,7 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12"
+      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12 mt-12"
     >
       <Section>
         <SectionHeader className="xl:text-left">Нашите услуги</SectionHeader>
