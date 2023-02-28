@@ -6,7 +6,7 @@ export default function PortfolioSection() {
   return (
     <div
       id="portfolio"
-      className="bg-white min-h-[1000px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
         <SectionHeader>Нашите проекти</SectionHeader>
