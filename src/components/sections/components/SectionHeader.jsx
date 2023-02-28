@@ -4,7 +4,7 @@ export default function SectionHeader({ children, className }) {
   return (
     <div
       className={clsx(
-        "hidden-section section-header text-center lg:text-left text-3xl sm:text-5xl font-semibold pb-2 mb-12",
+        "hidden-section section-header text-center xl:text-left text-3xl sm:text-5xl font-semibold pb-2 mb-12",
         className
       )}
     >
