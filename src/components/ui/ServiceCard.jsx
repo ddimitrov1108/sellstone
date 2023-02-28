@@ -7,7 +7,7 @@ export default function ServiceCard({ service = null }) {
       <span className="w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2 truncate ...">
         {service?.name}
       </span>
-      <p className="text-black-light">
+      <p className="text-sm md:text-base text-black-light">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam
         nobis omnis reprehenderit aspernatur asperiores fuga delectus voluptate.
         Odit nesciunt expedita, recusandae fugiat a temporibus? Repellat impedit

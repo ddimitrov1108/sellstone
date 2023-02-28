@@ -16,7 +16,7 @@ export default function HomeSection() {
           </p>
 
           <div className="flex flex-col gap-12">
-            <p className="max-w-[500px]">
+            <p className="text-sm md:text-base max-w-[500px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               autem doloribus quas accusantium dolores impedit deleniti
               explicabo enim, perferendis nostrum?
