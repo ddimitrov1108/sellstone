@@ -75,7 +75,7 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="bg-white sm:bg-secondary xl:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
+      className="bg-white sm:bg-secondary md:rounded-t-[100px] overflow-hidden px-4 xs:px-8 py-12"
     >
       <SectionMain>
         <SectionHeader>Нашите услуги</SectionHeader>
