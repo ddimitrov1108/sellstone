@@ -39,7 +39,7 @@ export default function PartnersSection() {
   return (
     <div
       id="partners"
-      className="md:rounded-t-[140px] bg-white px-4 xs:px-8 py-12"
+      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12"
     >
       <Section>
         <SectionHeader className="xl:text-left">Партньори</SectionHeader>

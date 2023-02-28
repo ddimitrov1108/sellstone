@@ -34,11 +34,35 @@ function App() {
       });
     });
 
-    const hiddenElements = document.querySelectorAll(".hidden-section");
-    hiddenElements.forEach((el) => observer.observe(el));
+    let borderTopRadiusObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("transition-border-radius-top");
+          entry.target.classList.remove("border-top-radius-transition-init");
+        }
+      });
+    });
 
+    let borderBottomRadiusObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("transition-border-radius-bottom");
+          entry.target.classList.remove("border-bottom-radius-transition-init");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden-section");
+    const borderTopRadiusElementsTransition = document.querySelectorAll(".border-top-radius-transition-init");
+    const borderBottomRadiusElementsTransition = document.querySelectorAll(".border-bottom-radius-transition-init");
+
+    hiddenElements.forEach((el) => observer.observe(el));
+    borderTopRadiusElementsTransition.forEach((el) => borderTopRadiusObserver.observe(el));
+    borderBottomRadiusElementsTransition.forEach((el) => borderBottomRadiusObserver.observe(el));
     return () => {
       observer = null;
+      borderTopRadiusObserver = null;
+      borderBottomRadiusObserver = null;
     };
   }, []);
 

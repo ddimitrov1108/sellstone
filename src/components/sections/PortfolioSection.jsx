@@ -6,7 +6,7 @@ export default function PortfolioSection() {
   return (
     <div
       id="portfolio"
-      className="min-h-[1024px] md:rounded-b-[140px] bg-white overflow-hidden px-4 xs:px-8 py-12"
+      className="border-bottom-radius-transition-init min-h-[1024px] bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
         <SectionHeader className="xl:text-left">Нашите проекти</SectionHeader>

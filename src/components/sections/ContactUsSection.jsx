@@ -53,7 +53,7 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="bg-white md:rounded-b-[140px] overflow-hidden px-4 xs:px-8 py-12"
+      className="border-bottom-radius-transition-init bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
         <SectionHeader className="xl:text-left">Свържете се с нас</SectionHeader>
