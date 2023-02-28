@@ -21,6 +21,7 @@ export default function ProjectCard() {
         target="_blank"
         rel="noreferrer"
         className="opacity-0 project-card-img relative rounded-md md:max-w-[60%] h-auto"
+        tabIndex={-1}
       >
         <img src={portfolioTemplateWebp} className="w-full" alt="test" />
       </a>

@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import OurTeamSection from "./components/sections/OurTeamSection";
 import PortfolioSection from "./components/sections/PortfolioSection";
 import PartnersSection from "./components/sections/PartnersSection";
+import FooterNavigation from "./components/navigation/FooterNavigation";
 
 function App() {
   const location = useLocation();
@@ -47,6 +48,7 @@ function App() {
       <PartnersSection/>
       <OurTeamSection />
       <ContactUsSection />
+      <FooterNavigation/>
     </>
   );
 }

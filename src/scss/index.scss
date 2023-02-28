@@ -67,19 +67,6 @@ body {
     .project-card-img {
       animation: FadeIn 0.2s 1s linear both, SlideInFromBottom 0.5s 1s linear both;
     }
-
-    // &:nth-child(odd) {
-    //   animation: FadeIn 0.15s linear both, SlideInFromLeft 0.5s linear both, BounceInFromLeft 0.5s linear both;
-    // }
-    // &:nth-child(even) {
-    //   animation: FadeIn 0.15s linear both, SlideInFromRight 0.5s linear both, BounceInFromRight 0.5s linear both;;
-    // }
-
-    // @for $i from 1 through 5 {
-    //   &:nth-child(#{$i}n) {
-    //     animation-delay: #{$i * 0.1 + 0.3}s !important;
-    //   }
-    // }
   }
 
   &.employee-card {
