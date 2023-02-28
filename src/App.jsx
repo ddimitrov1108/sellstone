@@ -44,8 +44,8 @@ function App() {
       <HomeSection />
       <ServicesSection />
       <PortfolioSection />
-      <OurTeamSection />
       <PartnersSection/>
+      <OurTeamSection />
       <ContactUsSection />
     </>
   );

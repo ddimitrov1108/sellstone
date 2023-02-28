@@ -10,8 +10,8 @@ const navLinks = [
   { name: "Начало", href: "/" },
   { name: "Услуги", href: "services" },
   { name: "Портфолио", href: "portfolio" },
-  { name: "Екип", href: "our-team" },
   { name: "Партньори", href: "partners" },
+  { name: "Екип", href: "our-team" },
 ];
 
 export default function HeaderNavigation() {
