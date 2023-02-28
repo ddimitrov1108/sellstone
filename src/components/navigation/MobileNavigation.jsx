@@ -30,6 +30,7 @@ export default function MobileNavigation({
           <div className="flex items-center justify-between">
             <Brand className="sm:hidden" />
             <button
+              aria-label="Затвори меню"
               className="text-4xl w-fit ml-auto hover:text-gold-main transition-all"
               onClick={onClose}
             >
