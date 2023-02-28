@@ -3,7 +3,7 @@ import portfolioTemplateWebp from "../../assets/project-template.webp";
 export default function ProjectCard() {
   return (
     <div className="hidden-section project-card group relative w-full flex flex-col-reverse md:flex-row md:odd:flex-row-reverse md:even:text-right">
-      <div className="project-card-info z-30 md:absolute md:top-0 lg:top-4 xl:top-12 md:group-odd:left-4 md:group-even:right-4">
+      <div className="z-30 md:absolute md:top-0 lg:top-4 xl:top-12 md:group-odd:left-4 md:group-even:right-4">
         <div className="py-1 text-gold-dark">Featured Project</div>
         <div className="text-2xl font-semibold text-black-main mb-4">
           Project Name
@@ -20,7 +20,7 @@ export default function ProjectCard() {
         href="https://www.google.com/"
         target="_blank"
         rel="noreferrer"
-        className="project-card-img relative rounded-md md:max-w-[60%] h-auto"
+        className="relative rounded-md md:max-w-[60%] h-auto"
       >
         <img src={portfolioTemplateWebp} className="w-full" alt="test" />
       </a>

@@ -57,6 +57,16 @@ body {
       }
     }
   }
+
+  &.employee-card {
+    animation: FadeIn 0.25s 1s linear both, SlideInFromBottom 0.35s 1s linear both;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1 + 0.3}s !important;
+      }
+    }
+  }
 }
 
 @media (min-width: 1025px) {
