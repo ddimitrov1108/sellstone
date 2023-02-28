@@ -20,15 +20,15 @@ body {
 }
 
 .transition-border-radius-top {
-  -webkit-transition: border-radius 0.5s 1.25s;
-  transition: border-radius 0.5s 1.25s;
+  -webkit-transition: border-radius 0.5s 0.25s;
+  transition: border-radius 0.5s 0.25s;
   border-top-right-radius: 70px;
   border-top-left-radius: 70px;
 }
 
 .transition-border-radius-bottom {
-  -webkit-transition: border-radius 0.5s 1.25s;
-  transition: border-radius 0.5s 1.25s;
+  -webkit-transition: border-radius 0.5s 0.5s;
+  transition: border-radius 0.5s 0.5s;
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 70px;
 }
