@@ -85,7 +85,7 @@ export default function OurTeamSection() {
               <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
                 {employee.img}
               </div>
-              <div className="grid items-center gap-4 p-4">
+              <div className="grid items-center gap-4 p-2">
                 <div className="grid gap-2">
                   <span className="text-left text-lg font-semibold truncate ...">
                     {employee.name}
