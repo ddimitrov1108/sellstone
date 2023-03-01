@@ -101,15 +101,15 @@ body {
 
 @media(min-width: 768px) {
   .transition-border-radius-top {
-    -webkit-transition: border-radius 0.5s 0.25s;
-    transition: border-radius 0.5s 0.25s;
+    -webkit-transition: border-radius 0.5s 0.5s;
+    transition: border-radius 0.5s 0.5s;
     border-top-right-radius: 140px;
     border-top-left-radius: 140px;
   }
   
   .transition-border-radius-bottom {
-    -webkit-transition: border-radius 0.5s 0.25s;
-    transition: border-radius 0.5s 0.25s;
+    -webkit-transition: border-radius 0.5s 0.5s;
+    transition: border-radius 0.5s 0.5s;
     border-bottom-right-radius: 140px;
     border-bottom-left-radius: 140px;
   }
