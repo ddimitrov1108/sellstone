@@ -106,7 +106,7 @@ export default function OurTeamSection() {
                   <span className="text-left text-lg font-semibold truncate ...">
                     {name}
                   </span>
-                  <span className="text-left text-black-main/40 truncate ...">
+                  <span className="text-left text-black-main/60 truncate ...">
                     {title}
                   </span>
                 </div>
