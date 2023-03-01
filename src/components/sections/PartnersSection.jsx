@@ -49,7 +49,7 @@ export default function PartnersSection() {
           <swiper-container
             className="h-44"
             id="swiperContainerPartners"
-            autoplay-delay="2500"
+            autoplay-delay="4000"
             autoplay-disable-on-interaction="false"
           >
             {[...Array(9).keys()].map((key) => (

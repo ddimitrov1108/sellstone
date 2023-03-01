@@ -22,7 +22,7 @@ export default function Select({
         value={field.value}
         name={field.name}
         className={clsx(
-          "px-4 py-3 focus:outline-gold-main focus-within:outline-gold-main border w-full rounded-md",
+          "px-4 py-3 focus:outline-gold-main focus-within:outline-gold-main border w-full rounded-md text-black-light",
           className,
           errors[field.name] && touched[field.name]
             ? " border-error-main focus:outline-error-main"
@@ -34,7 +34,7 @@ export default function Select({
           {hiddenOptionText}
         </option>
         {options.map((option, index) => (
-          <option key={index} value={option} className="text-black-main">
+          <option key={index} value={option} className="text-black-light">
             {option}
           </option>
         ))}

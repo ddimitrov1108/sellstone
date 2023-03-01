@@ -39,13 +39,8 @@ export default function MobileNavigation({
           </div>
 
           <nav className="h-[80vh] flex flex-col items-center justify-center gap-4 text-lg">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                text={link.name}
-                onClick={onNavLinkClick}
-              />
+            {navLinks.map(({ id, name, href }) => (
+              <Link key={id} to={href} text={name} onClick={onNavLinkClick} />
             ))}
             <NavLink
               to={"/contact-us"}

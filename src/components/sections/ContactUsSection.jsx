@@ -1,17 +1,17 @@
 import addressWebp from "../../assets/location.webp";
 import phoneWebp from "../../assets/phone.webp";
 import emailWebp from "../../assets/email.webp";
-import { v4 as uuidv4 } from "uuid";
 import ContactUsForm from "../forms/ContactUsForm";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { v4 as uuidv4 } from "uuid";
 
-const contactRef = [
+const contactUs = [
   {
     id: uuidv4(),
     name: "Address",
-    description: "Burgas, Bulgaria",
+    text: "175 5th Ave Premium Area, New York, NY 10010, United States",
     icon: (
       <LazyLoadImage
         src={addressWebp}
@@ -24,7 +24,7 @@ const contactRef = [
   {
     id: uuidv4(),
     name: "Phone",
-    description: "+359 888 888 888",
+    text: "+123(0123456789)",
     icon: (
       <LazyLoadImage
         src={phoneWebp}
@@ -38,7 +38,7 @@ const contactRef = [
   {
     id: uuidv4(),
     name: "Email",
-    description: "loremloremlorem@gmail.com",
+    text: "supportbdthemes@gmail.com",
     icon: (
       <LazyLoadImage
         src={emailWebp}
@@ -63,20 +63,16 @@ export default function ContactUsSection() {
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
           <div className="w-full lg:w-fit flex flex-col items-start lg:items-center gap-6">
-            {contactRef.map((contact) => (
+            {contactUs.map(({ id, name, text, icon }) => (
               <div
-                key={contact.id}
-                className="flex flex-row justify-start lg:flex-col gap-4 items-center text-center"
+                key={id}
+                className="hidden lg:flex flex-row justify-start lg:flex-col gap-4 items-center text-center"
               >
                 <div className="mx-auto rounded-full bg-alternative p-4 mt-2 min-w-fit">
-                  {contact.icon}
+                  {icon}
                 </div>
-                <div className="hidden lg:block font-semibold">
-                  {contact.name}
-                </div>
-                <div className="text-black-light text-sm">
-                  {contact.description}
-                </div>
+                <div className="font-semibold">{name}</div>
+                <div className="text-black-light/60 text-sm">{text}</div>
               </div>
             ))}
           </div>

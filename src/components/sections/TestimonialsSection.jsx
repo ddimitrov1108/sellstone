@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
                   />
 
                   <div className="relative mt-4 py-4 flex items-center gap-2">
-                    <FaQuoteLeft className="z-0 absolute top-1 left-2 text-black-light/30 text-7xl" />
+                    <FaQuoteLeft className="z-0 absolute top-1 left-2 text-black-light/50 text-8xl" />
                     <div className="z-30 text-white/80 p-4 text-sm">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Eveniet, numquam? Aut sapiente accusantium quas doloribus

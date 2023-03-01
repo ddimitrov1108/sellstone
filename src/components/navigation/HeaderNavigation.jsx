@@ -4,14 +4,15 @@ import Brand from "../ui/Brand";
 import MobileNavigation from "./MobileNavigation";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import Link from "../ui/Link";
+import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
 
-const navLinks = [
-  { name: "Начало", href: "/" },
-  { name: "Услуги", href: "services" },
-  { name: "Портфолио", href: "portfolio" },
-  { name: "Партньори", href: "partners" },
-  { name: "Екип", href: "our-team" },
+export const navLinks = [
+  { id: uuidv4(), name: "Начало", href: "/" },
+  { id: uuidv4(), name: "Услуги", href: "services" },
+  { id: uuidv4(), name: "Портфолио", href: "portfolio" },
+  { id: uuidv4(), name: "Партньори", href: "partners" },
+  { id: uuidv4(), name: "Екип", href: "our-team" },
 ];
 
 export default function HeaderNavigation() {
@@ -76,14 +77,14 @@ export default function HeaderNavigation() {
           </a>
 
           <nav className="hidden lg:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link key={link.href} to={link.href} text={link.name} />
+            {navLinks.map(({ id, name, href }) => (
+              <Link key={id} to={href} text={name} />
             ))}
           </nav>
 
           <NavLink
             to={"/contact-us"}
-            className="hidden lg:block bg-gold-main !text-black-main px-4 py-2.5 rounded-md font-semibold"
+            className="hidden lg:block bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
           >
             Свържи се с нас
           </NavLink>
