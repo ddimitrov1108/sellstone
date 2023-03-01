@@ -12,7 +12,7 @@ export default function HomeSection() {
           <h1 className="text-[35px] sm:text-6xl lg:text-7xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
             Evolve together.
             <br /> 
-            <h1 className="text-gold-main">Digitally.</h1>
+            <span className="text-gold-main">Digitally.</span>
           </h1>
 
           <div className="flex flex-col gap-12">

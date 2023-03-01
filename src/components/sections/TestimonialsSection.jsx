@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
-import userPfPng from "../../assets/user-pf.png";
+import userPfWebp from "../../assets/user-pf.webp";
 import { FaQuoteLeft } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const params = {
   centeredSlides: false,
@@ -53,11 +54,11 @@ export default function TestimonialsSection() {
             {[...Array(9).keys()].map((key) => (
               <swiper-slide key={key}>
                 <div className="w-full bg-black-dark rounded-md mt-14">
-                  <img
-                    src={userPfPng}
+                  <LazyLoadImage
+                    src={userPfWebp}
                     width="128px"
                     height="128px"
-                    alt="user_pf_png"
+                    alt="user_pf.webp"
                     className="shadow-md mx-auto bg-black-main border-2 border-gold-light rounded-full -mt-24"
                   />
 

@@ -6,6 +6,7 @@ import webDesignSeoWebp from "../../assets/web-design-seo.webp";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
 import ServiceCard from "../ui/ServiceCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { v4 as uuidv4 } from "uuid";
 
 const servicesArr = [
@@ -13,7 +14,7 @@ const servicesArr = [
     id: uuidv4(),
     name: "Branding / Business Cards",
     icon: (
-      <img src={brandingWebp} width="64px" height="64px" alt="branding_webp" />
+      <LazyLoadImage src={brandingWebp} width="64px" height="64px" alt="branding.webp" />
     ),
     description: "",
   },
@@ -21,11 +22,11 @@ const servicesArr = [
     id: uuidv4(),
     name: "Creative Production",
     icon: (
-      <img
+      <LazyLoadImage
         src={creativeProductionWebp}
         width="64px"
         height="64px"
-        alt="creative_production_webp"
+        alt="creative_production.webp"
       />
     ),
     description: "",
@@ -34,11 +35,11 @@ const servicesArr = [
     id: uuidv4(),
     name: "Email Marketing",
     icon: (
-      <img
+      <LazyLoadImage
         src={emailMarketingWebp}
         width="64px"
         height="64px"
-        alt="email_marketing_webp"
+        alt="email_marketing.webp"
       />
     ),
     description: "",
@@ -47,11 +48,11 @@ const servicesArr = [
     id: uuidv4(),
     name: "Social Media Marketing",
     icon: (
-      <img
+      <LazyLoadImage
         src={socialMediaMarketingWebp}
         width="64px"
         height="64px"
-        alt="social_media_marketing_webp"
+        alt="social_media_marketing.webp"
       />
     ),
     description: "",
@@ -60,11 +61,11 @@ const servicesArr = [
     id: uuidv4(),
     name: "Web Design & SEO",
     icon: (
-      <img
+      <LazyLoadImage
         src={webDesignSeoWebp}
         width="64px"
         height="64px"
-        alt="web_design_seo_webp"
+        alt="web_design_seo.webp"
       />
     ),
     description: "",

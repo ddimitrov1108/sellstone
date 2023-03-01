@@ -1,4 +1,5 @@
 import portfolioTemplateWebp from "../../assets/project-template.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ProjectCard() {
   return (
@@ -23,7 +24,13 @@ export default function ProjectCard() {
         className="opacity-0 project-card-img relative rounded-md md:max-w-[50%] h-auto"
         tabIndex={-1}
       >
-        <img src={portfolioTemplateWebp} className="w-full" alt="test" />
+        <LazyLoadImage
+          src={portfolioTemplateWebp}
+          width="100%"
+          height="100%"
+          alt="test"
+          effect="black-and-white"
+        />
       </a>
     </div>
   );

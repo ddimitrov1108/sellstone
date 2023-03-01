@@ -71,7 +71,10 @@ export default function HeaderNavigation() {
         )}
       >
         <div className="mx-auto w-full max-w-7xl flex items-center justify-between">
-          <Brand />
+          <a href="/">
+            <Brand />
+          </a>
+
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link key={link.href} to={link.href} text={link.name} />

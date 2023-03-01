@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import ContactUsForm from "../forms/ContactUsForm";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const contactRef = [
   {
@@ -12,11 +13,11 @@ const contactRef = [
     name: "Address",
     description: "Burgas, Bulgaria",
     icon: (
-      <img
+      <LazyLoadImage
         src={addressWebp}
         width="32px"
         height="32px"
-        alt="creative_production_webp"
+        alt="creative_production.webp"
       />
     ),
   },
@@ -25,11 +26,11 @@ const contactRef = [
     name: "Phone",
     description: "+359 888 888 888",
     icon: (
-      <img
+      <LazyLoadImage
         src={phoneWebp}
         width="32px"
         height="32px"
-        alt="creative_production_webp"
+        alt="creative_production.webp"
         className=""
       />
     ),
@@ -39,11 +40,11 @@ const contactRef = [
     name: "Email",
     description: "loremloremlorem@gmail.com",
     icon: (
-      <img
+      <LazyLoadImage
         src={emailWebp}
         width="32px"
         height="32px"
-        alt="creative_production_webp"
+        alt="creative_production.webp"
       />
     ),
   },

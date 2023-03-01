@@ -1,7 +1,8 @@
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
-import viberLogoPng from "../../assets/viber-logo.png";
+import viberLogoWebp from "../../assets/viber-logo.webp";
 import { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const params = {
   centeredSlides: false,
@@ -54,7 +55,7 @@ export default function PartnersSection() {
             {[...Array(9).keys()].map((key) => (
               <swiper-slide key={key}>
                 <div className="mx-auto max-w-[240px] w-full">
-                  <img src={viberLogoPng} alt="viber_logo_png" />
+                  <LazyLoadImage src={viberLogoWebp} alt="viber_logo_png" />
                 </div>
               </swiper-slide>
             ))}

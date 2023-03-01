@@ -1,14 +1,15 @@
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
 import { v4 as uuidv4 } from "uuid";
-import userPfPng from "../../assets/user-pf.png";
+import userPfWebp from "../../assets/user-pf.webp";
 import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <img src={userPfPng} width="256px" height="256px" alt="happy-person" />
+      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",
@@ -29,7 +30,7 @@ const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <img src={userPfPng} width="256px" height="256px" alt="happy-person" />
+      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",
@@ -50,7 +51,7 @@ const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <img src={userPfPng} width="256px" height="256px" alt="happy-person" />
+      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",
