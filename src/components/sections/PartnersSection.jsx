@@ -32,7 +32,6 @@ const params = {
 export default function PartnersSection() {
   return (
     <div
-      id="partners"
       className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12 pt-16"
     >
       <Section>
@@ -44,7 +43,7 @@ export default function PartnersSection() {
               <span>COMMUNITY.</span>
             </div>
 
-            <h1 className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
+            <h1 id="partners" className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Работим с най-добрите партньори
             </h1>
 
