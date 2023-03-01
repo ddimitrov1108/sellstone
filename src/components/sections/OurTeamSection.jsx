@@ -9,7 +9,12 @@ const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
+      <LazyLoadImage
+        src={userPfWebp}
+        width="256px"
+        height="256px"
+        alt="user_pf.webp"
+      />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",
@@ -30,7 +35,12 @@ const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
+      <LazyLoadImage
+        src={userPfWebp}
+        width="256px"
+        height="256px"
+        alt="user_pf.webp"
+      />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",
@@ -51,7 +61,12 @@ const teamArr = [
   {
     id: uuidv4(),
     img: (
-      <LazyLoadImage src={userPfWebp} width="256px" height="256px" alt="user_pf.webp" />
+      <LazyLoadImage
+        src={userPfWebp}
+        width="256px"
+        height="256px"
+        alt="user_pf.webp"
+      />
     ),
     name: "Daniel Dimitrov",
     title: "Web Developer",

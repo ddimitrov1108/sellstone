@@ -14,7 +14,12 @@ const servicesArr = [
     id: uuidv4(),
     name: "Branding / Business Cards",
     icon: (
-      <LazyLoadImage src={brandingWebp} width="64px" height="64px" alt="branding.webp" />
+      <LazyLoadImage
+        src={brandingWebp}
+        width="64px"
+        height="64px"
+        alt="branding.webp"
+      />
     ),
     description: "",
   },
