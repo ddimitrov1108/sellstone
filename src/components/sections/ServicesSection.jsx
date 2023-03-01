@@ -84,9 +84,11 @@ export default function ServicesSection() {
       className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12 mt-12"
     >
       <Section>
-        <SectionHeader className="xl:text-left">Нашите услуги</SectionHeader>
+        <SectionHeader className="text-center xl:text-left">
+          Нашите услуги
+        </SectionHeader>
 
-        <div className="flex flex-wrap gap-10 items-center justify-start">
+        <div className="flex flex-wrap gap-10 items-center justify-center lg:justify-start">
           {servicesArr.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

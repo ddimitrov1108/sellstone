@@ -9,7 +9,7 @@ export default function PortfolioSection() {
       className="border-bottom-radius-transition-init min-h-[1024px] bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader className="xl:text-left" bottomLineActive>Нашите проекти</SectionHeader>
+        <SectionHeader className="text-center xl:text-left">Нашите проекти</SectionHeader>
         <div className="flex flex-col gap-24 items-center justify-start even:justify-end">
           {[1, 2, 3].map((i, index) => (
             <ProjectCard key={index} />

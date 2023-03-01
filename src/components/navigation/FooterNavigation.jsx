@@ -46,7 +46,12 @@ const contactUs = [
     text: "+123(0123456789)",
     icon: <FaPhone className="rotate-90" />,
   },
-  { name: "Email", text: "supportbdthemes@gmail.com", icon: <FaMailBulk /> },
+  {
+    id: uuidv4(),
+    name: "Email",
+    text: "supportbdthemes@gmail.com",
+    icon: <FaMailBulk />,
+  },
 ];
 
 export default function FooterNavigation() {

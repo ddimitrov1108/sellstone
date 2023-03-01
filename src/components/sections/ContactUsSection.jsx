@@ -57,7 +57,7 @@ export default function ContactUsSection() {
       className="border-bottom-radius-transition-init bg-white overflow-hidden px-4 xs:px-8 py-12"
     >
       <Section>
-        <SectionHeader className="xl:text-left">
+        <SectionHeader className="text-center xl:text-left">
           Свържете се с нас
         </SectionHeader>
 
