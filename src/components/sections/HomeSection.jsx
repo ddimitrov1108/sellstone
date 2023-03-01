@@ -11,7 +11,7 @@ export default function HomeSection() {
         <div className="grid space-y-16 items-center">
           <h1 className="text-[35px] sm:text-6xl lg:text-7xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
             Evolve together.
-            <br />
+            <br /> 
             <h1 className="text-gold-main">Digitally.</h1>
           </h1>
 
