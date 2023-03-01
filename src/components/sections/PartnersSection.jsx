@@ -1,38 +1,11 @@
 import Section from "./components/Section";
-import SectionHeader from "./components/SectionHeader";
 import viberLogoWebp from "../../assets/viber-logo.webp";
-import { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
-const params = {
-  centeredSlides: false,
-  slidesPerGroupSkip: 1,
-  grabCursor: true,
-  keyboard: {
-    enabled: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    426: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    992: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-    },
-  },
-  spaceBetween: 30,
-  loop: true,
-};
 
 export default function PartnersSection() {
   return (
     <div
-    id="partners" 
+      id="partners"
       className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-24"
     >
       <Section>
