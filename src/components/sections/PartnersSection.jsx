@@ -32,18 +32,19 @@ const params = {
 export default function PartnersSection() {
   return (
     <div
-      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12 pt-16"
+    id="partners" 
+      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-24"
     >
       <Section>
         <div className="flex flex-col gap-12 xl:gap-24 items-center justify-center lg:flex-row md:justify-start  lg:px-12">
-          <div className="flex flex-col gap-10 max-h-fit lg:max-w-[500px] xl:max-w-[600px]">
+          <div className="flex flex-col gap-6 max-h-fit lg:max-w-[500px] xl:max-w-[600px]">
             <div className="flex gap-6 font-semibold text-sm text-gold-main">
               <span>TEAM.</span>
               <span>CUSTOMER.</span>
               <span>COMMUNITY.</span>
             </div>
 
-            <h1 id="partners" className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
+            <h1 className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Работим с най-добрите партньори
             </h1>
 
