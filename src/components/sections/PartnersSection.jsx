@@ -55,7 +55,7 @@ export default function PartnersSection() {
             </p>
           </div>
 
-          <div className="grow grid grid-cols-2 gap-24">
+          <div className="grow grid grid-cols-2 gap-12 lg:gap-24">
             {[...Array(6).keys()].map((key) => (
               <a
                 key={key}
