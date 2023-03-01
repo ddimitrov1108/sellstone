@@ -30,41 +30,6 @@ const params = {
 };
 
 export default function PartnersSection() {
-  // useEffect(() => {
-  //   const swiperEl = document.querySelector("#swiperContainerPartners");
-  //   Object.assign(swiperEl, params);
-
-  //   return () => {};
-  // }, []);
-
-  // return (
-  //   <div
-  //     id="partners"
-  //     className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12"
-  //   >
-  //     <Section>
-  //       <SectionHeader className="xl:text-left">Партньори</SectionHeader>
-
-  //       <div className="mx-auto py-12">
-  //         <swiper-container
-  //           className="h-44"
-  //           id="swiperContainerPartners"
-  //           autoplay-delay="4000"
-  //           autoplay-disable-on-interaction="false"
-  //         >
-  //           {[...Array(9).keys()].map((key) => (
-  //             <swiper-slide key={key}>
-  //               <div className="mx-auto max-w-[240px] w-full">
-  //                 <LazyLoadImage src={viberLogoWebp} alt="viber_logo_png" />
-  //               </div>
-  //             </swiper-slide>
-  //           ))}
-  //         </swiper-container>
-  //       </div>
-  //     </Section>
-  //   </div>
-  // );
-
   return (
     <div
       id="partners"
@@ -72,16 +37,16 @@ export default function PartnersSection() {
     >
       <Section>
         <div className="flex flex-col gap-12 xl:gap-24 items-center justify-center lg:flex-row md:justify-start  lg:px-12">
-          <div className="flex flex-col gap-6 max-h-fit lg:max-w-[500px] xl:max-w-[600px]">
+          <div className="flex flex-col gap-10 max-h-fit lg:max-w-[500px] xl:max-w-[600px]">
             <div className="flex gap-6 font-semibold text-sm text-gold-main">
               <span>TEAM.</span>
               <span>CUSTOMER.</span>
               <span>COMMUNITY.</span>
             </div>
 
-            <SectionHeader className="xs:text-left pb-0 mb-0">
+            <h1 className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Работим с най-добрите партньори
-            </SectionHeader>
+            </h1>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
