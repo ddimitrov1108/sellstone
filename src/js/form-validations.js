@@ -21,5 +21,5 @@ export const contactUsSchema = yup.object().shape({
     .max(12, "Максимум 12 символа")
     .required("Полето е задължително"),
   categoryType: yup.string().required("Полето е задължително"),
-  description: yup.string().max(1024),
+  description: yup.string().required("Полето е задължително").max(1024),
 });

@@ -12,5 +12,5 @@ Struktura
   creative production snimki videa na produkt 
 [DONE] 3. posle portfolio s nashite resultati chrez snimki i textove no za budeshte poneje sega nqmame nishto za portfolio vse oshte.
 [DONE] 4.posle "nashite partnyori". Logotata na firmite s koito rabotim s imeto im pod logoto. Kato logoto e clickable hyperlink kum oficialniq im website. 
-5. eventualno "nashiq ekip" kind of shit no za budeshte 
+[DONE] 5. eventualno "nashiq ekip" kind of shit no za budeshte 
 [DONE] 6. panela za zapitvane koito ot stupka 1 ima shortcut
