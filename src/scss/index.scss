@@ -57,7 +57,7 @@ body {
 
     @for $i from 1 through 5 {
       &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.1 + 0.5}s !important;
+        animation-delay: #{$i * 0.1 + 0.2}s !important;
       }
     }
   }
@@ -65,26 +65,25 @@ body {
   &.project-card {
     &:nth-child(odd) {
       .project-card-info {
-        animation: FadeIn 0.2s 1.25s linear both,
-          SlideInFromLeft 0.5s 1.25s linear both;
+        animation: FadeIn 0.2s 0.75s linear both,
+          SlideInFromLeft 0.5s 0.75s linear both;
       }
     }
     &:nth-child(even) {
       .project-card-info {
-        animation: FadeIn 0.2s 1.25s linear both,
-          SlideInFromRight 0.5s 1.25s linear both;
+        animation: FadeIn 0.2s 0.75s linear both,
+          SlideInFromRight 0.5s 0.75s linear both;
       }
     }
 
     .project-card-title {
-      animation: FadeIn 0.2s 0.75s linear both,
-        SlideInFromTop 0.5s 0.75s linear both,
-        BounceInFromTop 0.25s 0.75s linear both;
+      animation: FadeIn 0.2s 0.25s linear both,
+        SlideInFromTop 0.5s 0.25s linear both,
+        BounceInFromTop 0.25s 0.25s linear both;
     }
 
     .project-card-img {
-      animation: FadeIn 0.2s 1s linear both,
-        SlideInFromBottom 0.5s 1s linear both;
+      animation: FadeIn 0.2s 0.5s linear both;
     }
   }
 
