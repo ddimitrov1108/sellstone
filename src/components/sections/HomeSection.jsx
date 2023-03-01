@@ -9,11 +9,11 @@ export default function HomeSection() {
     >
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-16 items-center">
-          <p className="text-[35px] sm:text-6xl lg:text-7xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
+          <h1 className="text-[35px] sm:text-6xl lg:text-7xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
             Evolve together.
             <br />
-            <span className="text-gold-main">Digitally.</span>
-          </p>
+            <h1 className="text-gold-main">Digitally.</h1>
+          </h1>
 
           <div className="flex flex-col gap-12">
             <p className="text-sm md:text-base max-w-[500px]">
