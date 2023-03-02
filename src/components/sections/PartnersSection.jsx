@@ -6,7 +6,7 @@ export default function PartnersSection() {
   return (
     <div
       id="partners"
-      className="border-top-radius-transition-init bg-white px-4 xs:px-8 py-12 md:py-24"
+      className="border-top-radius-transition-init bg-white px-4 mobile-l:px-8 py-12 md:py-24"
     >
       <Section>
         <div className="flex flex-col gap-12 items-center justify-center lg:flex-row md:justify-start px-12">

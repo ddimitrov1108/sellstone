@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "375px",
+        "mobile-m": "375px",
+        "mobile-l": "425px",
       },
       colors: {
         secondary: "#FAFAFA",

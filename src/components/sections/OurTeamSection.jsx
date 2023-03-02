@@ -88,7 +88,7 @@ const teamArr = [
 
 export default function OurTeamSection() {
   return (
-    <div id="our-team" className="bg-white overflow-hidden px-4 xs:px-8 py-12">
+    <div id="our-team" className="bg-white overflow-hidden px-4 mobile-l:px-8 py-12">
       <Section>
         <SectionHeader className="">Нашият екип</SectionHeader>
 

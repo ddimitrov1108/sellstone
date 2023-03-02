@@ -5,11 +5,11 @@ export default function HomeSection() {
   return (
     <div
       id="home"
-      className="bg-black-dark text-white h-screen grid items-center py-14 px-4 xs:px-8"
+      className="bg-black-dark text-white h-screen grid items-center py-14 px-4 mobile-l:px-8"
     >
       <div className="w-full mx-auto max-w-7xl">
-        <div className="grid space-y-16 items-center">
-          <h1 className="text-[35px] sm:text-6xl lg:text-8xl leading-snug sm:leading-snug lg:leading-snug font-semibold">
+        <div className="grid space-y-12 items-center">
+          <h1 className="text-[35px] mobile-m:text-[42px] mobile-l:text-5xl sm:text-6xl md:text-7xl xl:text-8xl leading-snug mobile-m:leading-snug mobile-l:leading-snug sm:leading-snug md:leading-snug xl:leading-snug font-semibold">
             Evolve together.
             <br /> 
             <span className="text-gold-main">Digitally.</span>
