@@ -10,6 +10,7 @@ import PartnersSection from "./components/sections/PartnersSection";
 import FooterNavigation from "./components/navigation/FooterNavigation";
 import { register } from "swiper/element/bundle";
 import TestimonialsSection from "./components/sections/TestimonialsSection";
+
 register();
 
 function App() {
