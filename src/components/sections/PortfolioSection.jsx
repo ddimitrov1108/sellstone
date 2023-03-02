@@ -10,7 +10,7 @@ export default function PortfolioSection() {
     >
       <Section>
         <SectionHeader className="text-center xl:text-left">Нашите проекти</SectionHeader>
-        <div className="flex flex-col gap-24 items-center justify-start even:justify-end">
+        <div className="flex flex-col gap-24 lg:gap-44 items-center justify-start even:justify-end">
           {[1, 2, 3].map((i, index) => (
             <ProjectCard key={index} />
           ))}
