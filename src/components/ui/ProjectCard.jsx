@@ -21,7 +21,7 @@ export default function ProjectCard() {
         href="https://www.google.com/"
         target="_blank"
         rel="noreferrer"
-        className="opacity-0 project-card-img relative rounded-md md:max-w-[50%] h-auto"
+        className="opacity-0 overflow-hidden project-card-img relative rounded-md md:max-w-[50%] h-auto"
         tabIndex={-1}
       >
         <LazyLoadImage
