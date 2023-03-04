@@ -88,7 +88,7 @@ export default function ServicesSection() {
           Нашите услуги
         </SectionHeader>
 
-        <div className="flex flex-wrap gap-10 items-center justify-center lg:justify-start">
+        <div className="flex flex-wrap gap-10 items-center justify-center">
           {servicesArr.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
