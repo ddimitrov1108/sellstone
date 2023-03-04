@@ -96,9 +96,9 @@ export default function OurTeamSection() {
           {teamArr.map(({ id, img, name, title, socials }) => (
             <div
               key={id}
-              className="opacity-0 p-6 bg-white transition-all duration-300 shadow-lg overflow-hidden hidden-section employee-card grid gap-2 rounded-md"
+              className="opacity-0 p-6 bg-white transition-all duration-300 shadow-lg hidden-section employee-card grid gap-2 rounded-md"
             >
-              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative rounded-md">
+              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative avatar-wobble">
                 {img}
               </div>
               <div className="grid items-center gap-4 p-2">

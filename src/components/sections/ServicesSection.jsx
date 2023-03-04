@@ -81,7 +81,7 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="border-top-radius-transition-init bg-white px-4 mobile-l:px-8 py-12 mt-12"
+      className="round-top-on-entry bg-white px-4 mobile-l:px-8 py-12 mt-12"
     >
       <Section>
         <SectionHeader className="text-center xl:text-left">

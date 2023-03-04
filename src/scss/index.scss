@@ -19,18 +19,12 @@ body {
   min-height: fit-content !important;
 }
 
-.transition-border-radius-top {
-  -webkit-transition: border-radius 0.5s 0.25s;
-  transition: border-radius 0.5s 0.25s;
-  border-top-right-radius: 70px;
-  border-top-left-radius: 70px;
+.rounded-border-top {
+  animation: RoundedTopBorderMobile 0.25s 0.5s linear both;
 }
 
-.transition-border-radius-bottom {
-  -webkit-transition: border-radius 0.5s 0.25s;
-  transition: border-radius 0.5s 0.25s;
-  border-bottom-right-radius: 70px;
-  border-bottom-left-radius: 70px;
+.rounded-border-bottom {
+  animation: RoundedTopBorderMobile 0.25s 0.5s linear both;
 }
 
 .hidden-section {
@@ -99,19 +93,27 @@ body {
   }
 }
 
-@media(min-width: 768px) {
-  .transition-border-radius-top {
-    -webkit-transition: border-radius 0.5s 0.5s;
-    transition: border-radius 0.5s 0.5s;
-    border-top-right-radius: 140px;
-    border-top-left-radius: 140px;
+.avatar-wobble {
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  animation: wobble 15s ease-in-out alternate both infinite;
+}
+
+@keyframes wobble {
+  50% {
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
   }
-  
-  .transition-border-radius-bottom {
-    -webkit-transition: border-radius 0.5s 0.5s;
-    transition: border-radius 0.5s 0.5s;
-    border-bottom-right-radius: 140px;
-    border-bottom-left-radius: 140px;
+  100% {
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rounded-border-top {
+    animation: RoundedTopBorderDesktop 0.25s 0.5s linear both !important;
+  }
+
+  .rounded-border-bottom {
+    animation: RoundedBottomBorderDesktop 0.25s 0.5s linear both !important;
   }
 }
 

@@ -35,41 +35,50 @@ function App() {
       });
     });
 
-    let borderTopRadiusObserver = new IntersectionObserver((entries) => {
+    let roundTopBorderObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting)
-          entry.target.classList.add("transition-border-radius-top");
-        else entry.target.classList.remove("transition-border-radius-top");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("rounded-border-top");
+          return;
+        }
+
+        entry.target.classList.remove("rounded-border-top");
       });
     });
 
-    let borderBottomRadiusObserver = new IntersectionObserver((entries) => {
+    let roundBottomBorderObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting)
-          entry.target.classList.add("transition-border-radius-bottom");
-        else entry.target.classList.remove("transition-border-radius-bottom");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("rounded-border-bottom");
+          return;
+        }
+
+        entry.target.classList.remove("rounded-border-bottom");
       });
     });
 
     const hiddenElements = document.querySelectorAll(".hidden-section");
-    const borderTopRadiusElementsTransition = document.querySelectorAll(
-      ".border-top-radius-transition-init"
+    const roundTopBorderElementsOnEntry = document.querySelectorAll(
+      ".round-top-on-entry"
     );
-    const borderBottomRadiusElementsTransition = document.querySelectorAll(
-      ".border-bottom-radius-transition-init"
+    const roundBottomBorderElementsOnEntry = document.querySelectorAll(
+      ".round-bottom-on-entry"
     );
 
     hiddenElements.forEach((el) => observer.observe(el));
-    borderTopRadiusElementsTransition.forEach((el) =>
-      borderTopRadiusObserver.observe(el)
+
+    roundTopBorderElementsOnEntry.forEach((el) =>
+      roundTopBorderObserver.observe(el)
     );
-    borderBottomRadiusElementsTransition.forEach((el) =>
-      borderBottomRadiusObserver.observe(el)
+
+    roundBottomBorderElementsOnEntry.forEach((el) =>
+      roundBottomBorderObserver.observe(el)
     );
+
     return () => {
       observer = null;
-      borderTopRadiusObserver = null;
-      borderBottomRadiusObserver = null;
+      roundTopBorderObserver = null;
+      roundBottomBorderObserver = null;
     };
   }, []);
 
