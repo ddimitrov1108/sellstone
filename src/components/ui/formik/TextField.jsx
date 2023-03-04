@@ -21,7 +21,7 @@ export default function TextField({
           className,
           errors[field.name] && touched[field.name]
             ? " border-error-main focus:outline-error-main"
-            : "border-black-light/10 focus:outline-gold-main"
+            : "border-black-light/20 focus:outline-gold-main"
         )}
         type={type}
         {...field}

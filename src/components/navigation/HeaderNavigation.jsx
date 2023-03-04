@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Brand from "../ui/Brand";
 import MobileNavigation from "./MobileNavigation";
+import { FaRegSun, FaRegMoon } from "react-icons/fa";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import Link from "../ui/Link";
 import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
+import { ThemeContext } from "../../App";
 
 export const navLinks = [
   { id: uuidv4(), name: "Начало", href: "/" },
@@ -19,6 +21,7 @@ export default function HeaderNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("scroll-up");
   const [yValue, setYValue] = useState(window.scrollY);
+  const themeContext = useContext(ThemeContext);
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
   const closeMobileMenu = () => setIsOpen(false);
@@ -89,10 +92,19 @@ export default function HeaderNavigation() {
             Свържи се с нас
           </NavLink>
 
-          <HiOutlineBars3BottomRight
-            className="header-links lg:hidden text-4xl cursor-pointer text-secondary"
-            onClick={toggleMobileMenu}
-          />
+          <div className="flex items-center gap-4">
+            <button
+              className="text-2xl p-2 rounded-full hover:bg-black-light/30 transition-all text-white hover:text-gold-main"
+              onClick={themeContext.toggleTheme}
+            >
+              {themeContext.theme === "dark" ? <FaRegSun /> : <FaRegMoon />}
+            </button>
+
+            <HiOutlineBars3BottomRight
+              className="header-links lg:hidden text-4xl cursor-pointer text-secondary"
+              onClick={toggleMobileMenu}
+            />
+          </div>
         </div>
       </header>
     </>
