@@ -9,7 +9,7 @@
 
 @keyframes SlideInFromTop {
   from {
-    transform: translateY(-30px);
+    transform: translateY(-10px);
   }
   to {
     transform: translateY(0px);
@@ -36,7 +36,7 @@
 
 @keyframes SlideInFromLeft {
   from {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
   }
   to {
     transform: translateY(0px);
@@ -45,7 +45,7 @@
 
 @keyframes SlideInFromRight {
   from {
-    transform: translateX(30px);
+    transform: translateX(10px);
   }
   to {
     transform: translateY(0px);
@@ -58,7 +58,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
 }
 
@@ -68,7 +68,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-10px);
   }
 }
 
@@ -78,7 +78,7 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(30px);
+    transform: translateX(10px);
   }
 }
 
@@ -88,6 +88,6 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
   }
 }
