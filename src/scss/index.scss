@@ -5,6 +5,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import "./keyframes.scss";
 
+body:fullscreen {
+  overflow: scroll !important;
+}
+body:-ms-fullscreen {
+  overflow: scroll !important;
+}
+body:-webkit-full-screen {
+  overflow: scroll !important;
+}
+body:-moz-full-screen {
+  overflow: scroll !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -95,7 +108,7 @@ body {
 
 .avatar-wobble {
   border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
-  animation: wobble 15s ease-in-out alternate both infinite;
+  animation: wobble 10s ease-in-out alternate both infinite;
 }
 
 @keyframes wobble {
