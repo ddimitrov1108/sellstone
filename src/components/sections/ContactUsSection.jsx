@@ -77,7 +77,7 @@ export default function ContactUsSection() {
             ))}
           </div>
 
-          <div className="hidden lg:block h-[400px] w-0.5 bg-gold-light"></div>
+          <div className="hidden lg:block h-[400px] w-1 bg-gold-light rounded-full"></div>
 
           <div className="w-full">
             <ContactUsForm />

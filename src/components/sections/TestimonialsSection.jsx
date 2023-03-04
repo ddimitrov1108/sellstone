@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
         <SectionHeader className="text-center text-white pb-0 mb-2">
           Отзиви от наши клиенти
         </SectionHeader>
-        <div className="mx-auto w-[40%] md:w-[30%] h-1 bg-gold-main"></div>
+        <div className="mx-auto w-[40%] md:w-[30%] h-1 bg-gold-main rounded-full"></div>
         <div className="mx-auto min-h-fit py-12">
           <swiper-container
             id="swiperContainerTestimonials"
