@@ -32,18 +32,18 @@ body {
   min-height: fit-content !important;
 }
 
-.round-top-on-entry,
-.round-bottom-on-entry {
-  -webkit-transition: border-radius 0.5s 0.25s !important;
-  transition: border-radius 0.5s 0.25s !important;
-}
-
 .rounded-border-top {
-  animation: RoundedTopBorderMobile 0.25s 0.5s linear both;
+    -webkit-transition: border-radius 0.5s 0.25s;
+    transition: border-radius 0.5s 0.25s;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
 }
 
 .rounded-border-bottom {
-  animation: RoundedBottomBorderMobile 0.25s 0.5s linear both;
+  -webkit-transition: border-radius 0.5s 0.25s;
+  transition: border-radius 0.5s 0.25s;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
 }
 
 .hidden-section {
@@ -128,12 +128,18 @@ body {
 
 @media (min-width: 768px) {
   .rounded-border-top {
-    animation: RoundedTopBorderDesktop 0.25s 0.5s linear both !important;
-  }
+    -webkit-transition: border-radius 0.5s 0.25s;
+    transition: border-radius 0.5s 0.25s;
+    border-top-right-radius: 140px;
+    border-top-left-radius: 140px;
+}
 
-  .rounded-border-bottom {
-    animation: RoundedBottomBorderDesktop 0.25s 0.5s linear both !important;
-  }
+.rounded-border-bottom {
+  -webkit-transition: border-radius 0.5s 0.25s;
+  transition: border-radius 0.5s 0.25s;
+  border-bottom-right-radius: 140px;
+  border-bottom-left-radius: 140px;
+}
 }
 
 @media (min-width: 1025px) {
