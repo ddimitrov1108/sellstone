@@ -32,6 +32,12 @@ body {
   min-height: fit-content !important;
 }
 
+.round-top-on-entry,
+.round-bottom-on-entry {
+  -webkit-transition: border-radius 0.5s 0.25s !important;
+  transition: border-radius 0.5s 0.25s !important;
+}
+
 .rounded-border-top {
   animation: RoundedTopBorderMobile 0.25s 0.5s linear both;
 }
