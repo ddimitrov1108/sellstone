@@ -36,6 +36,7 @@ body {
 .round-bottom-on-entry {
   -webkit-transition: border-radius 0.5s 0.25s;
   transition: border-radius 0.5s 0.25s;
+  border: 1px solid transparent !important;
 }
 
 .rounded-border-top {
@@ -56,6 +57,21 @@ body {
 }
 
 .show-section {
+  &.service-card,
+  &.employee-card {
+    will-change: transform !important;
+  }
+
+  &.project-card {
+    will-change: transform !important;
+
+    .project-card-info,
+    .project-card-title,
+    .project-card-img {
+      will-change: transform !important;
+    }
+  }
+
   &.section-header {
     animation: FadeIn 0.15s 0.25s linear both;
   }

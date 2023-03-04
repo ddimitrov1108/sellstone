@@ -9,45 +9,55 @@
 
 @keyframes SlideInFromTop {
   from {
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 @keyframes SlideInFromBottom {
   from {
-    transform: translateY(10%);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 @keyframes SlideInFromBottomFull {
   from {
+    -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 @keyframes SlideInFromLeft {
   from {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 @keyframes SlideInFromRight {
   from {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -55,9 +65,11 @@
 @keyframes BounceInFromTop {
   0%,
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   50% {
+    -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
 }
@@ -65,9 +77,11 @@
 @keyframes BounceInFromBottom {
   0%,
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   50% {
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 }
@@ -75,9 +89,11 @@
 @keyframes BounceInFromLeft {
   0%,
   100% {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
   50% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
@@ -85,9 +101,11 @@
 @keyframes BounceInFromRight {
   0%,
   100% {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
   50% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 }
