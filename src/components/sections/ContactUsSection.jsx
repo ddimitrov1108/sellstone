@@ -58,7 +58,7 @@ export default function ContactUsSection() {
     >
       <Section>
         <SectionHeader className="text-center xl:text-left">
-          Свържете се с нас1234
+          Свържете се с нас123
         </SectionHeader>
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
