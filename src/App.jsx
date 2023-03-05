@@ -1,4 +1,4 @@
-import { createContext, useEffect } from "react";
+import { useEffect } from "react";
 import HeaderNavigation from "./components/navigation/HeaderNavigation";
 import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
@@ -10,14 +10,10 @@ import PartnersSection from "./components/sections/PartnersSection";
 import FooterNavigation from "./components/navigation/FooterNavigation";
 import { register } from "swiper/element/bundle";
 import TestimonialsSection from "./components/sections/TestimonialsSection";
-import useTheme from "./hooks/useTheme";
 
 register();
 
-export const ThemeContext = createContext(null);
-
 function App() {
-  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
@@ -89,8 +85,7 @@ function App() {
 
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={theme}>
+      <>
         <HeaderNavigation />
         <HomeSection />
         <ServicesSection />
@@ -100,8 +95,7 @@ function App() {
         <OurTeamSection />
         <ContactUsSection />
         <FooterNavigation />
-      </div>
-    </ThemeContext.Provider>
+      </>
   );
 }
 
