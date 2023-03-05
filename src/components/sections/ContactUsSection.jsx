@@ -54,11 +54,11 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="round-bottom-on-entry bg-[#222222] overflow-hidden px-4 mobile-l:px-8 py-12"
+      className="round-bottom-on-entry bg-[#222] overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
-        <SectionHeader className="text-center xl:text-left">
-          Свържете се с нас123
+        <SectionHeader className="text-white text-center xl:text-left">
+          Свържете се с нас
         </SectionHeader>
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
@@ -71,8 +71,8 @@ export default function ContactUsSection() {
                 <div className="mx-auto rounded-full bg-alternative p-4 mt-2 min-w-fit">
                   {icon}
                 </div>
-                <div className="font-semibold">{name}</div>
-                <div className="text-black-light/60 text-sm">{text}</div>
+                <div className="text-white font-semibold">{name}</div>
+                <div className="text-white/80 text-sm">{text}</div>
               </div>
             ))}
           </div>
