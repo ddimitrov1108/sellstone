@@ -14,7 +14,7 @@ module.exports = {
         alternative: "#EAECEF",
         black: {
           light: "#1E2329",
-          main: "#333333",
+          main: "#181a20",
           dark: "#0C0E12",
         },
         gold: {
