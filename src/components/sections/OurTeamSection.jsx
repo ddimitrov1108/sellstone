@@ -98,7 +98,7 @@ export default function OurTeamSection() {
               key={id}
               className="p-6 bg-black-dark/40 shadow-black-light/20 transition-all duration-300 shadow-md  grid gap-2 rounded-md"
             >
-              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-black-main avatar-wobble">
+              <div className="border overflow-hidden w-fit mx-auto p-4 pb-0 bg-black-main avatar-wobble">
                 {img}
               </div>
               <div className="grid items-center gap-4 p-2">
@@ -106,7 +106,7 @@ export default function OurTeamSection() {
                   <span className="text-white text-left text-lg font-semibold truncate ...">
                     {name}
                   </span>
-                  <span className="text-white/80 text-left truncate ...">
+                  <span className="text-white/40 text-left truncate ...">
                     {title}
                   </span>
                 </div>
@@ -117,7 +117,7 @@ export default function OurTeamSection() {
                       href={url}
                       target="_blank"
                       rel="noreferrer"
-                      className="transition-all duration-300 text-black-light/60 rounded-full hover:text-gold-main"
+                      className="transition-all duration-300 rounded-full text-gold-main"
                     >
                       {icon}
                     </a>

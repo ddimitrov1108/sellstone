@@ -9,7 +9,7 @@ export default function ProjectCard() {
         <div className="text-2xl font-semibold text-white mb-4">
           Project Name
         </div>
-        <div className="project-card-info  md:bg-black-main text-white/80 rounded-md sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
+        <div className="project-card-info  md:bg-black-main text-white/60 rounded-md sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
           suscipit illum omnis veniam, aperiam facilis eveniet earum debitis
           tenetur voluptas ullam quod tempora ea, distinctio molestiae fugiat
