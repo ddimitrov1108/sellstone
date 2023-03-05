@@ -6,7 +6,7 @@ export default function PartnersSection() {
   return (
     <div
       id="partners"
-      className="round-top-on-entry bg-white px-4 mobile-l:px-8 py-12 md:py-24"
+      className="round-top-on-entry bg-black-main px-4 mobile-l:px-8 py-12 md:py-24"
     >
       <Section>
         <div className="flex flex-col gap-12 items-center justify-center lg:flex-row md:justify-start px-12">
@@ -17,11 +17,11 @@ export default function PartnersSection() {
               <span>COMMUNITY.</span>
             </div>
 
-            <h1 className="section-header md:text-left text-3xl sm:text-5xl font-semibold">
+            <h1 className="text-white section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Работим с най-добрите партньори
             </h1>
 
-            <p className="text-black-light">
+            <p className="text-white/80">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               quae accusantium, deleniti voluptate eius explicabo necessitatibus
               facere autem maxime delectus porro perspiciatis vel veritatis est,

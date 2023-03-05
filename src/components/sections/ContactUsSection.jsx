@@ -54,7 +54,7 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="round-bottom-on-entry bg-[#222] overflow-hidden px-4 mobile-l:px-8 py-12"
+      className="round-bottom-on-entry bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
         <SectionHeader className="text-white text-center xl:text-left">

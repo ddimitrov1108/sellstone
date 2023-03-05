@@ -88,25 +88,25 @@ const teamArr = [
 
 export default function OurTeamSection() {
   return (
-    <div id="our-team" className="bg-white overflow-hidden px-4 mobile-l:px-8 py-12">
+    <div id="our-team" className="bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12">
       <Section>
-        <SectionHeader className="">Нашият екип</SectionHeader>
+        <SectionHeader className="text-white">Нашият екип</SectionHeader>
 
         <div className="flex flex-col md:flex-row gap-14 gap-y-10 items-center justify-center">
           {teamArr.map(({ id, img, name, title, socials }) => (
             <div
               key={id}
-              className="opacity-0 p-6 bg-white transition-all duration-300 shadow-lg hidden-section employee-card grid gap-2 rounded-md"
+              className="p-6 bg-black-dark/40 shadow-black-light/20 transition-all duration-300 shadow-md  grid gap-2 rounded-md"
             >
-              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-alternative avatar-wobble">
+              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-black-main avatar-wobble">
                 {img}
               </div>
               <div className="grid items-center gap-4 p-2">
                 <div className="grid gap-2">
-                  <span className="text-left text-lg font-semibold truncate ...">
+                  <span className="text-white text-left text-lg font-semibold truncate ...">
                     {name}
                   </span>
-                  <span className="text-left text-black-main/60 truncate ...">
+                  <span className="text-white/80 text-left truncate ...">
                     {title}
                   </span>
                 </div>

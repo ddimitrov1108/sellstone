@@ -6,10 +6,10 @@ export default function ProjectCard() {
     <div className="hidden-section project-card group relative w-full flex flex-col-reverse md:flex-row md:odd:flex-row-reverse md:even:text-right">
       <div className="project-card-title z-30 md:absolute md:top-0 lg:top-4 xl:top-12 md:group-odd:left-24 md:group-even:right-24">
         <div className="py-1 text-gold-dark">Featured Project</div>
-        <div className="text-2xl font-semibold text-black-main mb-4">
+        <div className="text-2xl font-semibold text-white mb-4">
           Project Name
         </div>
-        <div className="project-card-info rounded-md sm:shadow-lg text-sm lg:text-base min-w-full text-black-light md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 md:bg-secondary">
+        <div className="project-card-info  md:bg-black-dark text-white/80 rounded-md sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
           suscipit illum omnis veniam, aperiam facilis eveniet earum debitis
           tenetur voluptas ullam quod tempora ea, distinctio molestiae fugiat
@@ -29,7 +29,7 @@ export default function ProjectCard() {
           width="100%"
           height="100%"
           alt="test"
-          effect="black-and-white"
+          effect="black-and-white rounded-md"
         />
       </a>
     </div>
