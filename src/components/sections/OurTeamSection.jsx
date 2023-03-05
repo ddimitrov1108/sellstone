@@ -98,7 +98,7 @@ export default function OurTeamSection() {
               key={id}
               className="p-6 bg-black-dark/40 shadow-black-light/20 transition-all duration-300 shadow-md  grid gap-2 rounded-md"
             >
-              <div className="border overflow-hidden w-fit mx-auto p-4 pb-0 bg-black-main avatar-wobble">
+              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 bg-black-main avatar-wobble">
                 {img}
               </div>
               <div className="grid items-center gap-4 p-2">
