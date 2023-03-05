@@ -54,11 +54,11 @@ export default function ContactUsSection() {
   return (
     <div
       id="contact-us"
-      className="round-bottom-on-entry bg-white overflow-hidden px-4 mobile-l:px-8 py-12"
+      className="round-bottom-on-entry bg-[#222222] overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
         <SectionHeader className="text-center xl:text-left">
-          Свържете се с нас
+          Свържете се с нас1234
         </SectionHeader>
 
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
