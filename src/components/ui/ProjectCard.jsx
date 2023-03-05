@@ -29,7 +29,8 @@ export default function ProjectCard() {
           width="100%"
           height="100%"
           alt="test"
-          effect="black-and-white rounded-md"
+          className="rounded-md"
+          effect="black-and-white"
         />
       </a>
     </div>
