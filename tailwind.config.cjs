@@ -15,7 +15,7 @@ module.exports = {
         black: {
           light: "#1E2329",
           main: "#0C0E12",
-          dark: "#040506",
+          dark: "#333333",
         },
         gold: {
           light: "#FAD338",
