@@ -71,7 +71,7 @@ export default function ContactUsSection() {
                 <div className="mx-auto rounded-full bg-alternative p-4 mt-2 min-w-fit">
                   {icon}
                 </div>
-                <div className="text-white font-semibold">{name}</div>
+                <div className="text-gold-main font-semibold">{name}</div>
                 <div className="text-white/80 text-sm">{text}</div>
               </div>
             ))}
