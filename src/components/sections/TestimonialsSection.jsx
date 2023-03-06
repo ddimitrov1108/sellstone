@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
 import userPfWebp from "../../assets/user-pf.webp";
-import { FaQuoteLeft } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const params = {
