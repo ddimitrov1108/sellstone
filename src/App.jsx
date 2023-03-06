@@ -89,6 +89,7 @@ function App() {
         <HomeSection />
         <ServicesSection />
         <TestimonialsSection />
+        <PartnersSection />
         <OurTeamSection />
         <ContactUsSection />
         <FooterNavigation />

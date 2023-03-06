@@ -11,7 +11,7 @@ export const navLinks = [
   { id: uuidv4(), name: "Начало", href: "/" },
   { id: uuidv4(), name: "Услуги", href: "services" },
   //{ id: uuidv4(), name: "Портфолио", href: "portfolio" },
-  //{ id: uuidv4(), name: "Партньори", href: "partners" },
+  { id: uuidv4(), name: "Партньори", href: "partners" },
   { id: uuidv4(), name: "Екип", href: "our-team" },
 ];
 
