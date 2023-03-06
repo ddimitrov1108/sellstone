@@ -84,7 +84,7 @@ export default function ServicesSection() {
       className="round-top-on-entry bg-black-main px-4 mobile-l:px-8 py-12 mt-12"
     >
       <Section>
-        <SectionHeader className="text-white text-center xl:text-left">
+        <SectionHeader className="text-primaryHeaderText text-center xl:text-left">
           Нашите услуги
         </SectionHeader>
 

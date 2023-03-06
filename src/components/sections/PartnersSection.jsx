@@ -10,18 +10,18 @@ export default function PartnersSection() {
     >
       <Section>
         <div className="flex flex-col gap-12 items-center justify-center lg:flex-row md:justify-start px-12">
-          <div className="flex flex-col gap-4 md:gap-6 max-h-fit lg:max-w-[500px] xl:max-w-[600px]">
+          <div className="flex flex-col gap-4 md:gap-6 max-h-fit lg:max-w-[600px] xl:max-w-[700px]">
             <div className="flex gap-6 font-semibold text-sm text-gold-main">
               <span>TEAM.</span>
               <span>CUSTOMER.</span>
               <span>COMMUNITY.</span>
             </div>
 
-            <h1 className="text-white section-header md:text-left text-3xl sm:text-5xl font-semibold">
+            <h1 className="text-primaryHeaderText section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Работим с най-добрите партньори
             </h1>
 
-            <p className="text-white/80">
+            <p className="text-[#B7BDC6]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               quae accusantium, deleniti voluptate eius explicabo necessitatibus
               facere autem maxime delectus porro perspiciatis vel veritatis est,

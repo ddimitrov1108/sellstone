@@ -84,13 +84,13 @@ export default function HeaderNavigation() {
 
           <NavLink
             to={"/contact-us"}
-            className="hidden lg:block bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
+            className="text-base hidden lg:block bg-gold-main text-[#181A20] px-4 py-3 rounded-lg font-semibold"
           >
             Свържи се с нас
           </NavLink>
 
           <HiOutlineBars3BottomRight
-            className="header-links lg:hidden text-4xl cursor-pointer text-secondary"
+            className="header-links lg:hidden text-4xl cursor-pointer text-primaryHeaderText"
             onClick={toggleMobileMenu}
           />
         </div>

@@ -57,7 +57,7 @@ export default function ContactUsSection() {
       className="round-bottom-on-entry bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
-        <SectionHeader className="text-white text-center xl:text-left">
+        <SectionHeader className="text-primaryHeaderText text-center xl:text-left">
           Свържете се с нас
         </SectionHeader>
 
@@ -71,8 +71,8 @@ export default function ContactUsSection() {
                 <div className="mx-auto rounded-full bg-alternative p-4 mt-2 min-w-fit">
                   {icon}
                 </div>
-                <div className="text-gold-main font-semibold">{name}</div>
-                <div className="text-white/80 text-sm">{text}</div>
+                <div className="text-primaryHeaderText font-semibold">{name}</div>
+                <div className="text-[#B7BDC6] text-sm">{text}</div>
               </div>
             ))}
           </div>

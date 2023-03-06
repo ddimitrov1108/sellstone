@@ -6,14 +6,15 @@ export default function ProjectCard() {
     <div className="hidden-section project-card group relative w-full flex flex-col-reverse md:flex-row md:odd:flex-row-reverse md:even:text-right">
       <div className="project-card-title z-30 md:absolute md:top-0 lg:top-4 xl:top-12 md:group-odd:left-24 md:group-even:right-24">
         <div className="py-1 text-gold-dark">Featured Project</div>
-        <div className="text-2xl font-semibold text-white mb-4">
+        <div className="text-2xl font-semibold text-primaryHeaderText mb-4">
           Project Name
         </div>
-        <div className="project-card-info md:bg-black-dark text-white/60 rounded-md sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-          suscipit illum omnis veniam, aperiam facilis eveniet earum debitis
-          tenetur voluptas ullam quod tempora ea, distinctio molestiae fugiat
-          repellendus inventore error?
+        <div className="opacity-0 project-card-info md:bg-black-dark text-primaryHeaderText rounded-lg sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, velit
+          ipsam consectetur nihil at incidunt. Aperiam rerum, at delectus
+          impedit asperiores doloribus placeat, quidem ullam repudiandae fuga
+          quos ex, ea dolorem magni corrupti nesciunt sunt sequi porro
+          voluptatum odit. Mollitia!
         </div>
       </div>
 
@@ -21,7 +22,7 @@ export default function ProjectCard() {
         href="https://www.google.com/"
         target="_blank"
         rel="noreferrer"
-        className="opacity-0 overflow-hidden project-card-img relative rounded-md md:max-w-[50%] h-auto"
+        className="opacity-0 overflow-hidden project-card-img relative rounded-lg md:max-w-[60%] h-auto"
         tabIndex={-1}
       >
         <LazyLoadImage
@@ -29,7 +30,7 @@ export default function ProjectCard() {
           width="100%"
           height="100%"
           alt="test"
-          className="rounded-md"
+          className="rounded-lg"
           effect="black-and-white"
         />
       </a>

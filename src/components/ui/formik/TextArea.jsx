@@ -16,7 +16,7 @@ export default function TextArea({
 
       <textarea
         className={clsx(
-          "p-4 focus:outline-gold-main border w-full rounded-md",
+          "p-4 focus:outline-gold-main border w-full rounded-lg",
           className,
           errors[field.name] && touched[field.name]
             ? " border-error-main focus:outline-error-main"

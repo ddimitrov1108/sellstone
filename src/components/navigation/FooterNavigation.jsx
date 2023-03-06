@@ -61,7 +61,7 @@ export default function FooterNavigation() {
         <div className="flex flex-wrap gap-16">
           <div className="grid gap-8">
             <Brand />
-            <p className="text-sm max-w-[420px] text-white/40">
+            <p className="text-sm max-w-[420px] text-primaryText">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -74,7 +74,7 @@ export default function FooterNavigation() {
                   title={name}
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2.5 rounded-md text-xl bg-gold-main border border-gold-main hover:bg-black-dark hover:text-white transition-all duration-300"
+                  className="p-2.5 rounded-lg text-xl text-primaryHeaderText hover:text-gold-main transition-all duration-300"
                 >
                   {icon}
                 </a>
@@ -83,8 +83,8 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-white">Explore</span>
-            <div className="grid gap-2 text-white/40 text-sm">
+            <span className="text-2xl text-primaryHeaderText">Explore</span>
+            <div className="grid gap-2 text-primaryText text-sm">
               {navLinks.map(({ id, name, href }) => (
                 <NavLink key={id} to={href} className="hover:text-gold-main">
                   {name}
@@ -94,16 +94,16 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-white">Address</span>
-            <div className="grid gap-2 text-white/40">
+            <span className="text-2xl text-primaryHeaderText">Address</span>
+            <div className="grid gap-2">
               {contactUs.map(({ id, name, text, icon }) => (
                 <div
                   key={id}
                   title={name}
-                  className="min-w-fit flex items-center gap-2"
+                  className="min-w-fit flex items-center gap-2 text-primaryText"
                 >
                   <div className="text-base">{icon}</div>
-                  <span className="text-white/40 text-sm">{text}</span>
+                  <span className="text-sm">{text}</span>
                 </div>
               ))}
             </div>

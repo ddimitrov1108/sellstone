@@ -22,7 +22,7 @@ export default function MobileNavigation({
       ></div>
       <div
         className={clsx(
-          "z-50 fixed top-0 right-0 w-full sm:w-1/2 h-full bg-black-dark text-white transition-all ease-in-out duration-300",
+          "z-50 fixed top-0 right-0 w-full sm:w-1/2 h-full bg-black-dark transition-all ease-in-out duration-300",
           open ? "translate-x-0 " : "translate-x-full"
         )}
       >
@@ -31,7 +31,7 @@ export default function MobileNavigation({
             <Brand className="sm:hidden" />
             <button
               aria-label="Затвори меню"
-              className="text-4xl w-fit ml-auto hover:text-gold-main transition-all"
+              className="text-4xl w-fit ml-auto text-primaryHeaderText hover:text-gold-main transition-all"
               onClick={onClose}
             >
               <VscClose />
@@ -44,7 +44,7 @@ export default function MobileNavigation({
             ))}
             <NavLink
               to={"/contact-us"}
-              className="bg-gold-main !text-black-main px-4 py-3 rounded-md font-semibold"
+              className="bg-gold-main !text-black-main px-4 py-3 rounded-lg font-semibold"
             >
               Свържи се с нас
             </NavLink>

@@ -10,15 +10,17 @@ module.exports = {
         "mobile-l": "425px",
       },
       colors: {
+        primaryHeaderText: '#EAECEF',
+        primaryText: '#848E9C',
         secondary: "#FAFAFA",
         alternative: "#EAECEF",
         black: {
           light: "#1E2329",
           main: "#181a20",
-          dark: "#0C0E12",
+          dark: "#0C0E11",
         },
         gold: {
-          light: "#FAD338",
+          light: "#FCD535",
           main: "#F2BC07",
           dark: "#F0B90B",
         },

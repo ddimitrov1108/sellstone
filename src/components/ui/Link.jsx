@@ -13,7 +13,7 @@ export default function Link({
       className={clsx("relative group px-4 py-3 cursor-pointer", className)}
       {...restProps}
     >
-      <span className="transition-all text-white group-hover:text-gold-main ">
+      <span className="transition-all text-primaryHeaderText group-hover:text-gold-main ">
         {text}
       </span>
       <div className="absolute bottom-0 right-[50%] transition-all duration-300 w-0 group-hover:w-[50%] h-0.5 bg-gold-main"></div>

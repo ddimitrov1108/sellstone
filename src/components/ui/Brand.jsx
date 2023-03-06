@@ -9,7 +9,7 @@ export default function Brand({ className, ...restProps }) {
     >
       <GiMoebiusTriangle className="rotate-[45deg] text-gold-dark text-5xl" />
       <span className="text-gold-dark">SELL</span>
-      <span className="text-secondary">STONE</span>
+      <span className="text-primaryHeaderText">STONE</span>
     </div>
   );
 }

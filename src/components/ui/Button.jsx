@@ -10,7 +10,7 @@ export default function Button({
   return (
     <button
       className={clsx(
-        "bg-gold-main text-black-dark w-fit h-fit rounded-md px-8 font-semibold text-lg",
+        "bg-gold-main text-[#181A20] w-fit h-fit rounded-lg px-8 font-semibold text-base",
         className,
         size === "small" ? "py-1.5" : size === "normal" ? "py-2.5" : "py-4",
         fullWidth ? "w-full" : "w-fit"
