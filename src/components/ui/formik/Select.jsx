@@ -22,11 +22,11 @@ export default function Select({
         value={field.value}
         name={field.name}
         className={clsx(
-          "px-4 py-3 text-primaryHeaderText bg-black-dark/20 outline-none border rounded-lg w-full",
+          "px-4 py-3 focus:outline-gold-main focus-within:outline-gold-main border w-full rounded-md text-black-light",
           className,
           errors[field.name] && touched[field.name]
             ? " border-error-main focus:outline-error-main"
-            : "border-black-light focus:outline-gold-main"
+            : "border-black-light/10 focus:outline-gold-main"
         )}
         {...restProps}
       >

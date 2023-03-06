@@ -17,11 +17,11 @@ export default function TextField({
 
       <input
         className={clsx(
-          "px-4 py-3 text-primaryHeaderText bg-black-dark/20 outline-none border rounded-lg w-full",
+          "px-4 py-3 border rounded-md w-full text-black-main",
           className,
           errors[field.name] && touched[field.name]
-            ? "border-error-main focus:outline-error-main"
-            : "border-black-light focus:outline-gold-main"
+            ? " border-error-main focus:outline-error-main"
+            : "border-black-light/20 focus:outline-gold-main"
         )}
         type={type}
         {...field}
