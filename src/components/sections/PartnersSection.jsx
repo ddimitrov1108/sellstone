@@ -41,7 +41,7 @@ export default function PartnersSection() {
                 href="https://www.google.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center mx-auto w-[60%] md:w-[40%] h-fit"
+                className="flex items-center mx-auto w-[40%] h-fit"
               >
                 <LazyLoadImage
                   src={img}
