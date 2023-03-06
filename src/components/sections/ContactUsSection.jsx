@@ -68,7 +68,7 @@ export default function ContactUsSection() {
                 key={id}
                 className="hidden lg:flex flex-row justify-start lg:flex-col gap-4 items-center text-center"
               >
-                <div className="mx-auto rounded-full bg-alternative p-4 mt-2 min-w-fit">
+                <div className="mx-auto rounded-full p-4 mt-2 min-w-fit">
                   {icon}
                 </div>
                 <div className="text-primaryHeaderText font-semibold">{name}</div>
