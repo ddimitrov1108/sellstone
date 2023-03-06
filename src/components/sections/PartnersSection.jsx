@@ -34,7 +34,7 @@ export default function PartnersSection() {
             </p>
           </div>
 
-          <div className="w-full flex flex-wrap items-center text-center justify-center gap-y-8 gap-x-4 md:gap-12 lg:gap-16">
+          <div className="w-full flex flex-wrap items-center text-center justify-center gap-y-8 gap-x-4 md:gap-12">
             {partnersImgs.map((img, index) => (
               <a
                 key={index}
