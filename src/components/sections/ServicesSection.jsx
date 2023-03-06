@@ -131,7 +131,7 @@ export default function ServicesSection() {
   return (
     <div
       id="services"
-      className="round-top-on-entry bg-black-main px-4 mobile-l:px-8 py-12 mt-12"
+      className="round-top-on-entry round-bottom-on-entry bg-black-main px-4 mobile-l:px-8 py-12 mt-12"
     >
       <Section>
         <SectionHeader className="text-primaryHeaderText text-center xl:text-left">

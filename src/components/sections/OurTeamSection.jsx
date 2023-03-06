@@ -90,7 +90,7 @@ export default function OurTeamSection() {
   return (
     <div
       id="our-team"
-      className="bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12"
+      className="round-top-on-entry bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
         <SectionHeader className="text-primaryHeaderText">

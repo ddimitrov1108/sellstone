@@ -83,20 +83,32 @@ function App() {
     };
   }, []);
 
-
-  return (
+    return (
       <>
         <HeaderNavigation />
         <HomeSection />
         <ServicesSection />
-        <PortfolioSection />
         <TestimonialsSection />
-        <PartnersSection />
         <OurTeamSection />
         <ContactUsSection />
         <FooterNavigation />
       </>
   );
+
+
+  // return (
+  //     <>
+  //       <HeaderNavigation />
+  //       <HomeSection />
+  //       <ServicesSection />
+  //       <PortfolioSection />
+  //       <TestimonialsSection />
+  //       <PartnersSection />
+  //       <OurTeamSection />
+  //       <ContactUsSection />
+  //       <FooterNavigation />
+  //     </>
+  // );
 }
 
 export default App;
