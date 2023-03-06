@@ -16,11 +16,11 @@ export default function TextArea({
 
       <textarea
         className={clsx(
-          "p-4 focus:outline-gold-main border w-full rounded-lg",
+          "p-4 text-primaryHeaderText bg-black-dark/20 outline-none border rounded-lg w-full",
           className,
           errors[field.name] && touched[field.name]
             ? " border-error-main focus:outline-error-main"
-            : "border-black-light/10 focus:outline-gold-main"
+            : "border-black-light focus:outline-gold-main"
         )}
         {...field}
         {...restProps}

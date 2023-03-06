@@ -27,6 +27,12 @@ body {
   background-color: #0C0E12;
 }
 
+select {
+  option {
+    color: #EAECEF !important;
+  }
+}
+
 #swiperContainerTestimonials {
   padding-top: 52px !important;
   min-height: fit-content !important;
