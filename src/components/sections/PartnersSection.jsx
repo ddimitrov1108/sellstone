@@ -1,5 +1,4 @@
 import Section from "./components/Section";
-import viberLogoWebp from "../../assets/viber-logo.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import devinWebp from "../../assets/devin.webp";
 import lukoilWebp from "../../assets/lukoil.webp";
