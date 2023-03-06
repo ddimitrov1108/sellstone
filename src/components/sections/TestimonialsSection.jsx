@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
   return (
     <div className="bg-black-dark px-4 mobile-l:px-8 py-12">
       <Section>
-        <SectionHeader className="text-center text-white pb-0 mb-2">
+        <SectionHeader className="text-center text-primaryHeaderText pb-0 mb-2">
           Отзиви от наши клиенти
         </SectionHeader>
         <div className="mx-auto w-[40%] md:w-[30%] h-1 bg-gold-main rounded-full"></div>
