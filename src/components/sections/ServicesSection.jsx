@@ -125,7 +125,7 @@ export default function ServicesSection() {
 
         <div className="flex flex-wrap gap-10 items-stetch justify-center">
           {servicesArr.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+            <ServiceCard key={service.id} data={service} />
           ))}
         </div>
       </Section>

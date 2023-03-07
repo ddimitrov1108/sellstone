@@ -100,7 +100,7 @@ export default function OurTeamSection() {
 
         <div className="flex flex-col md:flex-row gap-14 gap-y-10 items-center justify-center">
           {teamArr.map((employee) => (
-            <EmployeeCard key={employee} employee={employee} />
+            <EmployeeCard key={employee} data={employee} />
           ))}
         </div>
       </Section>
