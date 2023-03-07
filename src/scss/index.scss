@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background-color: #0C0E12;
+  background-color: #0c0e12;
 }
 
 // select {
@@ -33,6 +33,14 @@ body {
 //     background-color: #0C0E11 !important;
 //   }
 // }
+
+.img-filter-hover {
+  filter: invert(37%) sepia(4%) saturate(1442%) hue-rotate(178deg) brightness(95%) contrast(80%);
+
+  &:hover {
+    filter: invert(74%) sepia(46%) saturate(1681%) hue-rotate(2deg) brightness(101%) contrast(95%);
+  }
+}
 
 #swiperContainerTestimonials {
   padding-top: 52px !important;
