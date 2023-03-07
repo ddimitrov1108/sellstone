@@ -1,10 +1,19 @@
 import Section from "./components/Section";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import devinWebp from "../../assets/devin.webp";
-import lukoilWebp from "../../assets/lukoil.webp";
-import redbullWebp from "../../assets/redbull.webp";
-
-const partnersImgs = [devinWebp, lukoilWebp, redbullWebp];
+import devinPng from "../../assets/devin.png";
+import lukoilPng from "../../assets/lukoil.png";
+import redbullPng from "../../assets/redbull.png";
+import kauflandPng from "../../assets/kaufland.png";
+import obbPng from "../../assets/obb.png";
+import xellaPng from "../../assets/xella.png";
+const partnersImgs = [
+  devinPng,
+  lukoilPng,
+  redbullPng,
+  kauflandPng,
+  obbPng,
+  xellaPng,
+];
 
 export default function PartnersSection() {
   return (
@@ -26,7 +35,10 @@ export default function PartnersSection() {
             </h1>
 
             <p className="text-[#B7BDC6]">
-              Ние ценим нашите партньорства с разнообразен набор от фирми и организации.  Те включват малки и средни предприятия, нестопански организации, стартиращи фирми и по-големи корпорации в различни индустрии.
+              Ние ценим нашите партньорства с разнообразен набор от фирми и
+              организации. Те включват малки и средни предприятия, нестопански
+              организации, стартиращи фирми и по-големи корпорации в различни
+              индустрии.
             </p>
           </div>
 
@@ -37,7 +49,7 @@ export default function PartnersSection() {
                 href="https://www.google.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center mx-auto w-[40%] h-fit"
+                className="flex items-center mx-auto w-[20%] h-fit"
               >
                 <LazyLoadImage
                   src={img}
@@ -45,6 +57,10 @@ export default function PartnersSection() {
                   height="auto"
                   alt="partner_logo.webp"
                   className=""
+                  style={{
+                    filter:
+                      "invert(67%) sepia(4%) saturate(1022%) hue-rotate(176deg) brightness(82%) contrast(88%)",
+                  }}
                 />
               </a>
             ))}
