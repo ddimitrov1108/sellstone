@@ -21,16 +21,14 @@ const teamArr = [
     title: "Web Developer",
     socials: [
       {
-        id: uuidv4(),
         url: "https://www.instagram.com/",
         icon: <FaInstagram />,
       },
       {
-        id: uuidv4(),
         url: "https://www.linkedin.com/feed",
         icon: <FaLinkedinIn />,
       },
-      { id: uuidv4(), url: "https://twitter.com/", icon: <FaTwitter /> },
+      { url: "https://twitter.com/", icon: <FaTwitter /> },
     ],
   },
   {
@@ -47,16 +45,14 @@ const teamArr = [
     title: "Web Developer",
     socials: [
       {
-        id: uuidv4(),
         url: "https://www.instagram.com/",
         icon: <FaInstagram />,
       },
       {
-        id: uuidv4(),
         url: "https://www.linkedin.com/feed",
         icon: <FaLinkedinIn />,
       },
-      { id: uuidv4(), url: "https://twitter.com/", icon: <FaTwitter /> },
+      { url: "https://twitter.com/", icon: <FaTwitter /> },
     ],
   },
   {
@@ -73,16 +69,14 @@ const teamArr = [
     title: "Web Developer",
     socials: [
       {
-        id: uuidv4(),
         url: "https://www.instagram.com/",
         icon: <FaInstagram />,
       },
       {
-        id: uuidv4(),
         url: "https://www.linkedin.com/feed",
         icon: <FaLinkedinIn />,
       },
-      { id: uuidv4(), url: "https://twitter.com/", icon: <FaTwitter /> },
+      { url: "https://twitter.com/", icon: <FaTwitter /> },
     ],
   },
 ];

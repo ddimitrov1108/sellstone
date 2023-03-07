@@ -69,14 +69,14 @@ export default function PartnersSection() {
             </p>
           </div>
 
-          <div className="w-full flex flex-wrap items-center text-center justify-center gap-y-8 gap-x-8 md:gap-12">
+          <div className="w-full flex flex-wrap items-center text-center justify-center gap-y-8 gap-x-12">
             {partnersImgs.map(({ id, href, img, alt }) => (
               <a
                 key={id}
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center mx-auto w-[20%] h-fit"
+                className="flex items-center w-[20%] h-fit"
               >
                 <LazyLoadImage
                   src={img}
