@@ -4,6 +4,7 @@ import userPfWebp from "../../assets/user-pf.webp";
 import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { v4 as uuidv4 } from "uuid";
+import EmployeeCard from "../ui/EmployeeCard";
 
 const teamArr = [
   {
@@ -98,39 +99,8 @@ export default function OurTeamSection() {
         </SectionHeader>
 
         <div className="flex flex-col md:flex-row gap-14 gap-y-10 items-center justify-center">
-          {teamArr.map(({ id, img, name, title, socials }) => (
-            <div
-              key={id}
-              className="opacity-0 hidden-section employee-card p-6 bg-black-dark/20 transition-all duration-300 shadow-md  grid gap-2 rounded-lg"
-            >
-              <div className="overflow-hidden w-fit mx-auto p-4 pb-0 rounded-lg">
-                {img}
-              </div>
-              <div className="grid items-center gap-4 p-2">
-                <div className="grid gap-2">
-                  <span className="text-primaryHeaderText text-left text-lg font-semibold truncate ...">
-                    {name}
-                  </span>
-                  <span className="text-gold-main text-left truncate ...">
-                    {title}
-                  </span>
-                </div>
-                <div className="flex items-center gap-4 text-xl transition-all duration-500">
-                  {socials.map(({ id, url, icon }) => (
-                    <div key={id} className="p-2 rounded-full bg-[#1E2329]">
-                      <a
-                        href={url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="transition-all duration-300 rounded-full text-[#848E9C] hover:text-gold-main"
-                      >
-                        {icon}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          {teamArr.map((employee) => (
+            <EmployeeCard key={employee} employee={employee} />
           ))}
         </div>
       </Section>

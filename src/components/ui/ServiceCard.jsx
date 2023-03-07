@@ -1,4 +1,4 @@
-export default function ServiceCard({ service = null }) {
+export default function ServiceCard({ service }) {
   return (
     <div className="bg-black-dark/20 flex flex-col gap-6 items-center justify-center hidden-section service-card select-none transition-all duration-300  p-6 rounded-lg w-full md:max-w-[330px] lg:max-w-[330px]">
       <div className="mx-auto rounded-full p-4">{service.icon}</div>
