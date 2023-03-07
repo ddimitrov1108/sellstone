@@ -25,7 +25,7 @@ export default function PartnersSection() {
     >
       <Section>
         <div className="flex flex-col gap-6 gap-y-16 items-center justify-center lg:flex-row md:justify-start md:px-12">
-          <div className="flex flex-col gap-4 md:gap-6 max-h-fit lg:max-w-[600px] xl:max-w-[700px] px-4 md:px-0">
+          <div className="flex flex-col gap-4 md:gap-6 max-h-fit lg:max-w-[600px] px-4 md:px-0">
             <div className="flex gap-6 font-semibold text-sm text-gold-main">
               <span>TEAM.</span>
               <span>CUSTOMER.</span>
