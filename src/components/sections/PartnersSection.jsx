@@ -26,10 +26,7 @@ export default function PartnersSection() {
             </h1>
 
             <p className="text-[#B7BDC6]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              quae accusantium, deleniti voluptate eius explicabo necessitatibus
-              facere autem maxime delectus porro perspiciatis vel veritatis est,
-              exercitationem laboriosam ullam labore laborum!
+              Ние ценим нашите партньорства с разнообразен набор от фирми и организации.  Те включват малки и средни предприятия, нестопански организации, стартиращи фирми и по-големи корпорации в различни индустрии.
             </p>
           </div>
 
