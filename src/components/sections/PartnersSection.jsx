@@ -24,7 +24,7 @@ export default function PartnersSection() {
       className="round-top-on-entry bg-black-main px-4 mobile-l:px-8 py-12 md:py-24"
     >
       <Section>
-        <div className="flex flex-col gap-6 items-center justify-center lg:flex-row md:justify-start md:px-12">
+        <div className="flex flex-col gap-6 gap-y-16 items-center justify-center lg:flex-row md:justify-start md:px-12">
           <div className="flex flex-col gap-4 md:gap-6 max-h-fit lg:max-w-[600px] xl:max-w-[700px] px-4 md:px-0">
             <div className="flex gap-6 font-semibold text-sm text-gold-main">
               <span>TEAM.</span>
