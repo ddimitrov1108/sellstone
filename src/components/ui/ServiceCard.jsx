@@ -5,7 +5,7 @@ export default function ServiceCard({ service = null }) {
       <span className="text-primaryHeaderText w-fit mx-auto text-center font-semibold text-lg border-b-2 border-gold-main px-4 py-2">
         {service.name}
       </span>
-      <p className="grow text-sm text-primaryHeaderText">
+      <p className="grow text-center text-sm text-primaryHeaderText">
         {service.description}
       </p>
     </div>
