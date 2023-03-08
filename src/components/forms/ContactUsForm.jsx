@@ -7,11 +7,13 @@ import Button from "../ui/Button";
 import Select from "../ui/formik/Select";
 
 const servicesArr = [
-  "Branding / Business Cards",
-  "Creative Production",
-  "Email Marketing",
-  "Social Media Marketing",
-  "Web Design & SEO",
+  "Уеб Дизайн",
+  "Графичен Дизайн",
+  "Мултимедия",
+  "Уеб Поддръжка",
+  "Маркетинг в Социалните Мрежи",
+  "Уеб SEO",
+  "Контент маркетинг",
 ];
 
 export default function ContactUsForm() {
