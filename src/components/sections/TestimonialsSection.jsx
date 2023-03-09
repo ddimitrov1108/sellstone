@@ -115,7 +115,7 @@ export default function TestimonialsSection() {
                     />
                   </div>
 
-                  <div className="mt-4 min-h-[150px] grow z-30 text-primaryHeaderText p-4 text-sm">
+                  <div className="text-center mt-4 min-h-[150px] grow z-30 text-primaryHeaderText p-4 text-sm">
                     {description}
                   </div>
 
