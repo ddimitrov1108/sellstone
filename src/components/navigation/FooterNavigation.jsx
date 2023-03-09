@@ -37,19 +37,19 @@ const contactUs = [
   {
     id: uuidv4(),
     name: "Location",
-    text: "175 5th Ave Premium Area, New York, NY 10010, United States",
+    text: "Бургас, с. Желязово",
     icon: <FaLocationArrow />,
   },
   {
     id: uuidv4(),
     name: "Phone",
-    text: "+123(0123456789)",
+    text: "+359 878499892",
     icon: <FaPhone className="rotate-90" />,
   },
   {
     id: uuidv4(),
     name: "Email",
-    text: "supportbdthemes@gmail.com",
+    text: "support@sellstone.eu",
     icon: <FaMailBulk />,
   },
 ];

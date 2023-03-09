@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Field, Form, Formik } from "formik";
 import { contactUsSchema } from "../../js/form-validations";
 import TextField from "../ui/formik/TextField";
 import TextArea from "../ui/formik/TextArea";
 import Button from "../ui/Button";
 import Select from "../ui/formik/Select";
+import successWebp from "../../assets/success.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const servicesArr = [
   "Уеб Дизайн",
@@ -17,14 +21,73 @@ const servicesArr = [
 ];
 
 export default function ContactUsForm() {
+  const recaptchaRef = useRef();
   const [formLoading, setFormLoading] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
 
-  const submitHandler = (values) => {
+
+  useEffect(() => {
+    console.log(recaptchaRef.current.getValue());
+  }, [recaptchaRef]);
+
+  const submitHandler = async (values) => {
+    const token = await recaptchaRef.current.executeAsync();
+    console.log(token);
+    setFormLoading(true);
+
+    await axios
+      .post("/mailer.php", {
+        fullName: values.fullName,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+        categoryType: servicesArr.indexOf(values.categoryType),
+        description: values.description,
+      })
+      .then((response) => {
+        // setFormLoading(false);
+        // setFormSuccess(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        setFormLoading(false);
+        alert("Не успяхме да изпратим вашето съобщение!");
+      });
+
     alert("check console");
     console.log(values);
+    values.fullName = "";
+    values.email = "";
+    values.phoneNumber = "";
+    values.categoryType = "";
+    values.description = "";
   };
 
-  return (
+  return !formLoading && formSuccess ? (
+    <div className="w-full grid justify-center items-center p-4 text-center">
+      <LazyLoadImage
+        src={successWebp}
+        width="64"
+        height="64"
+        alt="success.webp"
+        className="mx-auto"
+      />
+      <div className="text-lg mt-8 text-primaryHeaderText">
+        Вашето запитване беше изпратено успешно!
+      </div>
+
+      <div className="mt-2 text-[#B7BDC6]">
+        Ще се свържем с Вас в най-кратък срок
+      </div>
+
+      <Button
+        onClick={() => setFormSuccess(false)}
+        className="mx-auto mt-8"
+        aria-label="Изпрати ново запитване"
+      >
+        Изпрати ново запитване
+      </Button>
+    </div>
+  ) : (
     <Formik
       initialValues={{
         fullName: "",
@@ -96,6 +159,12 @@ export default function ContactUsForm() {
           rows={6}
           disabled={formLoading}
           fullWidth
+        />
+
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey="6LeZJukkAAAAAHiTlAkxJilQ6ywJnNSIIOzu3iAD"
         />
 
         <Button
