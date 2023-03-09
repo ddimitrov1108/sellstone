@@ -30,6 +30,8 @@ export default function ContactUsForm() {
     setFormLoading(true);
     setFormError("");
 
+    console.log(servicesArr.indexOf(values.categoryType));
+
     if (!executeRecaptcha) {
       setFormError("Execute recaptcha not yet available");
       setFormLoading(false);
@@ -37,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const token = await executeRecaptcha();
-
+    
     if (token) {
       alert("success captcha");
       await axios
@@ -63,8 +65,6 @@ export default function ContactUsForm() {
     }
 
     alert("check console");
-    console.log(values);
-
     values.fullName = "";
     values.email = "";
     values.phoneNumber = "";
