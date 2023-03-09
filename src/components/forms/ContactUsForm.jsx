@@ -51,7 +51,7 @@ export default function ContactUsForm() {
         .then((response) => {
           console.log(response.data);
           setFormLoading(false);
-          // setFormSuccess(true);
+          setFormSuccess(true);
         })
         .catch((err) => {
           console.log(err);
