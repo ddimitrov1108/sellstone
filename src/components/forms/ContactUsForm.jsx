@@ -164,7 +164,7 @@ export default function ContactUsForm() {
         <ReCAPTCHA
           ref={recaptchaRef}
           size="invisible"
-          sitekey="6LeZJukkAAAAAHiTlAkxJilQ6ywJnNSIIOzu3iAD"
+          sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
         />
 
         <Button
