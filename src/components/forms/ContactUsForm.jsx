@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Field, Form, Formik } from "formik";
 import { contactUsSchema } from "../../js/form-validations";
 import TextField from "../ui/formik/TextField";
@@ -31,7 +31,7 @@ export default function ContactUsForm() {
     setFormError("");
 
     if (!executeRecaptcha) {
-      setFormError('Execute recaptcha not yet available');
+      setFormError("Execute recaptcha not yet available");
       setFormLoading(false);
       return;
     }
@@ -173,12 +173,6 @@ export default function ContactUsForm() {
         />
 
         <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* <ReCAPTCHA
-            //sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
-            sitekey="6LeZJukkAAAAAHiTlAkxJilQ6ywJnNSIIOzu3iAD"
-            ref={recaptchaRef}
-          /> */}
-
           <Button
             type="submit"
             className="mt-5 md:mt-0 flex justify-center md:w-fit ml-auto"
