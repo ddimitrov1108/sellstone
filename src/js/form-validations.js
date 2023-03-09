@@ -18,7 +18,7 @@ export const contactUsSchema = yup.object().shape({
       /^[\\+]?[(]?[0-9]{3}[)]?[-\s\\.]?[0-9]{3}[-\s\\.]?[0-9]{4,7}$/,
       "Невалидно поле"
     )
-    .max(12, "Максимум 12 символа")
+    .max(32, "Максимум 32 символа")
     .required("Полето е задължително"),
   categoryType: yup.string().required("Полето е задължително"),
   description: yup.string().required("Полето е задължително").max(1024),

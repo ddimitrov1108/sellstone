@@ -30,8 +30,6 @@ export default function ContactUsForm() {
     setFormLoading(true);
     setFormError("");
 
-    console.log(servicesArr.indexOf(values.categoryType));
-
     if (!executeRecaptcha) {
       setFormError("Execute recaptcha not yet available");
       setFormLoading(false);
@@ -39,9 +37,8 @@ export default function ContactUsForm() {
     }
 
     const token = await executeRecaptcha();
-    
-    if (token) {
-      alert("success captcha");
+
+    if (token) {     
       await axios
         .post("/mailer.php", {
           fullName: values.fullName,
@@ -64,7 +61,8 @@ export default function ContactUsForm() {
       setFormError("You must confirm you are not a robot");
     }
 
-    alert("check console");
+    alert("success captcha");
+    alert("check console for errors");
     values.fullName = "";
     values.email = "";
     values.phoneNumber = "";
