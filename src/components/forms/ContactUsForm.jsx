@@ -8,7 +8,7 @@ import Select from "../ui/formik/Select";
 import successWebp from "../../assets/success.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import axios from "axios";
-import ReCAPTCHA from "react-google-recaptcha";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const servicesArr = [
   "Уеб Дизайн",
@@ -21,45 +21,50 @@ const servicesArr = [
 ];
 
 export default function ContactUsForm() {
-  const recaptchaRef = useRef(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [formLoading, setFormLoading] = useState(false);
   const [formSuccess, setFormSuccess] = useState(false);
-  const [formError, setFormError] = useState("asdadasdas");
-
-  useEffect(() => {
-    console.log(recaptchaRef.current.getValue());
-  }, [recaptchaRef]);
+  const [formError, setFormError] = useState("");
 
   const submitHandler = async (values) => {
     setFormLoading(true);
+    setFormError("");
 
-    const token = await recaptchaRef.current.executeAsync();
+    if (!executeRecaptcha) {
+      setFormError('Execute recaptcha not yet available');
+      setFormLoading(false);
+      return;
+    }
+
+    const token = await executeRecaptcha();
 
     if (token) {
       alert("success captcha");
-      // await axios
-      //   .post("/mailer.php", {
-      //     fullName: values.fullName,
-      //     email: values.email,
-      //     phoneNumber: values.phoneNumber,
-      //     categoryType: servicesArr.indexOf(values.categoryType),
-      //     description: values.description,
-      //   })
-      //   .then((response) => {
-      //     // setFormLoading(false);
-      //     // setFormSuccess(true);
-      //   })
-      //   .catch((err) => {
-      //     console.log(err);
-      //     setFormLoading(false);
-      //     setFormError("Не успяхме да изпратим вашето съобщение!");
-      //   });
+      await axios
+        .post("/mailer.php", {
+          fullName: values.fullName,
+          email: values.email,
+          phoneNumber: values.phoneNumber,
+          categoryType: servicesArr.indexOf(values.categoryType),
+          description: values.description,
+        })
+        .then((response) => {
+          console.log(response.data);
+          setFormLoading(false);
+          // setFormSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+          setFormLoading(false);
+          setFormError("Не успяхме да изпратим вашето съобщение!");
+        });
     } else {
-      alert("You must confirm you are not a robot");
+      setFormError("You must confirm you are not a robot");
     }
 
     alert("check console");
     console.log(values);
+
     values.fullName = "";
     values.email = "";
     values.phoneNumber = "";
@@ -168,11 +173,11 @@ export default function ContactUsForm() {
         />
 
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <ReCAPTCHA
+          {/* <ReCAPTCHA
             //sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
             sitekey="6LeZJukkAAAAAHiTlAkxJilQ6ywJnNSIIOzu3iAD"
             ref={recaptchaRef}
-          />
+          /> */}
 
           <Button
             type="submit"
