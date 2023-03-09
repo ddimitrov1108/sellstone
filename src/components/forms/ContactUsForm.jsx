@@ -21,37 +21,41 @@ const servicesArr = [
 ];
 
 export default function ContactUsForm() {
-  const recaptchaRef = useRef();
+  const recaptchaRef = useRef(null);
   const [formLoading, setFormLoading] = useState(false);
   const [formSuccess, setFormSuccess] = useState(false);
-
+  const [formError, setFormError] = useState("asdadasdas");
 
   useEffect(() => {
     console.log(recaptchaRef.current.getValue());
   }, [recaptchaRef]);
 
   const submitHandler = async (values) => {
-    const token = await recaptchaRef.current.executeAsync();
-    console.log(token);
     setFormLoading(true);
 
-    await axios
-      .post("/mailer.php", {
-        fullName: values.fullName,
-        email: values.email,
-        phoneNumber: values.phoneNumber,
-        categoryType: servicesArr.indexOf(values.categoryType),
-        description: values.description,
-      })
-      .then((response) => {
-        // setFormLoading(false);
-        // setFormSuccess(true);
-      })
-      .catch((err) => {
-        console.log(err);
-        setFormLoading(false);
-        alert("Не успяхме да изпратим вашето съобщение!");
-      });
+    const token = await recaptchaRef.current.executeAsync();
+
+    if (token) {
+      await axios
+        .post("/mailer.php", {
+          fullName: values.fullName,
+          email: values.email,
+          phoneNumber: values.phoneNumber,
+          categoryType: servicesArr.indexOf(values.categoryType),
+          description: values.description,
+        })
+        .then((response) => {
+          // setFormLoading(false);
+          // setFormSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+          setFormLoading(false);
+          setFormError("Не успяхме да изпратим вашето съобщение!");
+        });
+    } else {
+      alert("You must confirm you are not a robot");
+    }
 
     alert("check console");
     console.log(values);
@@ -100,6 +104,7 @@ export default function ContactUsForm() {
       onSubmit={submitHandler}
     >
       <Form>
+        {formError && <div className="mb-8 text-error-main">{formError}</div>}
         <div className="flex flex-col md:flex-row justify-between md:gap-x-10">
           <Field
             id="fullName"
@@ -161,21 +166,22 @@ export default function ContactUsForm() {
           fullWidth
         />
 
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          size="invisible"
-          sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
-        />
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <ReCAPTCHA
+            sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
+            ref={recaptchaRef}
+          />
 
-        <Button
-          type="submit"
-          className="flex justify-center md:w-fit ml-auto"
-          aria-label="изпрати"
-          disabled={formLoading}
-          fullWidth
-        >
-          Изпрати
-        </Button>
+          <Button
+            type="submit"
+            className="mt-5 md:mt-0 flex justify-center md:w-fit ml-auto"
+            aria-label="изпрати"
+            disabled={formLoading}
+            fullWidth
+          >
+            Изпрати
+          </Button>
+        </div>
       </Form>
     </Formik>
   );
