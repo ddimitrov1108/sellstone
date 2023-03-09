@@ -62,8 +62,9 @@ export default function FooterNavigation() {
           <div className="grid gap-8">
             <Brand />
             <p className="text-sm max-w-[420px] text-primaryText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              За да имате нужната видимост в онлайн пространството Ви трябва
+              правилния маркетинг специалист. Ние ще Ви помогнем да достигнете
+              успешно до вашите клиенти.
             </p>
 
             <div className="mt-8 flex gap-2">
