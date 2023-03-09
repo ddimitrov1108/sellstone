@@ -36,23 +36,24 @@ export default function ContactUsForm() {
     const token = await recaptchaRef.current.executeAsync();
 
     if (token) {
-      await axios
-        .post("/mailer.php", {
-          fullName: values.fullName,
-          email: values.email,
-          phoneNumber: values.phoneNumber,
-          categoryType: servicesArr.indexOf(values.categoryType),
-          description: values.description,
-        })
-        .then((response) => {
-          // setFormLoading(false);
-          // setFormSuccess(true);
-        })
-        .catch((err) => {
-          console.log(err);
-          setFormLoading(false);
-          setFormError("Не успяхме да изпратим вашето съобщение!");
-        });
+      alert("success captcha");
+      // await axios
+      //   .post("/mailer.php", {
+      //     fullName: values.fullName,
+      //     email: values.email,
+      //     phoneNumber: values.phoneNumber,
+      //     categoryType: servicesArr.indexOf(values.categoryType),
+      //     description: values.description,
+      //   })
+      //   .then((response) => {
+      //     // setFormLoading(false);
+      //     // setFormSuccess(true);
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //     setFormLoading(false);
+      //     setFormError("Не успяхме да изпратим вашето съобщение!");
+      //   });
     } else {
       alert("You must confirm you are not a robot");
     }
@@ -168,7 +169,8 @@ export default function ContactUsForm() {
 
         <div className="flex flex-col md:flex-row items-center justify-between">
           <ReCAPTCHA
-            sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
+            //sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
+            sitekey="6LeZJukkAAAAAHiTlAkxJilQ6ywJnNSIIOzu3iAD"
             ref={recaptchaRef}
           />
 
