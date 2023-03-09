@@ -142,7 +142,7 @@ export default function ContactUsForm() {
             type="text"
             label="Телефон"
             placeholder="+359..."
-            maxLength={12}
+            maxLength={32}
             component={TextField}
             disabled={formLoading}
             fullWidth
