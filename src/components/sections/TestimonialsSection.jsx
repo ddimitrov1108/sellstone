@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
-import userPfWebp from "../../assets/user-pf.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { v4 as uuidv4 } from "uuid";
 
