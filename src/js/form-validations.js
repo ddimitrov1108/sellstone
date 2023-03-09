@@ -4,6 +4,10 @@ export const contactUsSchema = yup.object().shape({
   fullName: yup
     .string()
     .matches(/^[a-z ,.'-]+$/i, "Невалидно поле")
+    .test("fullNameSplitCheck", "Име и Фамилия са задължителни", (value) => {
+      console.log(value);
+      return value.split(' ').length;
+    })
     .max(40, "Максимум 40 символа")
     .required("Полето е задължително"),
   email: yup

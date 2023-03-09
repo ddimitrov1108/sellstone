@@ -17,12 +17,12 @@ export default function EmployeeCard({ data = null }) {
       </div>
       <div className="flex items-center gap-4 text-xl transition-all duration-500">
         {data?.socials.map(({ url, icon }, index) => (
-          <div key={index} className="p-2 rounded-full bg-[#1E2329]">
+          <div key={index} className="p-2 rounded-full bg-[#1E2329] group ">
             <a
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="transition-all duration-300 rounded-full text-[#848E9C] hover:text-gold-main"
+              className="transition-all duration-300 rounded-full text-[#848E9C] group-hover:text-gold-main"
             >
               {icon}
             </a>

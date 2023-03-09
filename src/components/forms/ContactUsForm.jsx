@@ -38,31 +38,34 @@ export default function ContactUsForm() {
 
     const token = await executeRecaptcha();
 
-    if (token) {     
+    if (token) {
+      let form = new FormData();
+      form.append("fullName", values.fullName);
+      form.append("email", values.email);
+      form.append("phoneNumber", values.phoneNumber);
+      form.append("categoryType", servicesArr.indexOf(values.categoryType));
+      form.append("description", values.description);
+      form.append("token", token);
+
       await axios
-        .post("/mailer.php", {
-          fullName: values.fullName,
-          email: values.email,
-          phoneNumber: values.phoneNumber,
-          categoryType: servicesArr.indexOf(values.categoryType),
-          description: values.description,
+        .post("/mailer.php", form, {
+          headers: {
+            "content-type": "application/x-www-form-urlencoded",
+          },
         })
-        .then((response) => {
-          console.log(response.data);
+        .then(() => {
           setFormLoading(false);
           setFormSuccess(true);
         })
         .catch((err) => {
           console.log(err);
           setFormLoading(false);
-          setFormError("Не успяхме да изпратим вашето съобщение!");
+          setFormError("Не успяхме да изпратим вашето съобщение.");
         });
     } else {
       setFormError("You must confirm you are not a robot");
     }
 
-    alert("success captcha");
-    alert("check console for errors");
     values.fullName = "";
     values.email = "";
     values.phoneNumber = "";
@@ -108,7 +111,9 @@ export default function ContactUsForm() {
       onSubmit={submitHandler}
     >
       <Form>
-        {formError && <div className="mb-8 text-error-main">{formError}</div>}
+        {formError && (
+          <div className="mb-4 px-2 py-4 text-error-main">{formError}</div>
+        )}
         <div className="flex flex-col md:flex-row justify-between md:gap-x-10">
           <Field
             id="fullName"
