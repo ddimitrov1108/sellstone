@@ -11,7 +11,7 @@ const contactUs = [
   {
     id: uuidv4(),
     name: "Address",
-    text: "Бургас, с. Желязово",
+    text: "София, Бизнес Парк",
     icon: (
       <LazyLoadImage
         src={addressWebp}
@@ -24,7 +24,7 @@ const contactUs = [
   {
     id: uuidv4(),
     name: "Phone",
-    text: "+359 878499892",
+    text: "+359 878499892,\n 0886 258 405",
     icon: (
       <LazyLoadImage
         src={phoneWebp}

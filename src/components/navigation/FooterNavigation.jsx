@@ -37,13 +37,13 @@ const contactUs = [
   {
     id: uuidv4(),
     name: "Location",
-    text: "Бургас, с. Желязово",
+    text: "София, Бизнес Парк",
     icon: <FaLocationArrow />,
   },
   {
     id: uuidv4(),
     name: "Phone",
-    text: "+359 878499892",
+    text: "+359 878499892,\n 0886 258 405",
     icon: <FaPhone className="rotate-90" />,
   },
   {

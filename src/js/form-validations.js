@@ -3,13 +3,10 @@ import * as yup from "yup";
 export const contactUsSchema = yup.object().shape({
   fullName: yup
     .string()
-    .matches(/^[a-z ,.'-]+$/i, "Невалидно поле")
-    .test("fullNameSplitCheck", "Име и Фамилия са задължителни", (value) => {
-      console.log(value);
-      return value.split(' ').length;
-    })
+    .matches(/[\p{Letter}\p{Mark}\s]+/gu, "Невалидно поле")
     .max(40, "Максимум 40 символа")
-    .required("Полето е задължително"),
+    .required("Полето е задължително")
+    .trim(),
   email: yup
     .string()
     .email("Невалидно поле")
