@@ -10,18 +10,28 @@
 
 
 <a name="install"></a>
-## Installation
+<h1>Installation</h1>
 
-1. Clone the project via git clone command
+##1. Clone the project via git clone command
 
-2. Install npm packages
+##2. Install npm packages
 ```bash
 npm install
 ```
 
-3. Scripts to run the app:
+##3. Run the project
+
+Run the project in development mode
 ```bash
-npm run dev // running in development mode
-npm run build // to build the project
-npm run preview // to preview the latest build
+npm run dev
+```
+
+Build the project for production
+```bash
+npm run build
+```
+
+Run the latest production build
+```bash
+npm run peview
 ```
