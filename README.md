@@ -17,7 +17,7 @@
 <h3>2. Install npm packages</h3>
 
 ```bash
-npm run dev
+npm install
 ```
 
 <h3>3. Run the project</h3>
