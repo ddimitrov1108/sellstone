@@ -7,8 +7,8 @@ import Button from "../ui/Button";
 import Select from "../ui/formik/Select";
 import successWebp from "../../assets/success.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import axios from "axios";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import axios from "axios";
 
 const servicesArr = [
   "Уеб Дизайн",
@@ -161,6 +161,7 @@ export default function ContactUsForm() {
             hiddenOptionText="Изберете категория"
             options={servicesArr}
             component={Select}
+            disabled={formLoading}
             fullWidth
           />
         </div>

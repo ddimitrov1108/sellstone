@@ -37,19 +37,19 @@ const contactUs = [
   {
     id: uuidv4(),
     name: "Location",
-    text: "София, Бизнес Парк",
+    text: ["София, Бизнес Парк"],
     icon: <FaLocationArrow />,
   },
   {
     id: uuidv4(),
     name: "Phone",
-    text: "+359 878499892,\n 0886 258 405",
+    text: ["+359 878499892", "+359 886258405"],
     icon: <FaPhone className="rotate-90" />,
   },
   {
     id: uuidv4(),
     name: "Email",
-    text: "support@sellstone.eu",
+    text: ["support@sellstone.eu"],
     icon: <FaMailBulk />,
   },
 ];
@@ -84,7 +84,7 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-headerText">Explore</span>
+            <span className="text-2xl text-headerText">Навигация</span>
             <div className="grid gap-2 text-primaryText text-sm">
               {navLinks.map(({ id, name, href }) => (
                 <NavLink key={id} to={href} className="hover:text-gold-main">
@@ -95,16 +95,22 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-headerText">Address</span>
+            <span className="text-2xl text-headerText">Адрес</span>
             <div className="grid gap-2">
               {contactUs.map(({ id, name, text, icon }) => (
                 <div
                   key={id}
                   title={name}
-                  className="min-w-fit flex items-center gap-2 text-primaryText"
+                  className="min-w-fit flex items-start gap-2 text-primaryText"
                 >
                   <div className="text-base">{icon}</div>
-                  <span className="text-sm">{text}</span>
+                  <div className="flex flex-col gap-1 text-[#B7BDC6] text-sm">
+                    {text.map((t, i) => (
+                      <span key={i} className="text-sm">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>

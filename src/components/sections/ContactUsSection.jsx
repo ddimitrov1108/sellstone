@@ -65,7 +65,7 @@ export default function ContactUsSection() {
         <div className="flex flex-col-reverse items-center lg:flex-row gap-12 lg:gap-24">
           <div className="w-full lg:w-fit flex flex-col items-start lg:items-center gap-6">
             {contactUs.map((contactData) => (
-              <ContactUsDetails data={contactData} key={contactUs.id} />
+              <ContactUsDetails key={contactData.id} data={contactData} />
             ))}
           </div>
 

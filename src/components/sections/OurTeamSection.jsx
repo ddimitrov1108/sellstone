@@ -77,13 +77,11 @@ export default function OurTeamSection() {
       className="bg-black-main overflow-hidden px-4 mobile-l:px-8 py-12"
     >
       <Section>
-        <SectionHeader className="text-headerText">
-          Нашият екип
-        </SectionHeader>
+        <SectionHeader className="text-headerText">Нашият екип</SectionHeader>
 
         <div className="flex flex-col lg:flex-row gap-12 gap-y-10 items-center justify-center">
-          {teamArr.map((employee) => (
-            <EmployeeCard key={employee} data={employee} />
+          {teamArr.map((employeeData) => (
+            <EmployeeCard key={employeeData.id} data={employeeData} />
           ))}
         </div>
       </Section>

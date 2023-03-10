@@ -5,7 +5,7 @@ import ServicesSection from "./components/sections/ServicesSection";
 import ContactUsSection from "./components/sections/ContactUsSection";
 import { useLocation } from "react-router-dom";
 import OurTeamSection from "./components/sections/OurTeamSection";
-import PortfolioSection from "./components/sections/PortfolioSection";
+// import PortfolioSection from "./components/sections/PortfolioSection";
 import PartnersSection from "./components/sections/PartnersSection";
 import FooterNavigation from "./components/navigation/FooterNavigation";
 import { register } from "swiper/element/bundle";
