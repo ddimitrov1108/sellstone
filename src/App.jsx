@@ -13,6 +13,11 @@ import TestimonialsSection from "./components/sections/TestimonialsSection";
 
 register();
 
+/* 
+  Built by Daniel Dimitrov
+  https://www.linkedin.com/in/daniel-dimitrov-94593a180/"
+*/
+
 function App() {
   const location = useLocation();
 
@@ -83,19 +88,18 @@ function App() {
     };
   }, []);
 
-    return (
-      <>
-        <HeaderNavigation />
-        <HomeSection />
-        <ServicesSection />
-        <TestimonialsSection />
-        <PartnersSection />
-        <OurTeamSection />
-        <ContactUsSection />
-        <FooterNavigation />
-      </>
+  return (
+    <>
+      <HeaderNavigation />
+      <HomeSection />
+      <ServicesSection />
+      <TestimonialsSection />
+      <PartnersSection />
+      <OurTeamSection />
+      <ContactUsSection />
+      <FooterNavigation />
+    </>
   );
-
 
   // return (
   //     <>
