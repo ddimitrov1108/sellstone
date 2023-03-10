@@ -36,3 +36,5 @@ Run the latest production build
 ```bash
 npm run peview
 ```
+
+<h2>To upload the production build on an FTP, import all the files from ./dist directory to the FTP server</h2>
