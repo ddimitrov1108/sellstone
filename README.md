@@ -15,8 +15,9 @@
 <h3>1. Clone the project via git clone command</h3>
 
 <h3>2. Install npm packages</h3>
+
 ```bash
-npm install
+npm run dev
 ```
 
 <h3>3. Run the project</h3>
