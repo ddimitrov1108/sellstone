@@ -23,7 +23,7 @@ export default function EmployeeCard({ data = null }) {
         </div>
         <div className="flex items-center gap-4 text-xl transition-all duration-500">
           {data?.socials.map(({ url, icon }) => (
-            <div key={url} className="p-2 rounded-full bg-[#1E2329] group ">
+            <div key={url} className="p-2 rounded-full bg-[#1E2329] group cursor-pointer">
               <a
                 href={url}
                 target="_blank"
