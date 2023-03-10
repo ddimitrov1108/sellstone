@@ -1,11 +1,10 @@
-import addressWebp from "../../assets/location.webp";
+import addressWebp from "../../assets/address.webp";
 import phoneWebp from "../../assets/phone.webp";
 import emailWebp from "../../assets/email.webp";
 import ContactUsForm from "../forms/ContactUsForm";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
 import ContactUsDetails from "../ContactUsDetails";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { v4 as uuidv4 } from "uuid";
 
 const contactUs = [
@@ -13,41 +12,19 @@ const contactUs = [
     id: uuidv4(),
     name: "Address",
     text: ["София, Бизнес Парк"],
-    icon: (
-      <LazyLoadImage
-        src={addressWebp}
-        width="32px"
-        height="32px"
-        alt="creative_production.webp"
-      />
-    ),
+    img: { src: addressWebp, alt: "address.webp" },
   },
   {
     id: uuidv4(),
     name: "Phone",
     text: ["+359 878499892", "+359 886258405"],
-    icon: (
-      <LazyLoadImage
-        src={phoneWebp}
-        width="32px"
-        height="32px"
-        alt="creative_production.webp"
-        className=""
-      />
-    ),
+    img: { src: phoneWebp, alt: "phone.webp" },
   },
   {
     id: uuidv4(),
     name: "Email",
     text: ["support@sellstone.eu"],
-    icon: (
-      <LazyLoadImage
-        src={emailWebp}
-        width="32px"
-        height="32px"
-        alt="creative_production.webp"
-      />
-    ),
+    img: { src: emailWebp, alt: "email.webp" },
   },
 ];
 

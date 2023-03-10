@@ -79,7 +79,7 @@ export default function OurTeamSection() {
       <Section>
         <SectionHeader className="text-headerText">Нашият екип</SectionHeader>
 
-        <div className="flex flex-col lg:flex-row gap-12 gap-y-10 items-center justify-center">
+        <div className="flex flex-col lg:flex-row gap-6 gap-y-10 items-center justify-center">
           {teamArr.map((employeeData) => (
             <EmployeeCard key={employeeData.id} data={employeeData} />
           ))}
