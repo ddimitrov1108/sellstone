@@ -10,15 +10,15 @@
 <a name="install"></a>
 <h1>Installation</h1>
 
-<h3>1. Clone the project via git clone command</h3>
+<h4>1. Clone the project via git clone command</h4>
 
-<h3>2. Install npm packages</h3>
+<h4>2. Install npm packages</h4>
 
 ```bash
 npm install
 ```
 
-<h3>3. Run the project</h3>
+<h4>3. Run the project</h4>
 
 Run the project in development mode
 ```bash
@@ -35,4 +35,4 @@ Run the latest production build
 npm run peview
 ```
 
-<h4>To upload the production build on an FTP server - import all the files from ./dist directory to the FTP server</h4>
+<h5>To upload the production build on an FTP server - import all the files from ./dist directory to the FTP server</h5>
