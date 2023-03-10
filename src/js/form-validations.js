@@ -3,7 +3,7 @@ import * as yup from "yup";
 export const contactUsSchema = yup.object().shape({
   fullName: yup
     .string()
-    .matches(/[\p{Letter}\p{Mark}\s]+/gu, "Невалидно поле")
+    .matches(/[\p{Letter}\p{Mark}\s-]+/gu, "Невалидно поле")
     .max(40, "Максимум 40 символа")
     .required("Полето е задължително")
     .trim(),
