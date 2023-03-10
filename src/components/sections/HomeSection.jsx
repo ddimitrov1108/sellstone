@@ -9,14 +9,14 @@ export default function HomeSection() {
     >
       <div className="w-full mx-auto max-w-7xl">
         <div className="grid space-y-12 items-center">
-          <h1 className="text-[35px] mobile-m:text-[42px] mobile-l:text-5xl sm:text-6xl md:text-7xl xl:text-8xl leading-snug mobile-m:leading-snug mobile-l:leading-snug sm:leading-snug md:leading-snug xl:leading-snug font-semibold text-primaryHeaderText">
+          <h1 className="text-[35px] mobile-m:text-[42px] mobile-l:text-5xl sm:text-6xl md:text-7xl xl:text-8xl leading-snug mobile-m:leading-snug mobile-l:leading-snug sm:leading-snug md:leading-snug xl:leading-snug font-semibold text-headerText">
             Evolve together.
             <br />
             <span className="text-gold-main">Digitally.</span>
           </h1>
 
           <div className="flex flex-col gap-12">
-            <p className="max-w-[500px] text-primaryHeaderText">
+            <p className="max-w-[500px] text-headerText">
               За да имате нужната видимост в онлайн пространството Ви трябва
               правилния маркетинг специалист. Ние ще Ви помогнем да достигнете
               успешно до вашите клиенти.

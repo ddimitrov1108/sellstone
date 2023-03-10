@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
   return (
     <div className="bg-black-dark px-4 mobile-l:px-8 py-12">
       <Section>
-        <SectionHeader className="text-center text-primaryHeaderText pb-0 mb-2">
+        <SectionHeader className="text-center text-headerText pb-0 mb-2">
           Отзиви от наши клиенти
         </SectionHeader>
         <div className="mx-auto w-[40%] md:w-[30%] h-1 bg-gold-main rounded-full"></div>
@@ -115,11 +115,11 @@ export default function TestimonialsSection() {
                     />
                   </div>
 
-                  <div className="text-center mt-4 min-h-[150px] grow z-30 text-primaryHeaderText p-4 text-sm">
+                  <div className="text-center mt-4 min-h-[150px] grow z-30 text-headerText p-4 text-sm">
                     {description}
                   </div>
 
-                  <div className="text-center text-primaryHeaderText">
+                  <div className="text-center text-headerText">
                     <span className="font-semibold text-gold-main">{name}</span>
                   </div>
                 </div>

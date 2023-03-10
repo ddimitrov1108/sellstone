@@ -10,7 +10,7 @@ module.exports = {
         "mobile-l": "425px",
       },
       colors: {
-        primaryHeaderText: '#EAECEF',
+        headerText: '#EAECEF',
         primaryText: '#848E9C',
         black: {
           light: "#1E2329",

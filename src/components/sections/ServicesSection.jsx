@@ -7,7 +7,7 @@ import webSeoWebp from "../../assets/web-seo.webp";
 import contentMarketingWebp from "../../assets/content-marketing.webp";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
-import ServiceCard from "../ui/ServiceCard";
+import ServiceCard from "../ServiceCard";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { v4 as uuidv4 } from "uuid";
 
@@ -119,7 +119,7 @@ export default function ServicesSection() {
       className="round-top-on-entry round-bottom-on-entry bg-black-main px-4 mobile-l:px-8 py-12 mt-12"
     >
       <Section>
-        <SectionHeader className="text-primaryHeaderText text-center xl:text-left">
+        <SectionHeader className="text-headerText text-center xl:text-left">
           Нашите услуги
         </SectionHeader>
 

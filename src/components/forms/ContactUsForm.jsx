@@ -82,7 +82,7 @@ export default function ContactUsForm() {
         alt="success.webp"
         className="mx-auto"
       />
-      <div className="text-lg mt-8 text-primaryHeaderText">
+      <div className="text-lg mt-8 text-headerText">
         Вашето запитване беше изпратено успешно!
       </div>
 

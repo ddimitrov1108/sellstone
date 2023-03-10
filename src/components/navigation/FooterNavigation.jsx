@@ -75,7 +75,7 @@ export default function FooterNavigation() {
                   title={name}
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2.5 rounded-lg text-xl text-primaryHeaderText hover:text-gold-main transition-all duration-300"
+                  className="p-2.5 rounded-lg text-xl text-headerText hover:text-gold-main transition-all duration-300"
                 >
                   {icon}
                 </a>
@@ -84,7 +84,7 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-primaryHeaderText">Explore</span>
+            <span className="text-2xl text-headerText">Explore</span>
             <div className="grid gap-2 text-primaryText text-sm">
               {navLinks.map(({ id, name, href }) => (
                 <NavLink key={id} to={href} className="hover:text-gold-main">
@@ -95,7 +95,7 @@ export default function FooterNavigation() {
           </div>
 
           <div className="grid w-full md:max-w-[240px] gap-2">
-            <span className="text-2xl text-primaryHeaderText">Address</span>
+            <span className="text-2xl text-headerText">Address</span>
             <div className="grid gap-2">
               {contactUs.map(({ id, name, text, icon }) => (
                 <div

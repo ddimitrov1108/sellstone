@@ -57,7 +57,7 @@ export default function PartnersSection() {
               <span>COMMUNITY.</span>
             </div>
 
-            <h1 className="text-primaryHeaderText section-header md:text-left text-3xl sm:text-5xl font-semibold">
+            <h1 className="text-headerText section-header md:text-left text-3xl sm:text-5xl font-semibold">
               Партньорите, с които работим
             </h1>
 

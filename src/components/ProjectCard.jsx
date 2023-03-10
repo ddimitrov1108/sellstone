@@ -1,4 +1,4 @@
-import portfolioTemplateWebp from "../../assets/project-template.webp";
+import portfolioTemplateWebp from "../assets/project-template.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ProjectCard() {
@@ -6,10 +6,10 @@ export default function ProjectCard() {
     <div className="hidden-section project-card group relative w-full flex flex-col-reverse md:flex-row md:odd:flex-row-reverse md:even:text-right">
       <div className="project-card-title z-30 md:absolute md:top-0 lg:top-4 xl:top-12 md:group-odd:left-24 md:group-even:right-24">
         <div className="py-1 text-gold-dark">Featured Project</div>
-        <div className="text-2xl font-semibold text-primaryHeaderText mb-4">
+        <div className="text-2xl font-semibold text-headerText mb-4">
           Project Name
         </div>
-        <div className="opacity-0 project-card-info md:bg-black-dark text-primaryHeaderText rounded-lg sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
+        <div className="opacity-0 project-card-info md:bg-black-dark text-headerText rounded-lg sm:shadow-lg text-sm lg:text-base min-w-full md:max-w-[420px] lg:max-w-[520px] xl:max-w-[600px] md:p-4 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, velit
           ipsam consectetur nihil at incidunt. Aperiam rerum, at delectus
           impedit asperiores doloribus placeat, quidem ullam repudiandae fuga

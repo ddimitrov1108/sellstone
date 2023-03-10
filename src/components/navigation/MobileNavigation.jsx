@@ -31,7 +31,7 @@ export default function MobileNavigation({
             <Brand className="sm:hidden" />
             <button
               aria-label="Затвори меню"
-              className="text-4xl w-fit ml-auto text-primaryHeaderText hover:text-gold-main transition-all"
+              className="text-4xl w-fit ml-auto text-headerText hover:text-gold-main transition-all"
               onClick={onClose}
             >
               <VscClose />
