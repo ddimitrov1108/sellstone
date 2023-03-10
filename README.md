@@ -1,4 +1,4 @@
-# marketing-ui
+# SellStone
 
 ![npm_version](https://img.shields.io/npm/v/marketing-ui)
 ![license](https://img.shields.io/npm/l/marketing-ui)
@@ -12,14 +12,14 @@
 <a name="install"></a>
 <h1>Installation</h1>
 
-##1. Clone the project via git clone command
+<h3>1. Clone the project via git clone command</h3>
 
-##2. Install npm packages
+<h3>2. Install npm packages</h3>
 ```bash
 npm install
 ```
 
-##3. Run the project
+<h3>3. Run the project</h3>
 
 Run the project in development mode
 ```bash
