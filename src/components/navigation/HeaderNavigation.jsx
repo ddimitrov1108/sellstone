@@ -4,16 +4,8 @@ import Brand from "../ui/Brand";
 import MobileNavigation from "./MobileNavigation";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import Link from "../ui/Link";
-import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
-
-export const navLinks = [
-  { id: uuidv4(), name: "Начало", href: "/" },
-  { id: uuidv4(), name: "Услуги", href: "services" },
-  //{ id: uuidv4(), name: "Портфолио", href: "portfolio" },
-  { id: uuidv4(), name: "Партньори", href: "partners" },
-  { id: uuidv4(), name: "Екип", href: "our-team" },
-];
+import { navLinks } from "../constants";
 
 export default function HeaderNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +50,6 @@ export default function HeaderNavigation() {
   return (
     <>
       <MobileNavigation
-        navLinks={navLinks}
         open={isOpen}
         onNavLinkClick={closeMobileMenu}
         onClose={toggleMobileMenu}

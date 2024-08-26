@@ -1,58 +1,8 @@
-import {
-  FaLinkedin,
-  FaFacebookF,
-  FaTwitter,
-  FaLocationArrow,
-  FaPhone,
-  FaMailBulk,
-} from "react-icons/fa";
 import Section from "../sections/components/Section";
 import Brand from "../ui/Brand";
 import { NavLink } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
-import { navLinks } from "./HeaderNavigation";
-
-const socialLinks = [
-  {
-    id: uuidv4(),
-    name: "Facebook",
-    href: "https://www.facebook.com/",
-    icon: <FaFacebookF />,
-  },
-  {
-    id: uuidv4(),
-    name: "Linkedin",
-    href: "https://www.linkedin.com/",
-    icon: <FaLinkedin />,
-  },
-  {
-    id: uuidv4(),
-    name: "Twitter",
-    href: "https://www.twitter.com/",
-    icon: <FaTwitter />,
-  },
-];
-
-const contactUs = [
-  {
-    id: uuidv4(),
-    name: "Location",
-    text: ["София, Бизнес Парк"],
-    icon: <FaLocationArrow />,
-  },
-  {
-    id: uuidv4(),
-    name: "Phone",
-    text: ["+359 878499892", "+359 886258405"],
-    icon: <FaPhone className="rotate-90" />,
-  },
-  {
-    id: uuidv4(),
-    name: "Email",
-    text: ["support@sellstone.eu"],
-    icon: <FaMailBulk />,
-  },
-];
+import { navLinks } from "../constants";
+import { contactUs, socials } from "../constants";
 
 export default function FooterNavigation() {
   return (
@@ -68,7 +18,7 @@ export default function FooterNavigation() {
             </p>
 
             <div className="mt-8 flex gap-2">
-              {socialLinks.map(({ id, name, href, icon }) => (
+              {socials.map(({ id, name, href, icon }) => (
                 <a
                   key={id}
                   href={href}

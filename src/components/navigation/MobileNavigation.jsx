@@ -3,9 +3,9 @@ import Brand from "../ui/Brand";
 import Link from "../ui/Link";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
+import { navLinks } from "../constants";
 
 export default function MobileNavigation({
-  navLinks = [],
   open,
   onNavLinkClick,
   onClose,

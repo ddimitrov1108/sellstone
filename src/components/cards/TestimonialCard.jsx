@@ -2,7 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function TestimonialCard({ data = null }) {
   return (
-    <div className="w-full bg-black-dark rounded-lg mt-14 ">
+    <div className="w-full bg-black-dark mt-14 ">
       <div className="mx-auto border-2 w-32 h-32 flex overflow-hidden border-gold-light rounded-full -mt-24">
         <LazyLoadImage
           src={data?.img.src}

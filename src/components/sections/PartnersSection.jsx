@@ -1,46 +1,6 @@
+import { partners } from "../constants";
 import Section from "./components/Section";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import devinWebp from "../../assets/devin.webp";
-import lukoilWebp from "../../assets/lukoil.webp";
-import redbullWebp from "../../assets/redbull.webp";
-import kauflandWebp from "../../assets/kaufland.webp";
-import obbWebp from "../../assets/obb.webp";
-import xellaWebp from "../../assets/xella.webp";
-import { v4 as uuidv4 } from "uuid";
-
-const partnersImgs = [
-  {
-    id: uuidv4(),
-    href: "http://www.devin-bg.com/en/",
-    img: devinWebp,
-    alt: "devin.webp",
-  },
-  {
-    id: uuidv4(),
-    href: "https://lukoil.bg/bg/",
-    img: lukoilWebp,
-    alt: "lukoil.webp",
-  },
-  {
-    id: uuidv4(),
-    href: "https://www.redbull.com/bg-bg",
-    img: redbullWebp,
-    alt: "redbull.webp",
-  },
-  {
-    id: uuidv4(),
-    href: "https://www.kaufland.bg/",
-    img: kauflandWebp,
-    alt: "kaufland.webp",
-  },
-  { id: uuidv4(), href: "https://www.ubb.bg/", img: obbWebp, alt: "obb.webp" },
-  {
-    id: uuidv4(),
-    href: "https://www.xella.bg/",
-    img: xellaWebp,
-    alt: "xella.webp",
-  },
-];
 
 export default function PartnersSection() {
   return (
@@ -70,7 +30,7 @@ export default function PartnersSection() {
           </div>
 
           <div className="w-full flex flex-wrap items-center text-center justify-center gap-y-8 gap-x-12">
-            {partnersImgs.map(({ id, href, img, alt }) => (
+            {partners.map(({ id, href, img, alt }) => (
               <a
                 key={id}
                 href={href}

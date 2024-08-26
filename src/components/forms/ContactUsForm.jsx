@@ -5,7 +5,7 @@ import TextField from "../ui/formik/TextField";
 import TextArea from "../ui/formik/TextArea";
 import Button from "../ui/Button";
 import Select from "../ui/formik/Select";
-import successWebp from "../../assets/success.webp";
+import successWebp from "../../assets/utils/success.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";

@@ -2,7 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function EmployeeCard({ data = null }) {
   return (
-    <div className="opacity-0 hidden-section employee-card p-6 bg-black-dark/20 transition-all duration-300 shadow-md  grid gap-8 rounded-lg">
+    <div className="opacity-0 hidden-section employee-card p-6 bg-black-dark/20 transition-all duration-300 shadow-md  grid gap-8 rounded-2xl">
       <div className="overflow-hidden w-fit mx-auto p-4 pb-0 rounded-lg">
         <LazyLoadImage
           src={data?.img.src}

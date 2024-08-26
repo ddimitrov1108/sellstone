@@ -1,32 +1,9 @@
-import addressWebp from "../../assets/address.webp";
-import phoneWebp from "../../assets/phone.webp";
-import emailWebp from "../../assets/email.webp";
+
 import ContactUsForm from "../forms/ContactUsForm";
 import SectionHeader from "./components/SectionHeader";
 import Section from "./components/Section";
-import ContactUsDetails from "../ContactUsDetails";
-import { v4 as uuidv4 } from "uuid";
-
-const contactUs = [
-  {
-    id: uuidv4(),
-    name: "Address",
-    text: ["София, Бизнес Парк"],
-    img: { src: addressWebp, alt: "address.webp" },
-  },
-  {
-    id: uuidv4(),
-    name: "Phone",
-    text: ["+359 878499892", "+359 886258405"],
-    img: { src: phoneWebp, alt: "phone.webp" },
-  },
-  {
-    id: uuidv4(),
-    name: "Email",
-    text: ["support@sellstone.eu"],
-    img: { src: emailWebp, alt: "email.webp" },
-  },
-];
+import ContactUsDetails from "../cards/ContactUsDetails";
+import { contactUs } from "../constants";
 
 export default function ContactUsSection() {
   return (

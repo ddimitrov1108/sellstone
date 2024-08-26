@@ -3,13 +3,12 @@ import HeaderNavigation from "./components/navigation/HeaderNavigation";
 import HomeSection from "./components/sections/HomeSection";
 import ServicesSection from "./components/sections/ServicesSection";
 import ContactUsSection from "./components/sections/ContactUsSection";
-import { useLocation } from "react-router-dom";
 import OurTeamSection from "./components/sections/OurTeamSection";
-// import PortfolioSection from "./components/sections/PortfolioSection";
 import PartnersSection from "./components/sections/PartnersSection";
 import FooterNavigation from "./components/navigation/FooterNavigation";
-import { register } from "swiper/element/bundle";
 import TestimonialsSection from "./components/sections/TestimonialsSection";
+import { useLocation } from "react-router-dom";
+import { register } from "swiper/element/bundle";
 
 register();
 
@@ -100,20 +99,6 @@ function App() {
       <FooterNavigation />
     </>
   );
-
-  // return (
-  //     <>
-  //       <HeaderNavigation />
-  //       <HomeSection />
-  //       <ServicesSection />
-  //       <PortfolioSection />
-  //       <TestimonialsSection />
-  //       <PartnersSection />
-  //       <OurTeamSection />
-  //       <ContactUsSection />
-  //       <FooterNavigation />
-  //     </>
-  // );
 }
 
 export default App;

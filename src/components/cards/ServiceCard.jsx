@@ -2,7 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ServiceCard({ data = null }) {
   return (
-    <div className="bg-black-dark/20 flex flex-col gap-6 items-center justify-center hidden-section service-card select-none transition-all duration-300  p-6 rounded-lg w-full md:max-w-[330px] lg:max-w-[330px]">
+    <div className="bg-black-dark/20 flex flex-col gap-6 items-center justify-center hidden-section service-card select-none transition-all duration-300  p-6 rounded-2xl w-full md:max-w-[330px] lg:max-w-[330px]">
       <div className="mx-auto rounded-full p-4">
         <LazyLoadImage
           src={data?.img.src}
